@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woorkbook 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Caveat", cursive;
+            background-color: #819171;
+            overflow: hidden;
+        }
+        .header{
+            box-sizing: content-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 4vh;
+            position: absolute;
+            background-color: #546C5B;
+            left: 30%;
+            top: 12%;
+            color: white;
+            height: 1.8em;
+        }
+
+        .title{
+        }
+
+        .sparkle{
+            height: 1.5em;
+        }
+
+        .pin-board{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .board-bg{
+            width:70vw;
+        }
+
+        .board-content{
+            font-size: 1.5em;
+        }
+
+        a{
+            color: white;
+        }
+
+
+        .week1 {
+            color: white;
+            position: absolute;
+            background-color: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-10deg);
+            padding: 15px;
+        }
+
+        .week2{
+            color: white;
+            position: absolute;
+            background-color: seagreen;
+            top: 30%;
+            left: 25%;
+            transform: rotate(35deg);
+            padding: 15px;
+        }
+       
+        .week3{
+            color: white;
+            position: absolute;
+            background-color: orange;
+            bottom: 34%;
+            right: 25%;
+            transform: rotate(-40deg);
+            padding: 15px;
+        }
+
+        .hunt{
+            color: white;
+            position: absolute;
+            background-color: yellowgreen;
+            top: 60%;
+            left: 25%;
+            transform: rotate(15deg);
+            padding: 15px;
+        }
+       
+        a:link, a:visited {
+             text-decoration: none;
+        }       
+
+        #circle {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: -0.5em;
+         }
+
+         	
+/* Shooting Stars */
+
+#shooting-stars {
+    position: absolute; 
+    z-index: -1;
+}
+
+
+
+.stars1 {
+
+color: rgb(245, 245, 171);
+
+text-shadow: rgb(190, 190, 232);
+
+font-size: 1.4em;
+
+letter-spacing: -2px;
+
+text-shadow: 2px 2px 20px yellow;
+
+opacity: 0.9;
+
+}
+
+#star1 {
+
+position: absolute;
+top: 0px;
+right: 10vw;
+animation: 5s shootingStar linear infinite;
+
+}
+
+#star2 {
+position: absolute;
+top: 0px;
+right: 50vw;
+animation: 4s shootingStar linear infinite;
+}
+
+#star3 {
+position: absolute;
+top: -15vh;
+right: 60vw;
+animation: 5s shootingStar linear infinite;
+animation-delay: 1.2s;
+}
+
+#star4 {
+position: absolute;
+top: -30vh;
+right: 90vw;
+animation: 7s shootingStar linear infinite;
+animation-delay: 2s;
+}
+
+#star5 {
+position: absolute;
+top: -40vh;
+right: 30vw;
+animation: 6s shootingStar linear infinite;
+}
+
+#star6 {
+position: absolute;
+top: -3vh;
+right: -50vw;
+animation: 6s shootingStar linear infinite;
+animation-delay: 1.2s;
+}
+
+#star7 {
+position: absolute;
+top: -22px;
+right: -20vw;
+animation: 5s shootingStar linear infinite;
+animation-delay: 2.2s;
+}
+
+@keyframes stars-fall {
+0% {
+line-height: 5px;
+}
+100% {
+line-height: 10px;
+}
+}
+@keyframes shootingStar {
+0% {
+transform: rotateZ(-40deg) translateX(0%) translateY(0%);
+}
+100% {
+transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
+}
+}
+
+
+       
+    </style>
+</head>
+<body>
+   
+    <div class="pin-board">
+        <div id="shooting-stars" class="hidden">
+            <div class="stars1" id="star1"><pre>⟡‘.•⁀જ</pre></div>
+            <div class="stars1" id="star2"><pre>⟡‘.•⁀જ</pre></div>
+            <div class="stars1" id="star3"><pre>⟡‘.•⁀જ</pre></div>
+            <div class="stars1" id="star4"><pre>⟡‘.•⁀જ</pre></div>
+            <div class="stars1" id="star5"><pre>⟡‘.•⁀જ</pre></div>
+            <div class="stars1" id="star6"><pre>⟡‘.•⁀જ</pre></div>
+            <div class="stars1" id="star7"><pre>⟡‘.•⁀જ</pre></div>
+        </div>
+        <div class="board">
+            <div class="header">
+                <div id="circle">
+                </div>
+                <img class="sparkle" src="images/images.png"><p class="title">Lihini's Workbook</p><img class="sparkle" src="images/images.png">
+            </div>
+            <img class="board-bg" src="images/2712024.png">
+            <div class="board-content">
+                <div class="week1">
+                    <div id="circle">
+                    </div>
+                    <a href="week1.html">Week 1 </a>
+                </div>
+                <div class="week2">
+                    <div id="circle">
+                    </div>
+                    <a href="week2.html">Week 2 </a>
+                </div>
+                <div class="week3">
+                    <div id="circle">
+                    </div>
+                    <a href="week1.html">Week 3 </a>
+                </div>
+                <div class="hunt">
+                    <div id="circle">
+                    </div>
+                    <a href="week2.html">Huntngather </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
