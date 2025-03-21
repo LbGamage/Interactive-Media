@@ -26,26 +26,42 @@
             height: 10em;
         }
 
-        .infinte-scroll{
-            color: white;
+        .infinite-scroll{
+            position: relative;
+            overflow: hidden;
             background-color: black;
-            margin: none;
+            width: 100%;
+            white-space: nowrap;
+            margin-bottom: 0.8em;
+
         }
 
+        #scroll-text{
+            animation: move 30s linear infinite;
+            color: white;
+            padding: 0.4em 0.4em;
+        }
+
+
+
+      
+
+
         .section-header{
-           /* background-color: greenyellow;*/
+           /*background-color: greenyellow;*/
         }
 
         .main-info-row{
-            /*background-color: red;*/
+            background-color: red;
             display: flex;
+            justify-content: center;            
             flex-direction: row;
-            margin: 20px;
-            gap: 30px;
+            margin: 15px;
+            gap: 0.25em;
         }
 
         .section-col{
-           /*background-color: aqua;*/
+           background-color: aqua;
             display: flex;
             flex-direction: row;
             gap: 30px;
@@ -66,6 +82,33 @@
             background-color: brown ;
             border: 1px solid black;
         }
+
+        .crazy-images{
+            background-color:yellow ;
+        }
+
+
+        @keyframes move {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /*id {
+            animations: scrol-text 30s infinite
+        }
+        @keyframes scroll-text {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+translateX(100%);
+            }
+        }*/
      </style>
 </head>
 <body>
@@ -79,43 +122,47 @@
         <div class="section-header">
             /Crazy 8s <hr>
         </div>
+        <div class="crazy-images">
         <div class="main-info-row">
-            <div class="section-col">
                 <div class="img-col">
                     <img src="images/Week 2/Crazy8/1.png">         
-                       </div>
-                       <div class="img-col">
+                </div>
+                <div class="img-col">
                         <img src="images/Week 2/Crazy8/1.png">         
-                           </div>
-            
+                </div>
                 <div class="img-col">
                     <img src="images/Week 2/Crazy8/1.png">         
-                       </div>
-                       <div class="img-col">
+                </div>
+                <div class="img-col">
                         <img src="images/Week 2/Crazy8/1.png">         
-                           </div>
-            </div>
+                </div>
         </div>
         <div class="main-info-row">
-            <div class="section-col">
-                <div class="img-col">
+            <div class="img-col">
+                <img src="images/Week 2/Crazy8/1.png">         
+            </div>
+            <div class="img-col">
                     <img src="images/Week 2/Crazy8/1.png">         
-                       </div>
-                       <div class="img-col">
-                        <img src="images/Week 2/Crazy8/1.png">         
-                           </div>
-            
-                <div class="img-col">
+            </div>
+            <div class="img-col">
+                <img src="images/Week 2/Crazy8/1.png">         
+            </div>
+            <div class="img-col">
                     <img src="images/Week 2/Crazy8/1.png">         
-                       </div>
-                       <div class="img-col">
-                        <img src="images/Week 2/Crazy8/1.png">         
-                           </div>
             </div>
         </div>
+    </div>
         
     </div>
-    <div class="infinte-scroll">HELLO WORLD | HELLO WORLD|</div>
+    <!-- 100% width -->
+     <div class="delete">
+    <div class="infinite-scroll"> 
+        <!-- WIDER WIDTH -->
+        <div id="scroll-text">
+            HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | THIS TOOK LONGER THAN EXPECTED | BLA BLA BLA | UIUHFFHUKHHK | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD |
+        </div>
+    </div>
+    </div>
     <div class=" wrapper building-blocks">
         <div class="section-header">
             /build-a-web <hr>
