@@ -21,6 +21,8 @@
             background-color: black;
             font-family: 'Px437 IBM VGA';
             margin-left: 1.5em;
+            margin-right: 1.5em;
+            overflow-x: hidden;
         }
 
         a{
@@ -51,6 +53,11 @@
             display: flex;
             align-items: center;
             margin-right: 8em;
+            gap: 0.5em;
+        }
+
+        .gesture-image{
+            height: 30vh;
         }
 
         .firstpage{
@@ -62,6 +69,26 @@
             color: black;
             padding: 0.3em;
         }
+
+        .huntweek1{
+            display: flex;
+            align-items: flex-start;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .hng-container{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            border: #a9a9a9 1px solid;
+            padding: 1%;
+            height: 18em;
+       }
+
+
+
+       
     
     </style>
 </head>
@@ -93,13 +120,13 @@
             <p>In this workshop, we put together a gesture glossary by noting down different movements and behaviors that triggered interactions between people and non-human systems.  We looked at how simple gestures could act as commands or signals in human-computer interaction.</p>
         </div>
         <div class="gesture-box">
-            <img class="gesture-image" src="images/images.png">
+            <img class="gesture-image" src="images/Week 1/Doublefku.png">
             <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
-        </div>
+        </div><br>
         <div class="gesture-box">
             <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
-            <img class="gesture-image" src="images/images.png">
-        </div>
+            <img class="gesture-image" src="images/Week 1/memecaptcha.png">
+        </div><br>
         <div class="gesture-box">
             <img class="gesture-image" src="images/images.png">
             <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
@@ -120,14 +147,31 @@
             This activity helped us learn the absolute basics of HTML. As a group, we <b>attempted</b> to build the structure of YouTube (the website we chose) using HTML tags.
         </p>
         <div class="tag-images">
-            <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
-            <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
+            <img style="width: 15em;" src="images/Week 1/htmltag.png">
+            <img style="width: 15em;" src="images/Week 1/htmlyoutube.png">
         </div>
     </div>
-    <div class="huntweek1">
-        <div class="tag-header" id="insp">— Hunt N' Gather of the Week! —</div><br>
-        <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
-            <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
-    </div>
+    <div class="tag-header" id="insp">— Hunt N' Gather of the Week! —</div><br>
+        <div class="huntweek1">
+            <div class="hng-container">
+                <img style="height: 10em;" src="images/Week 1/mirror.jpg">
+                <p class="tag-explain">
+                    AI mirror that perceives your emotions and microexpressions to create an unique tailors poem/haiku just for you based on what it perceives.
+                </p>
+                <a href="   https://melbourne.sciencegallery.com/mental-exhibits/mirror-ritual">[Click to View]</a>
+            </div>
+            <div class="hng-container">
+                <img style="height: 10em;" src="images/Week 1/F17EGsKWYAIpx-9.jpg">
+                <p class="tag-explain">SÉANCE is a 20-minute immersive audio experience in complete darkness that uses psychology and suggestibility to blur the line between reality and imagination.
+                </p>
+                <a href="https://www.artscentremelbourne.com.au/event-archive/2025/theatre/seance-darkfield">[Clcik to View]</a>
+            </div>
+            <div class="hng-container">
+                <img style="height: 10em;" src="images/Week 1/seance.png">
+                <p class="tag-explain">SÉANCE is a 20-minute immersive audio experience in complete darkness that uses psychology and suggestibility to blur the line between reality and imagination.
+                </p>
+                <a href="https://www.artscentremelbourne.com.au/event-archive/2025/theatre/seance-darkfield">[Click to View]</a>
+            </div>
+        </div>
 </body>
 </html>
