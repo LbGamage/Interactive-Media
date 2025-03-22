@@ -4,192 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Week 1</title>
+
     <style>
+     @font-face {
+    font-family: 'Px437 IBM VGA';
+    src: url('Fonts/Px437_IBM_VGA_8x16.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+    }
+
         body{
-        font-family:"Source Code Pro", monospace;
-        }
-
-        .wrapper{
-            /*background-color: bisque;*/
-        }
-
-        .main-info-row{
-           /* background-color: red;*/
-            justify-content: space-between;
-
-        }
-
-        img{
-            height: 10em;
-        }
-
-        .infinite-scroll{
-            position: relative;
-            overflow: hidden;
+            color: #d3d0cf;
             background-color: black;
-            width: 100%;
-            white-space: nowrap;
-            margin-bottom: 0.8em;
-
+            font-family: 'Px437 IBM VGA';
+            margin-left: 1.5em;
         }
 
-        #scroll-text{
-            animation: move 30s linear infinite;
-            color: white;
-            padding: 0.4em 0.4em;
+        a{
+            text-decoration: none;
+            color: #d3d0cf;;
         }
 
-
-
-      
-
-
-        .section-header{
-           /*background-color: greenyellow;*/
-        }
-
-        .main-info-row{
-            background-color: red;
+        .week1-subnav{
             display: flex;
-            justify-content: center;            
-            flex-direction: row;
-            margin: 15px;
-            gap: 0.25em;
+            flex-direction: column;
+        }
+        
+        hr{border: 1px dashed;
         }
 
-        .section-col{
-           background-color: aqua;
+        .www-explain{
+            margin-right: 8em;
+        }
+        
+        .html-header, .www-header, .tag-header{
+            margin-top: 1em;
+            background-color: #a9a9a9;
+            color: black;
+            padding: 0.3em;
+        }
+
+        .gesture-box{
             display: flex;
-            flex-direction: row;
-            gap: 30px;
-            /*justify-content: space-between;*/
+            align-items: center;
+            margin-right: 8em;
         }
 
-        .img-col{
-          background-color: aliceblue;
+        .firstpage{
+            text-align: center;
         }
 
-        .text-col{
-            /*background-color: aquamarine;*/
-            width: 100%;
-            font-size: 12px;
+        .nav-button{
+            background-color: #a9a9a9;
+            color: black;
+            padding: 0.3em;
         }
-
-         img{
-            background-color: brown ;
-            border: 1px solid black;
-        }
-
-        .crazy-images{
-            background-color:yellow ;
-        }
-
-
-        @keyframes move {
-            0% {
-                transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        /*id {
-            animations: scrol-text 30s infinite
-        }
-        @keyframes scroll-text {
-            0% {
-                transform: translateX(0)
-            }
-
-            100% {
-translateX(100%);
-            }
-        }*/
-     </style>
+    
+    </style>
 </head>
 <body>
-    <nav><h3><a href="index.html">home </a></h3></nav>    
-    <header><h1>Week 2: WWW</h1></header>
-    <div class="header-description">
-        <p>The interface is the place where flesh meets metal…<br> where information moves from one entity to another, from one <br> node to another within the system. —Galloway, 2013</p>
+    <div class="week1-navigation">
+        <a href="index.html" class="nav-button">[0] Home</a>
+        <a href="week2.html" class="nav-button">[a] Week 2</a>
+        <a href="week3.html" class="nav-button">[s] Week 3</a>
     </div>
-    
-    <div class="wrapper gestures">
-        <div class="section-header">
-            /Crazy 8s <hr>
-        </div>
-        <div class="crazy-images">
-        <div class="main-info-row">
-                <div class="img-col">
-                    <img src="images/Week 2/Crazy8/1.png">         
-                </div>
-                <div class="img-col">
-                        <img src="images/Week 2/Crazy8/1.png">         
-                </div>
-                <div class="img-col">
-                    <img src="images/Week 2/Crazy8/1.png">         
-                </div>
-                <div class="img-col">
-                        <img src="images/Week 2/Crazy8/1.png">         
-                </div>
-        </div>
-        <div class="main-info-row">
-            <div class="img-col">
-                <img src="images/Week 2/Crazy8/1.png">         
-            </div>
-            <div class="img-col">
-                    <img src="images/Week 2/Crazy8/1.png">         
-            </div>
-            <div class="img-col">
-                <img src="images/Week 2/Crazy8/1.png">         
-            </div>
-            <div class="img-col">
-                    <img src="images/Week 2/Crazy8/1.png">         
-            </div>
-        </div>
+    <div class="week1-title">
+        <pre>__          __       _      __ 
+\ \        / /      | |    /_ |
+ \ \  /\  / /__  ___| | __  | |                                                                     ──────▄▀▄─────▄▀▄
+  \ \/  \/ / _ \/ _ \ |/ /  | |                                                                     ─────▄█░░▀▀▀▀▀░░█▄
+   \  /\  /  __/  __/   <   | |                                                                     ─▄▄──█░░░░░░░░░░░█──▄▄
+    \/  \/ \___|\___|_|\_\  |_|                                                                     █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
+.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:. .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:. .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:. .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.</pre>
     </div>
-        
+    <div class="week1-subnav">
+        <a href="#gestures">[1] Human computer in your face</a>
+        <a href="#babyfirst">[2] Baby's first code</a>
+        <a href="#tag">[3] HTML Relay</a>
+        <a href="#insp">[4] Hunt N' Gather</a>
     </div>
-    <!-- 100% width -->
-     <div class="delete">
-    <div class="infinite-scroll"> 
-        <!-- WIDER WIDTH -->
-        <div id="scroll-text">
-            HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | THIS TOOK LONGER THAN EXPECTED | BLA BLA BLA | UIUHFFHUKHHK | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD | HELLO WORLD |
+    <hr>
+    <div class="www">
+        <div class="www-header" id="gestures">— HUMAN COMPUTER IN YOUR FACE —</div>
+        <div class="www-explain">
+            <p>In this workshop, we put together a gesture glossary by noting down different movements and behaviors that triggered interactions between people and non-human systems.  We looked at how simple gestures could act as commands or signals in human-computer interaction.</p>
+        </div>
+        <div class="gesture-box">
+            <img class="gesture-image" src="images/images.png">
+            <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
+        </div>
+        <div class="gesture-box">
+            <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
+            <img class="gesture-image" src="images/images.png">
+        </div>
+        <div class="gesture-box">
+            <img class="gesture-image" src="images/images.png">
+            <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
         </div>
     </div>
+    <div class="babysfirst" id="babyfirst">
+        <div class="html-header">— Baby's first website —</div>
+        <p class="html-explain">▶ WWW (World Wide Web): A system of interlinked web pages and resources accessed via the internet.<br>
+            ▶ HTML (HyperText Markup Language): The standard language used to structure and format content on the web.<br>
+            ▶ CSS (Cascading Style Sheets): A styling language that controls the layout, design, and appearance of web pages.</p>
+            <hr>
+            <a><p class="firstpage">[Click here to view webpage]</p></a>
+            <hr>
     </div>
-    <div class=" wrapper building-blocks">
-        <div class="section-header">
-            /build-a-web <hr>
-        </div>
-        <div class="section-col">
-            <div class="img-col">
-                <img src="images/1651c2dec73c0511cca3d95e62b1e54d.jpg">
-            </div>
-            <div class="img-col">
-                <img src="images/1651c2dec73c0511cca3d95e62b1e54d.jpg" >
-            </div>
-        </div>
-    </div>
-    <div class="wrapper huntngather">
-        <div class="section-header">
-            /huntngather <hr>
-        </div>
-        <div class="section-col">
-            <div class="img-col">
-                <img src="images/1651c2dec73c0511cca3d95e62b1e54d.jpg">
-            </div>
-            <div class="text-col">
-                <p>description about gesture</p>
-            </div>
+    <div class="tag">
+        <div class="tag-header" id="tag">— Hello World Tag! —</div>
+        <p class="tag-explain">
+            This activity helped us learn the absolute basics of HTML. As a group, we <b>attempted</b> to build the structure of YouTube (the website we chose) using HTML tags.
+        </p>
+        <div class="tag-images">
+            <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
+            <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
         </div>
     </div>
-
-    
+    <div class="huntweek1">
+        <div class="tag-header" id="insp">— Hunt N' Gather of the Week! —</div><br>
+        <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
+            <img style="width: 10em;" src="images/pencil-shading-drawing-11.jpg">
+    </div>
 </body>
 </html>
