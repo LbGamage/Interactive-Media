@@ -6,21 +6,96 @@
     <title>Document</title>
     <style>
         body{
-            background-color: yellow;
+            background-color: paleturquoise;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
         }
 
         .main-body{
-            background-color: aqua;
-            margin: 3%;
-            padding: 2%;
+            background-color: white;
+            position: relative;
+            margin: 7%;
+            height: 70vh;
             border: 2px solid black;
             border-radius: 15px;
+            z-index: -1;
+        }
+
+        .navweek3-buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            width: 25vw;
+            text-align: center;
+        }
+
+        .nav3-button{
+            border-right: 1.5px black solid;
+            flex: 1;
+            padding: 0.6em;
+            border-radius: 0px 14px 0px 0px;
+        }
+
+        .week3-title{
+            display: flex;
+            align-items: top;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-bottom: 1px black solid;
+            border-top: 1px black solid;
+            padding: 1%;
+            gap: 5%;
+        }
+
+        .box-content{
+            display: flex;
+            gap: 2%;
+            align-items: stretch;
+            border-bottom: 1px black solid;
+        }
+
+        .week-3descrip{
+            padding: 0.8em;
+        }
+
+        .week3-audio{
+            border-left: 1px black solid;
+            flex: 1;
+            align-content: center;
+            padding: 0.8em;
         }
 
         .popup{
-            display: none;
             position: fixed;
-            background-color: white;
+            height: 30vh;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 0.8em;
+        }
+
+        .folder-buttons{
+            padding: 1em;
+            display: flex;
+            gap: 3%;
+        }
+
+        .fluidPop{
+            background-color: palegoldenrod;
+            position: absolute;
+            right: 5%;
+            top: 60%;
+            width: 40vw;
+            height: 40vh;
+            z-index: 1;
+        }
+
+        .mediaQ{
+            background-color: azure;
+            position: absolute;
+            left: 5%;
+            top: 80%;
+            width: 40vw;
+            height: 40vh;
         }
     </style>
 </head>
@@ -29,26 +104,37 @@
         <div class="navweek3-buttons">
             <a href="index.html" class="nav3-button">Home</a>
             <a href="week2.html" class="nav3-button">Week 1</a>
-            <a href="week3.html" class="nav3-button">Week 3</a>
+            <a href="week3.html" class="nav3-button">Week 2</a>
         </div>
-        <div class="week3-title">Week 3</div>
+        <div class="week3-title">
+            <img style="height: 15vh;" src="images/Week 2/music.png"> Week 3
+        </div>
+        <div class="box-content">
         <div class="week-3descrip">
             <p>In Week 2, we took a journey through the different versions of the WWW: Web 1.0, the static web; Web 2.0, the social web; and Web 3.0, the 3D decentralized web. We also explored various types of websites. During the worksho we did some Paper Prototyping, trying out Crazy 8s and creating wireframesf for our workbook. Along with that we got into the basics of CSS, covering layout, units, fonts, and more!</p>
         </div>
-        <div class="week3-subnav"></div>
-        <div class="week3-audio"></div>
+        <div class="week3-audio">
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+    </div>
+    <div class="folder-buttons">
         <button class="folder-buttom" onclick="openFolder('fluid')">Fluid-design</button>
-        <div class="popup" id="fluid">
+        <div class="popup fluidPop" id="fluid">
             <button class="close-folder" id="closeFolder" onclick="closeFolder('fluid')">X</button>
             <img style="width: 8vw;" src="images/2712024.jpg">
             <p>Something about making my workbook responsive</p>
         </div>
         <button class="folder-buttom" onclick="openFolder('mediaQ')">media-queries</button>
-        <div class="popup" id="mediaQ">
+        <div class="popup mediaQ" id="mediaQ">
             <button class="close-folder" id="closeFolder" onclick="closeFolder('mediaQ')">X</button>
             <p>Media queries play a crucial role in responsive web design by allowing layouts to adjust based on viewport size. Additionally, they can identify various device characteristics, such as input method (touchscreen vs. mouse).</p>
         </div>
         <div class="huntgather3"></div>
+    </div>
     </div>
 
     <script>
