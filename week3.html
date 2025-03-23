@@ -16,6 +16,12 @@
             border: 2px solid black;
             border-radius: 15px;
         }
+
+        .popup{
+            display: none;
+            position: fixed;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -31,9 +37,28 @@
         </div>
         <div class="week3-subnav"></div>
         <div class="week3-audio"></div>
-        <div class="fluid"></div>
-        <div class="media-queries"></div>
+        <button class="folder-buttom" onclick="openFolder('fluid')">Fluid-design</button>
+        <div class="popup" id="fluid">
+            <button class="close-folder" id="closeFolder" onclick="closeFolder('fluid')">X</button>
+            <img style="width: 8vw;" src="images/2712024.jpg">
+            <p>Something about making my workbook responsive</p>
+        </div>
+        <button class="folder-buttom" onclick="openFolder('mediaQ')">media-queries</button>
+        <div class="popup" id="mediaQ">
+            <button class="close-folder" id="closeFolder" onclick="closeFolder('mediaQ')">X</button>
+            <p>Media queries play a crucial role in responsive web design by allowing layouts to adjust based on viewport size. Additionally, they can identify various device characteristics, such as input method (touchscreen vs. mouse).</p>
+        </div>
         <div class="huntgather3"></div>
     </div>
+
+    <script>
+        function openFolder(folderId){
+            document.getElementById(folderId).style.display="block";
+        }
+
+        function closeFolder(folderId){
+            document.getElementById(folderId).style.display="none";
+        }
+    </script>
 </body>
 </html>
