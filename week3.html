@@ -18,7 +18,6 @@
             height: 70vh;
             border: 2px solid black;
             border-radius: 15px;
-            z-index: -1;
         }
 
         .navweek3-buttons{
@@ -66,6 +65,7 @@
         }
 
         .popup{
+            display: none; 
             position: fixed;
             height: 30vh;
             border: 2px solid black;
@@ -77,6 +77,11 @@
             padding: 1em;
             display: flex;
             gap: 3%;
+        }
+
+        .folder-buttom{
+            background-color: white;
+            border: none;
         }
 
         .fluidPop{
@@ -96,6 +101,16 @@
             top: 80%;
             width: 40vw;
             height: 40vh;
+        }
+
+        .folder-conatiner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.6em;
+            font-weight: bold;
+            flex-wrap: wrap;
+            width: 5em;text-align: center;
         }
     </style>
 </head>
@@ -122,18 +137,31 @@
         </div>
     </div>
     <div class="folder-buttons">
-        <button class="folder-buttom" onclick="openFolder('fluid')">Fluid-design</button>
+        <div class="folder-conatiner">
+        <button class="folder-buttom" onclick="openFolder('fluid')"><img style="width: 4em;" src="images/Week 3/Vector 9.png"></button>
+        <div class="folder-text">Make it Fluid!</div>
+        </div>
         <div class="popup fluidPop" id="fluid">
             <button class="close-folder" id="closeFolder" onclick="closeFolder('fluid')">X</button>
             <img style="width: 8vw;" src="images/2712024.jpg">
             <p>Something about making my workbook responsive</p>
         </div>
-        <button class="folder-buttom" onclick="openFolder('mediaQ')">media-queries</button>
+        <div class="folder-conatiner">
+        <button class="folder-buttom" onclick="openFolder('mediaQ')"><img style="width: 4em;" src="images/Week 3/Vector 9.png"></button>
+        <div class="folder-text">Media Queries</div>
+        </div>
         <div class="popup mediaQ" id="mediaQ">
             <button class="close-folder" id="closeFolder" onclick="closeFolder('mediaQ')">X</button>
             <p>Media queries play a crucial role in responsive web design by allowing layouts to adjust based on viewport size. Additionally, they can identify various device characteristics, such as input method (touchscreen vs. mouse).</p>
         </div>
-        <div class="huntgather3"></div>
+        <div class="folder-conatiner">
+            <button class="folder-buttom" onclick="openFolder('huntngather')"><img style="width: 4em;" src="images/Week 3/Vector 9.png"></button>
+            <div class="folder-text">Hunt N' Gather</div>
+            </div>
+            <div class="popup huntngather" id="huntngather">
+                <button class="close-folder" id="closeFolder" onclick="closeFolder('huntngather')">X</button>
+                <p>Media queries play a crucial role in responsive web design by allowing layouts to adjust based on viewport size. Additionally, they can identify various device characteristics, such as input method (touchscreen vs. mouse).</p>
+            </div>
     </div>
     </div>
 
