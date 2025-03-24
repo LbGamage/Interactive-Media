@@ -20,8 +20,9 @@
             color: #d3d0cf;
             background-color: black;
             font-family: 'Px437 IBM VGA';
-            margin-left: 2.5em;
-            margin-right: 2.5em;
+            font-size: 1.2em;
+            margin-left: 1.5em;
+            margin-right: 1.5em;
             overflow-x: hidden;
         }
 
@@ -43,7 +44,7 @@
         }
 
         .www-explain{
-            margin-right: 8em;
+            width: 70%;
         }
         
         .html-header, .www-header, .tag-header{
@@ -55,13 +56,15 @@
 
         .gesture-box{
             display: flex;
-            align-items: center;
-            margin-right: 8em;
+            align-items:top;
+            width: 70%;
             gap: 0.5em;
         }
 
         .gesture-image{
             height: 30vh;
+            border: #a9a9a9 1px solid;
+
         }
 
         .firstpage{
@@ -72,7 +75,6 @@
             background-color: #a9a9a9;
             color: black;
             padding: 0.3em;
-            border-top: 3em;
         }
 
         .huntweek1{
@@ -91,6 +93,25 @@
             height: 18em;
        }
 
+       .watch-container{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        gap: 10px;
+        border: none;
+       }
+
+       .watch-explain{
+        display: flex;
+        flex-direction: column;
+       }
+
+       .tag-images{
+        border: #a9a9a9 1px solid;
+        padding: 1%;
+        width: 45vw;
+       }
+
        .cateye{
         color: #FFEA00;
         animation: colorChange 3s;
@@ -104,11 +125,6 @@
             color: black;
         }
        }
-
-
-
-       
-    
     </style>
 </head>
 <body>
@@ -140,15 +156,15 @@
         </div>
         <div class="gesture-box">
             <img class="gesture-image" src="images/Week 1/Doublefku.png">
-            <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
+            <div class="gesture-description">Initially, our group came up with a funny hand gesture, but we misunderstood the assignment. We didn't realize the gesture had to be one that allowed a person to interact with a computer system. This was supposed to be a sort of 'double fk u'</div>
         </div><br>
         <div class="gesture-box">
-            <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
+            <div class="gesture-description">The second interaction gesture we brainstormed involved using a meme to verify that a user is human in the form of a captcha. The user would see a meme and be required to vocalize the audio, creating a fun and unique experience. We though it could kind of be a secret code, similar to a password for a speakeasy, offering exclusive access to content for people who get the meme.</div>
             <img class="gesture-image" src="images/Week 1/memecaptcha.png">
         </div><br>
         <div class="gesture-box">
             <img class="gesture-image" src="images/images.png">
-            <div class="gesture-description">The hand gesture of crocheting involves a repetitive motion of looping yarn over a hooked needle, with one hand guiding the yarn while the other maneuvers the hook in small, rhythmic movements to create stitches. </div>
+            <div class="gesture-description">At home, I thought of a more intriguing gesture: crocheting, as it's something I do oftem. The hand movements involved in crocheting are rhythmic and repetitive, with one hand guiding the yarn and the other maneuvering the hook to form stitches. This reminded me of futuristic scenes in movies like 'Iron Man', where characters use hand gestures to manipulate technology in a 3D space</div>
         </div>
     </div>
     <div class="babysfirst" id="babyfirst">
@@ -163,27 +179,42 @@
     <div class="tag">
         <div class="tag-header" id="tag">—•‧₊˚⊹Hello World Tag! •‧₊˚⊹—</div>
         <p class="tag-explain">
-            This activity helped us learn the absolute basics of HTML. As a group, we <b>attempted</b> to build the structure of YouTube (the website we chose) using HTML tags.
+            This activity helped us learn the basics of HTML. As a group, we <b>attempted</b> to build the structure of YouTube (the website we chose) using HTML tags.
         </p>
         <div class="tag-images">
             <img style="width: 15em;" src="images/Week 1/htmltag.png">
             <img style="width: 15em;" src="images/Week 1/htmlyoutube.png">
         </div>
     </div>
+    <div class="tag-header" id="insp">—•‧₊˚⊹ Watch! •‧₊˚⊹—</div><br>
+
+    <div class="watch-container">
+        <img style="height: 10em;" src="images/Week 1/F17EGsKWYAIpx-9.jpg">
+        <div class="watch-explain">For the WATCH! activity, I chose Across the Spider-Verse because it's one of my favorite movies. The film features several futuristic interfaces:
+            <ul>
+            <li>Multiversal Watches – Wristwatches used by the Spider Society to travel between universes without glitching, stabilizing users in alternate realities. </li>
+            
+            <li>Spider Society HQ Interfaces – Futuristic yellow holographic displays, functioning like monitor screens for controlling Spider Society tech and monitoring the multiverse. These may use gesture-based interaction, touch controls, and sometimes 3D elements.</li>
+            
+            <li>LYLA (AI Assistant) – Miguel O’Hara’s AI companion, similar to J.A.R.V.I.S., used for data analysis, communication, and mission tracking. LYLA is a holographic AI with voice control and a distinct personality.</li>
+            </ul>
+        </div>
+    </div>
+
     <div class="tag-header" id="insp">—•‧₊˚⊹ Hunt N' Gather of the Week! •‧₊˚⊹—</div><br>
         <div class="huntweek1">
             <div class="hng-container">
-                <img style="height: 10em;" src="images/Week 1/mirror.jpg">
+                <img style="width: 17em;" src="images/Week 1/mirror.jpg">
                 <p class="tag-explain">
                     AI mirror that perceives your emotions and microexpressions to create an unique tailors poem/haiku just for you based on what it perceives.
                 </p>
                 <a href="   https://melbourne.sciencegallery.com/mental-exhibits/mirror-ritual">[Click to View]</a>
             </div>
             <div class="hng-container">
-                <img style="height: 10em;" src="images/Week 1/F17EGsKWYAIpx-9.jpg">
-                <p class="tag-explain">SÉANCE is a 20-minute immersive audio experience in complete darkness that uses psychology and suggestibility to blur the line between reality and imagination.
+                <img style="height: 10em;" src="images/Week 1/catpaw.png">
+                <p class="tag-explain">An interactive animation allows you to click on the search results screen, triggering cat arms to reach out and leave a trail of sooty paw prints.
                 </p>
-                <a href="https://www.artscentremelbourne.com.au/event-archive/2025/theatre/seance-darkfield">[Click to View]</a>
+                <a href="https://www.google.com/search?q=cat&rlz=1C1OPNX_enAU1151AU1151&oq=cat+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg9MgYIBBBFGDwyBggFEEUYPDIGCAYQRRhBMgYIBxBFGEHSAQgxMjQzajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8">[Click to View]</a>
             </div>
             <div class="hng-container">
                 <img style="height: 10em;" src="images/Week 1/seance.png">
