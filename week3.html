@@ -25,7 +25,11 @@
             background-color: white;
             margin: 3%;
             border: 2px solid black;
+            border-right: 7px solid black;
+            border-bottom: 7px solid black;
             border-radius: 15px;
+            padding-bottom: 1%;
+
         }
 
         .navweek3-buttons{
@@ -105,17 +109,14 @@
             position: absolute;
             top: 27em;
             width: 30vw;
-            height: 30vh;
             left: 2em;
             z-index: 1;
         }
         
         .huntngather{
             position: absolute;
-            top: 32em;
-            width: 50vw;
-            height: 40vh;
-            right: 6em;
+            top: 35em;
+            left: 20em;
             z-index: 2;
         }
         
@@ -123,11 +124,12 @@
             position: absolute;
             top: 20em;
             width: 50vw;
-            height: 30vh;
             right: 2em;
         }
 
-        
+        .popup-text{
+            padding: 2%;
+        }
 
         .close-buttonposition{
             display: flex;
@@ -139,6 +141,17 @@
         .close-folder{
             background: transparent;
             border-radius: 5px;
+        }
+
+        .hunt3content{
+            display: flex;
+            padding: 3%;
+            gap: 1em;
+        }
+
+        .hunt3item{
+            display: flex;
+            flex-direction: column;
         }
 
 
@@ -176,7 +189,7 @@
                 </div>
                 <div class="folder-conatiner">
                     <button class="folder-buttom" onclick="openFolder('mediaQ')"><img style="width: 4em;" src="images/Week 3/Vector 9.png"></button>
-                    <div class="folder-text">Media Queries</div>
+                    <div class="folder-text">Responsive Design</div>
                 </div>
                 <div class="folder-conatiner">
                     <button class="folder-buttom" onclick="openFolder('huntngather')"><img style="width: 4em;" src="images/Week 3/Vector 9.png"></button>
@@ -188,10 +201,18 @@
         <!-- the fodler popups are outside the main body but still in the body vessel? lets see what happens -->
         <div class="popup mediaQ" id="mediaQ">
             <div class="close-buttonposition">
-                <b>Media Queries</b>
+                <b>Responsive Design</b>
                 <button class="close-folder" id="closeFolder" onclick="closeFolder('mediaQ')">X</button>
                 </div>
-            <p>Media queries play a crucial role in responsive web design by allowing layouts to adjust based on viewport size. Additionally, they can identify various device characteristics, such as input method (touchscreen vs. mouse).</p>
+            <p class="popup-text">Responsive Design allows people to access content across multiple device resolutions. The viewports should adjust logically on tablets, phones, and desktops of any resolution. Adopt a mobile-first approach, utilize scalable vector graphics (SVGs) for icons and illustrations, and implement three or more breakpoints for various screen sizes. <br>There are 3 main principles to follow: 
+                <ul>
+                    <li><b>Grid Systems</b>: Uses relative sizing instead of fixed pixel dimensions.</li>
+                    <li><b>Fluid Image</b>: Images resize dynamically to fit their containers.</li>
+                    <li><b>Media Queries</b>:Adjust layouts based on screen size breakpoints.</li>
+                </ul>
+
+                <a style="padding: 2%;" href="https://www.interaction-design.org/literature/article/responsive-design-let-the-device-do-the-work#what_is_responsive_design?-0">Learn more about responsive design</a>
+            </p>
         </div>
 
         <div class="popup huntngather" id="huntngather">
@@ -199,7 +220,23 @@
                 <b>Hunt n gatehr</b>
                 <button class="close-folder" id="closeFolder" onclick="closeFolder('huntngather')">X</button>
                 </div>
-            <p>Media queries play a crucial role in responsive web design by allowing layouts to adjust based on viewport size. Additionally, they can identify various device characteristics, such as input method (touchscreen vs. mouse).</p>
+                <div class="hunt3content">
+                    <div class="hunt3item">
+                        <img style="width: 15em;" src="images/Week 2/fontrun.png">
+                        <a class="folder-text" href="https://web.archive.org/">Way Back Machine</a>
+                        <p class="hunt3-descrip">A digital archive of the World Wide Web, maintained by the Internet Archive, allowing users to access archived versions of websites from the past</p>
+                    </div>
+                    <div class="hunt3item">
+                        <img style="width: 15em;" src="images/Week 2/fontrun.png">
+                        <a class="folder-text" href="https://web.archive.org/">Way Back Machine</a>
+                        <p class="hunt3-descrip">A digital archive of the World Wide Web, maintained by the Internet Archive, allowing users to access archived versions of websites from the past</p>
+                    </div>
+                    <div class="hunt3item">
+                        <img style="width: 15em;" src="images/Week 2/fontrun.png">
+                        <a class="folder-text" href="https://web.archive.org/">Way Back Machine</a>
+                        <p class="hunt3-descrip">A digital archive of the World Wide Web, maintained by the Internet Archive, allowing users to access archived versions of websites from the past</p>
+                    </div>
+                </div>
         </div>
 
         <div class="popup fluidPop" id="fluid">
@@ -207,9 +244,8 @@
                 <b>Make it Fluid!</b>
             <button class="close-folder" id="closeFolder" onclick="closeFolder('fluid')">X</button>
             </div>
-
-            <img style="width: 8vw;" src="images/2712024.jpg">
-            <p>Something about making my workbook responsive</p>
+            <p class="popup-text">In this workshop, we explored responsive design principles by sketching mobile layouts for our workbook site. These paper sketches allowed us to visualize how content should adjust to smaller screens, emphasizing navigation, content hierarchy, and touch interactions.</p>
+            <img style="width: 100%;" src="images/Week 2/Crazy8/1.png">
         </div>
 </div>
 
