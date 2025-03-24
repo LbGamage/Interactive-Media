@@ -15,9 +15,13 @@
             margin: 7%;
             margin-bottom: 5em;
             height: 120vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
         }
 
-        .main-body3{
+        .main-body3, .popup{
             background-color: white;
             margin: 3%;
             border: 2px solid black;
@@ -95,9 +99,32 @@
 
         .popup{
             /* display: none; */
+        }
+        
+        .mediaQ{
+            position: absolute;
+            top: 27em;
+            width: 30vw;
             height: 30vh;
-            border: 2px solid black;
-            border-radius: 15px;
+            left: 2em;
+            z-index: 1;
+        }
+        
+        .huntngather{
+            position: absolute;
+            top: 32em;
+            width: 50vw;
+            height: 40vh;
+            right: 6em;
+            z-index: 2;
+        }
+        
+        .fluidPop{
+            position: absolute;
+            top: 20em;
+            width: 50vw;
+            height: 30vh;
+            right: 2em;
         }
 
         
@@ -121,7 +148,7 @@
     <!-- no colour, just the vessel. hollow like how i feel in my body-->
     <div class="body-container3">
         <!-- contains the main window shit -->
-        <div class="main-body3">
+            <div class="main-body3">
             <div class="navweek3-buttons">
                 <a href="index.html" class="nav3-button">Home</a>
                 <a href="week2.html" class="nav3-button">Week 1</a>
@@ -156,7 +183,8 @@
                     <div class="folder-text">Hunt N' Gather</div>
                 </div>       
             </div>
-        </div>
+            </div>
+       
         <!-- the fodler popups are outside the main body but still in the body vessel? lets see what happens -->
         <div class="popup mediaQ" id="mediaQ">
             <div class="close-buttonposition">
@@ -183,7 +211,7 @@
             <img style="width: 8vw;" src="images/2712024.jpg">
             <p>Something about making my workbook responsive</p>
         </div>
-    </div>
+</div>
 
     <!-- open and close the folders -->
     <script>
