@@ -54,7 +54,10 @@
         }
 
         .board-bg{
-            width:70vw;
+            left: 0;
+            top: 0;
+            z-index: -10;
+            width: 100vw;
         }
 
         .board-content{
@@ -96,15 +99,6 @@
             padding: 15px;
         }
 
-        .hunt{
-            color: white;
-            position: absolute;
-            background-color: yellowgreen;
-            top: 60%;
-            left: 25%;
-            transform: rotate(15deg);
-            padding: 15px;
-        }
        
         a:link, a:visited {
              text-decoration: none;
@@ -230,7 +224,7 @@ transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
     </style>
 </head>
 <body>
-   <img class="background-board" src="images/homebackground.png">
+  
     <div class="pin-board">
         <div id="shooting-stars" class="hidden">
             <div class="stars1" id="star1"><pre>⟡‘.•⁀જ</pre></div>
@@ -247,7 +241,8 @@ transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
                 </div>
                 <img class="sparkle" src="images/images.png"><p class="title">Lihini's Workbook</p><img class="sparkle" src="images/images.png">
             </div>
-            <!-- <img class="board-bg" src="images/2712024.png"> -->
+            <!-- <img class="background-board" src="images/homebackground.png"> -->
+            <img class="board-bg" src="images/homebackground.png">
             <div class="board-content">
                 <div class="week1">
                     <div id="circle">
@@ -263,11 +258,6 @@ transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
                     <div id="circle">
                     </div>
                     <a href="week1.html">Week 3 </a>
-                </div>
-                <div class="hunt">
-                    <div id="circle">
-                    </div>
-                    <a href="week2.html">Huntngather </a>
                 </div>
             </div>
         </div>
