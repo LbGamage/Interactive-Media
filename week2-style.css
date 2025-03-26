@@ -1,0 +1,179 @@
+        
+body{
+    font-family:"Text Me One", sans-serif;
+    font-size:1.2em;
+    padding-left: 0.5%;
+}
+.week2-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav2-button{
+    position: relative;
+    border: #1F214D 0.1em solid;
+    padding: 0.4em;
+    text-decoration: none;
+    color: black;
+}
+
+.nav2-button:hover,.week2-sub:hover{
+    background-color: #FFCE61;
+}
+
+.week2-title{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.week2-descrip{
+    width: 70vw;
+}
+
+.crazy8-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+
+}
+
+.crazy8-grid img {
+    width: 100%; 
+    border: black 1px solid;
+}
+
+.ideation{
+    display: flex;
+    flex-direction: column;
+}
+
+.ideation-images img, .paper-proto img{
+    border: black 1px solid;
+
+}
+
+.marquee{
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    width: 80%;
+    white-space: nowrap;
+}
+
+#scroll-text{
+    animation: move 30s linear infinite;
+    color: white;
+    padding: 0.4em 0.4em;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.css-prac{
+    height:50vh;
+    background-image: linear-gradient(180deg, #1F214D,#50366F, #BF3475, #EE6C45, #FFCE61);
+    background-size: 100% 300%;
+    animation:gradMove 8s alternate-reverse infinite linear;
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grid-layout-button{
+    position: absolute;
+    background-color: transparent;
+    border: 3px white solid;
+    border-radius: 15px;
+    padding: 1%;
+    color: white;
+    font-family:"Text Me One", sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.grid-layout-button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes gradMove {
+    0% {
+    background-position: 50% 0%;
+    }
+    100% {
+    background-position: 50% 100%;
+    }
+}
+
+.huntweek1{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.hng-container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1%;
+}
+
+.huntweek2, .Crazy8-header{
+font-weight: bold;
+}
+
+.huntweek2 a{
+text-decoration: none;
+color: black;
+}
+
+.week2-subnav a{
+    color: black;
+}
+
+.huntweek2 a:hover{
+    color: #BF3475
+}
+
+.week2-subnav{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-inspo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.paper-proto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+.bling-des{
+    border: black 1px solid;
+    margin: 3%;
+    width: 60vw;
+}
+

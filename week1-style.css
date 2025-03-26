@@ -1,0 +1,116 @@
+@font-face {
+font-family: 'Px437 IBM VGA';
+src: url('Fonts/Px437_IBM_VGA_8x16.ttf') format('truetype'); 
+font-weight: normal;
+font-style: normal;
+}
+
+   body{
+       color: #d3d0cf;
+       background-color: black;
+       font-family: 'Px437 IBM VGA';
+       font-size: 1.2em;
+       margin-left: 1.5em;
+       margin-right: 1.5em;
+       overflow-x: hidden;
+   }
+
+   a{
+       text-decoration: none;
+       color: #d3d0cf;;
+   }
+
+   a:hover{
+       color: #FFEA00;
+   }
+
+   .week1-subnav{
+       display: flex;
+       flex-direction: column;
+   }
+   
+   hr{border: 1px dashed;
+   }
+
+   .www-explain{
+       width: 70%;
+   }
+   
+   .html-header, .www-header, .tag-header{
+       margin-top: 1em;
+       background-color: #a9a9a9;
+       color: black;
+       padding: 0.3em;
+   }
+
+   .gesture-box{
+       display: flex;
+       align-items:top;
+       width: 70%;
+       gap: 0.5em;
+   }
+
+   .gesture-image{
+       height: 30vh;
+       border: #a9a9a9 1px solid;
+
+   }
+
+   .firstpage{
+       text-align: center;
+   }
+
+   .nav-button{
+       background-color: #a9a9a9;
+       color: black;
+       padding: 0.3em;
+   }
+
+   .huntweek1{
+       display: flex;
+       align-items: flex-start;
+       gap: 1em;
+       flex-wrap: wrap;
+   }
+
+   .hng-container{
+       display: flex;
+       flex-direction: column;
+       width: 30%;
+       border: #a9a9a9 1px solid;
+       padding: 1%;
+       height: 18em;
+  }
+
+  .watch-container{
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   gap: 10px;
+   border: none;
+  }
+
+  .watch-explain{
+   display: flex;
+   flex-direction: column;
+  }
+
+  .tag-images{
+   border: #a9a9a9 1px solid;
+   padding: 1%;
+   width: 45vw;
+  }
+
+  .cateye{
+   color: #FFEA00;
+   animation: colorChange 3s;
+  }
+
+  @keyframes colorChange {
+   0%{
+       color: #FFEA00;
+   }
+   50%{
+       color: black;
+   }
+  }
