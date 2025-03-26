@@ -32,6 +32,7 @@ body{
     width: 70vw;
 }
 
+/*CSS grid, thank you w3 schools*/
 .crazy8-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -54,6 +55,7 @@ body{
 
 }
 
+/*Thank you matilda for your help on this during class*/
 .marquee{
     position: relative;
     overflow: hidden;

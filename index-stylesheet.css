@@ -27,9 +27,6 @@
             font-family: 'CsAnika';
         }
 
-        .title{
-        }
-
         .sparkle{
             height: 1.5em;
         }
@@ -123,7 +120,7 @@
          }
 
          	
-/* Shooting Stars */
+/* Shooting Stars from the LMS pages */
 
 #shooting-stars {
     position: absolute; 
