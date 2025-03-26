@@ -38,7 +38,7 @@
         }
 
         .week2-descrip{
-            width: 70%;
+            width: 70vw;
         }
 
         .crazy8-grid {
@@ -82,11 +82,37 @@
         }
 
         .css-prac{
-            height:50vh;
+            height:40vh;
             background-image: linear-gradient(180deg, #1F214D,#50366F, #BF3475, #EE6C45, #FFCE61);
             background-size: 100% 300%;
             animation:gradMove 8s alternate-reverse infinite linear;
             z-index: -10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .grid-layout-button{
+            position: absolute;
+            background-color: transparent;
+            border: 3px white solid;
+            border-radius: 15px;
+            padding: 1%;
+            color: white;
+            font-family: "Source Code Pro", monospace;
+            font-weight: bolder;
+        }
+
+        .grid-layout-button:hover{
+            background-color: black;
+            cursor: pointer;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
         }
 
         @keyframes gradMove {
@@ -125,6 +151,7 @@
             color: #BF3475
         }
 
+
     </style>
 </head>
 <body>
@@ -161,7 +188,7 @@
     
     <div class="Crazy8-header" style="font-weight: bold;">/More Ideation at Home</div><hr>
     <div class="ideation-images">
-        <img class="8images" style="width:400px;" src="images/Week 2/Crazy8/1.png">
+        <img class="8images" style="width:400px;" src="images/Week 2/At home.png">
         <p class="week2-descrip">I explored more variation after I went home. I really wanted to make a workbook that represented my peronality well. 
             Somthing realted to trinkets, becasue I love collecting things. After mutiple cycles of ideating I ended up choosing a pin board as I felt like it would be more fun than a bookshelf. 
             Organized clutter is one of my favourite things and I hope to show it through the homepage as i get better at coding it. 
@@ -171,6 +198,7 @@
     <div class="bling" style="font-weight: bold;">/⊹₊ ☆₊ ⊹Make it Bling!⊹₊ ☆₊ ⊹</div><hr>
     <div class="paper-proto" style="font-weight: bold;">/CSS Practice: Sunsets</div><hr>
     <div class="css-prac">
+        <button class="grid-layout-button"><a href="layout-workshop.html">//Layout Workshop - Click here to view</a></button>
         <pre style="text-align: center; color: white;">
             .              o          .  '       .                      '                                                    '     '   ' 
             .               .     .                                                    |   .                                              
