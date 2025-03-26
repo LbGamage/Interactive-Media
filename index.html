@@ -17,7 +17,7 @@
 }
         body{
             font-family: "Caveat", cursive;
-            background-color: #caa478;
+            background-color: white;
             overflow: hidden;
         }
         .header{
@@ -217,12 +217,20 @@ transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
 }
 }
 
+.background-board{
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -10;
+            width: 100vw;
+        }
+
 
        
     </style>
 </head>
 <body>
-   
+   <img class="background-board" src="images/homebackground.png">
     <div class="pin-board">
         <div id="shooting-stars" class="hidden">
             <div class="stars1" id="star1"><pre>⟡‘.•⁀જ</pre></div>
@@ -239,7 +247,7 @@ transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
                 </div>
                 <img class="sparkle" src="images/images.png"><p class="title">Lihini's Workbook</p><img class="sparkle" src="images/images.png">
             </div>
-            <img class="board-bg" src="images/2712024.png">
+            <!-- <img class="board-bg" src="images/2712024.png"> -->
             <div class="board-content">
                 <div class="week1">
                     <div id="circle">
