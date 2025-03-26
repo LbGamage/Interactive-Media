@@ -72,31 +72,34 @@
         .week1 {
             color: white;
             position: absolute;
-            background-color: red;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-10deg);
+            background-color: #ecd189;
+            top: 30%;
+            left: 55%;
+            transform: rotate(-10deg);
             padding: 15px;
+            border: 2.5px black solid;
         }
 
         .week2{
             color: white;
             position: absolute;
-            background-color: seagreen;
+            background-color: #acbc8a;
             top: 30%;
             left: 25%;
             transform: rotate(35deg);
             padding: 15px;
+            border: 2.5px black solid
         }
        
         .week3{
             color: white;
             position: absolute;
-            background-color: orange;
-            bottom: 34%;
+            background-color: #88bfcc;
+            bottom: 44%;
             right: 25%;
             transform: rotate(-40deg);
             padding: 15px;
+            border: 2.5px black solid
         }
 
        
@@ -111,6 +114,10 @@
             background-color: black;
             position: absolute;
             top: -0.5em;
+         }
+        /*https://travis.media/blog/how-to-make-an-item-grow-on-hover-with-css/ */
+         .week3:hover, .week1:hover, .week2:hover{
+            transform: scale(1.1); 
          }
 
          	
@@ -239,10 +246,10 @@ transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
             <div class="header">
                 <div id="circle">
                 </div>
-                <img class="sparkle" src="images/images.png"><p class="title">Lihini's Workbook</p><img class="sparkle" src="images/images.png">
+                <!-- <img class="sparkle" src="images/images.png"><p class="title">Lihini's Workbook</p><img class="sparkle" src="images/images.png"> -->
             </div>
             <!-- <img class="background-board" src="images/homebackground.png"> -->
-            <img class="board-bg" src="images/homebackground.png">
+            <img class="board-bg" src="images/bg-s1.png">
             <div class="board-content">
                 <div class="week1">
                     <div id="circle">
