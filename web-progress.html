@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Text+Me+One&display=swap" rel="stylesheet">
-    <title>Progress</title>
+    <title>Workbook Progress</title>
     <style>
     body {
         background-image: url(images/Progress/painted-relief-texture.jpg);
@@ -31,6 +31,27 @@
         display: block;
     }
 
+    .progress-img{
+        border: 1px black solid;
+        padding: 1%;
+    }
+
+    .menu-progress{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .prog-homelink{
+        font-size: 1.2em;
+        color: black;
+        padding-right: 2%;
+    }
+
+    .prog-homelink a{
+        color: black;
+    }
+
     @media (max-width: 768px) {
         .gallery {
             grid-template-columns: 1fr;
@@ -39,7 +60,16 @@
     </style>
 </head>
 <body>
+    <div class="menu-progress">
     <h1>Workbook Progress</h1>
+    <div class="prog-homelink">
+    <a href="index.html">Home</a>
+    <a href="week1.html">Week 1</a>
+    <a href="week2.html">Week 2</a>
+    <a href="week3.html">Week 3</a>
+    </div>
+    </div>
+
     <div class="gallery">
         <div class="progress-img">
             <img src="images/Week 2/Crazy8/3.png">
@@ -59,15 +89,15 @@
         </div>
         <div class="progress-img">
             <img src="images/Progress/w1.png">
-            <p>Text for Image 1</p>
+            <p>Initially, I didn’t have a clear vision for Week 1, but I wanted to experiment with ASCII art. After several attempts, I managed to create an old-fashioned command prompt window look (which is the current design on the website) (homepage- item: doodle)</p>
         </div>
         <div class="progress-img">
             <img src="images/Progress/w2.png">
-            <p>Text for Image 1</p>
+            <p>For Week 2, I aimed to keep the HTML simple, almost like a basic text document, while focusing on CSS practice. I particularly enjoyed creating a vibrant sunset gradient (homepage item: polaroid).</p>
         </div>
         <div class="progress-img">
             <img src="images/Progress/w3.png">
-            <p>Text for Image 1</p>
+            <p>In Week 3, I began experimenting with JS and pop-ups. This page really helped me understand how to use divs, positioning, and other concepts. I feel like I can truly see my progress from Day 1 to the final Week 3 website.</p>
         </div>
     </div>
 </body>
