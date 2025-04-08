@@ -14,7 +14,7 @@ canvas {
 }
 
 body {
-  background-image: url('../images/Week 4/sl_072622_51930_13.jpg');
+  background-color: black;
   background-size: cover; /* makes the image cover the entire background */
   background-position: center; /* centers the image */
   background-repeat: repeat-y; /* prevents the image from repeating */
