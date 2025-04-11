@@ -14,7 +14,7 @@ canvas {
 }
 
 body {
-  cursor: url('images/cursor.cur'), auto;
+  cursor: url('images/cursor.cur'), auto; /*pencil cursor*/
   background-color: black;
   background-size: cover; /* makes the image cover the entire background */
   background-position: center; /* centers the image */
