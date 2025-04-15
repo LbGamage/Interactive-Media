@@ -1,3 +1,5 @@
+//the code for how to make the eyes follow the mouse is from Eyes following cursor by koolaid_krusade (https://editor.p5js.org/koolaid_krusade/sketches/JHBnC1wLR)
+
 var mainX, mainY, d;
 
 function setup() {
@@ -28,11 +30,6 @@ function setup() {
     fill(130, 96, 65);
      ellipse(windowWidth/2,windowHeight/2,400, 500);
      fill(0);
-    //  triangle(mainX-230, mainY-260, mainX-90, mainY-0, mainX-20, mainY-260);
-    //  triangle(mainX+230, mainY-260, mainX-0, mainY-260, mainX+180, mainY-2);
-
-
-
   // Eye balls
   fill(255);
   circle(mainX-70, mainY, d);
@@ -62,34 +59,9 @@ function setup() {
      arc(mainX, mainY-100,460, 390, PI, 0);
      rect(mainX+150, mainY-110, 50, 380);
      rect(mainX-200, mainY-110, 50, 380);
+     
+     
 
-  
-   
-   
-  //    fill(130, 96, 65);
-  //    ellipse(windowWidth/2,windowHeight/2,400, 500);
-     
-  //    fill(242, 86, 78);
-  //    arc(windowWidth/2,windowHeight/1.5,100, 100, 0, PI);
-  //    //arc(windowWidth / 2 - 25, windowHeight / 2 + 130, 50, 30, PI, 0);
-  //    //arc(windowWidth / 2 +25, windowHeight / 2 + 130, 50, 30, PI, 0);
-  //    fill(255);
-  //    ellipse(windowWidth/2.3,windowHeight/2,80, 80);
-  //    ellipse(windowWidth/1.8,windowHeight/2,80, 80);
-     
-    
-
-
-  //      fill(0,0,0);
-  //    ellipse(windowWidth/2.3,windowHeight/2.1,50, 50);
-  //    ellipse(windowWidth/1.8,windowHeight/2,50, 50);
-  //    triangle(windowWidth/2,windowHeight/1.9,windowWidth/2+20,480,windowWidth/2+50,480);
-     
-  
-     
-  //     fill(0);
-  //  rect(windowWidth/2+150,windowHeight/2.9, 50, 380);
-  //  rect(windowWidth/2-200,windowHeight/2.9, 50, 380);  fill(0);
    }
 
 
