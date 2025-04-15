@@ -1,18 +1,17 @@
 let circles = [];
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-
-  // Create random circles with random positions
-
+  let canvas = createCanvas(windowWidth / 1.1, windowHeight / 1.2);
+  canvas.position((windowWidth - width) / 5, (windowHeight - height) / 4);
+  let bg = color(0, 0, 0);
+  bg.setAlpha(220); 
+  background(bg);
 }
 
 function draw() {
-  background(237, 231, 213);  // Clear the background every frame
-
-  fill(230, // Red channel for pink/purple shades
-  map(mouseY, 0, height, 50, 100), // Green stays low to keep it in blue/pink/purple range
-  map(mouseX + mouseY, 0, width + height, 150, 255));
+ 
+  let y = map(mouseY, 0, height, 0, 255);
+  fill( 255, y, 0);
   noStroke();
   
   
@@ -33,14 +32,16 @@ function draw() {
 
 function mousePressed() {
   circles = [];
-  for (let i = 0; i < 50; i++) {
-    background(237, 231, 213);  
+  for (let i = 0; i < 100; i++) {
     circles.push({
       x: random(width),
       y: random(height),
       size: random(20, 100)
     });
   }
-  background(237, 231, 213);  
+  let bg = color(0, 0, 0);
+  bg.setAlpha(220); 
+  background(bg);
+
 
 }

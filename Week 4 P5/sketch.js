@@ -29,9 +29,9 @@ function setup() {
 
   // Create clickable images for each preloaded image. Co-pilot helped to edit this function so it applies to all images.
   createClickableImage('images/heart-doodle.png', 'clickable heart', 'self-potraint.html', 150, 150);
-  createClickableImage('images/smile-doodle.png', 'clickable smile', 'smile-page.html', 150, 150);
+  createClickableImage('images/smile-doodle.png', 'clickable smile', 'self-potraint.html', 150, 150);
   createClickableImage('images/spiral doodle.png', 'clickable spiral', 'spiral-page.html', 150, 150);
-  createClickableImage('images/flower-doodle.png', 'clickable flower', 'flower-page.html', 150, 150);
+  createClickableImage('images/flower-doodle.png', 'clickable flower', 'kusama.html', 150, 150);
 
   let titleImg = createImg('images/week-4 header.png', 'title');
   titleImg.size(450,450* (8 / 37)); //used chat to figure out the ratio for this image
