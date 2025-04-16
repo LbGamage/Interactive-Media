@@ -43,3 +43,11 @@ function mousePressed() {
   bg.setAlpha(220); 
   background(bg);
 }
+
+function openFolder(elementId){
+  document.getElementById(elementId).style.display="block";
+  }
+
+  function closeFolder(elementId){
+  document.getElementById(elementId).style.display="none";
+  }
