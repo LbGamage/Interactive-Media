@@ -67,6 +67,10 @@ canvas {
     margin-bottom: 0%;
 }
 
+.info-about{
+    display: none;
+}
+
 .info-bg{
     position: absolute;
     top: 0;
@@ -128,6 +132,10 @@ canvas {
         top: 5%;
         right: 3%;
     }
+
+    .stamp:hover{
+        cursor: pointer;
+    }
 </style>
 <script src="libraries/p5.min.js"></script>
 <script src="libraries/p5.sound.min.js"></script>
@@ -139,15 +147,16 @@ canvas {
         <h1> Kusama Polka Dot Experiment</h1>
         <p>Postcard Vol.4</p>
         </div>
-        <p class="moreinfo">[More info]</p>
+        <p class="moreinfo" onclick="openFolder(postBack)">[More info]</p>
     </div>
     <div class="kusama-jap">
       <p>草<br>間<br><br>彌<br>生</p>
     </div>
 
-    <div class="info-about">
+    <div class="info-about" id="postBack">
         <img src="images/paper-kusama.jpg" class="info-bg">
-        <img src="images/stamp.png" class="stamp">
+        <!-- copiliot was used to fix onclick function because it wasnt working. was missing the '' -->
+        <img src="images/stamp.png" class="stamp" onclick="closeFolder('postBack')">
         <div class="vl"></div>
         <div class="postcard-col">
             <div class="col1">
@@ -164,6 +173,16 @@ canvas {
                
         </div>
     </div>
-    <script src="kusama.js"></script>
+    <script src="kusama.js">
+        function openFolder(elementId){
+        document.getElementById(elementId).style.display="block";
+        }
+
+        function closeFolder(elementId){
+        document.getElementById(elementId).style.display="none";
+        }
+
+    </script>
+
 </body>
 </html>

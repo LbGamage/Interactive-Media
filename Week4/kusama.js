@@ -42,6 +42,4 @@ function mousePressed() {
   let bg = color(0, 0, 0);
   bg.setAlpha(220); 
   background(bg);
-
-
 }
