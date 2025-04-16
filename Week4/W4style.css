@@ -16,9 +16,10 @@ canvas {
   height: 100%;
 }
 
+
 body {
   cursor: url('images/cursor.cur'), auto; /*pencil cursor*/
-  background-color: black;
+  background-color: white;
   background-size: cover; /* makes the image cover the entire background */
   background-position: center; /* centers the image */
   background-repeat: repeat-y; /* prevents the image from repeating */
@@ -37,6 +38,8 @@ body {
   justify-content: flex-end;
   padding: 1%;
   color: white;
+  padding-right: 3%;
+  padding-top: 2%;
 }
 
 .week4-navigation a{

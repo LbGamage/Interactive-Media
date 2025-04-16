@@ -12,7 +12,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(windowWidth / 1.03, windowHeight / 1.04);
+  canvas.position((windowWidth - width) / 2, (windowHeight - height) / 2);
   background(0); 
   // Function to create a clickable image
   function createClickableImage(imgPath, altText, link, width, height) {
