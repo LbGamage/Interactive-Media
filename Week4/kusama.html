@@ -74,7 +74,51 @@ canvas {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+    z-index: 2;
 }
+
+.postcard-col {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 15%;
+    /* background-color: greenyellow; */
+}
+
+.col1, .col2{
+    flex:1;
+    height: 100%;
+    display: flex;
+}
+
+.vid{
+    width: 12vw;
+}
+
+.col1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10%;
+    padding-left: 2%;
+    /* background-color: #eccd01; */
+    }
+
+.col2{
+        /* background-color: red; */
+        padding-left: 2%;
+    }
+
+    .vl {
+        border-left: 3px solid black;
+        height: 90%;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        top: 5%;
+    }
 </style>
 <script src="libraries/p5.min.js"></script>
 <script src="libraries/p5.sound.min.js"></script>
@@ -92,9 +136,24 @@ canvas {
       <p>草<br>間<br><br>彌<br>生</p>
     </div>
 
-    <!-- <div class="info-about">
+    <div class="info-about">
         <img src="images/paper-kusama.jpg" class="info-bg">
-    </div> -->
+        <div class="vl"></div>
+        <div class="postcard-col">
+            <div class="col1">
+                <img src="images/week-4 header.png" class="vid">
+                <img src="images/week-4 header.png" class="vid">
+                <img src="images/week-4 header.png" class="vid">
+                <img src="images/week-4 header.png" class="vid">
+
+            </div>
+            
+            <div class="col2">
+                <p>This is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrption</p>
+            </div>
+               
+        </div>
+    </div>
     <script src="kusama.js"></script>
 </body>
 </html>
