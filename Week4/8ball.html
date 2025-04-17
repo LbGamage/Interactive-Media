@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <title>Document</title>
+    <style>
+        html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+canvas {
+  display: block;
+  position: absolute; /* Position the canvas behind other elements */
+  top: 30%;
+  left: 10%;
+  z-index: -1; /* Push the canvas behind everything else */
+  width: 100%;
+  height: 100%;
+}
+
+a:hover {
+  color: rgb(178, 92, 231);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: absolute;
+  right: 0;
+  padding: 1%;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: rgb(241, 241, 241);
+  color: black;
+}
+
+.two-collumns {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 70%; 
+    z-index: 3;
+    top: 15%;
+    /* background-color: greenyellow; */
+}
+
+.ball8, .info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.ball8{
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: blue; */
+}
+
+.ball8 p{
+ padding:1%;
+ margin-left: 2%;
+ text-align: center;
+ font-weight: bolder;
+ /* background-color: rebeccapurple; */
+}
+.W4subheader{
+    font-size: 4em;
+    padding: 1%;
+}
+
+.footer{
+    font-size: 1.5em;
+    position: absolute; 
+    bottom: 0; 
+    text-align: left;
+    padding: 3%;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    padding: 1%;
+    margin: 0;
+}
+
+li{
+    padding-top: 1%;
+}
+
+li::before{
+    content: "🎱";
+    padding-right: 1.5%;
+}
+
+    </style>
+</head>
+<body>
+  <div class="W4subheader">
+    Slave to the algorithm
+  </div>
+  <div class="two-collumns">
+    <div class="ball8">
+        <p>Speak your question into the universe and click the magic 8-ball to receive your answer!</p>
+        <iframe src="slavealgo.html" style="border:none; width: 50%; height:100%;"></iframe>
+    </div>
+    <div class="info">
+        We were doing the "Slave to the Algorithm" exercises where randomness influenced how we went through our day. I lowkey already live like that because I love letting "the universe take the wheel" sometimes, especially as a very indecisve person. Honestly, it didn’t mess up my day much, but I had fun with it.
+      <ul>
+        <li>if (walkLight === 'green') {<br>
+            walkHome();<br>
+          } else if (walkLight === 'red') {<br>
+            takeTramHome();<br>
+          } <br>Ended up turning green and I walked 10K+ steps to get home</li>
+          <li>Asked my friend to choose 1 or 2. If 1 I would go home and study. If 2 I would go to the park and read for a bit. Ended up going to the park to read
+        </li>
+        <li>
+          <img src="images/heart-doodle.png" alt="Dice" style="width:50px; height:auto; margin-right:10px;"> <br>
+          Spun a wheel to decide how to cook chicken. We ended up making teriyaki chicken.
+        </li>
+        <li>//Flipped a coin to choose what to drink. I got an orange juice.<br>
+            let drink = (coin === 'heads') ? 'matcha' : 'orange juice';</li>
+        
+        <li>If someone got on the elevator while I was going up, I’d head to the library to study. Otherwise, I’d stay in my room. No one did, so I studied from bed 😌 (Which is why I was tempted to nap.)</li>
+        <li>
+            <img src="images/heart-doodle.png" alt="Friend" style="width:50px; float:left; margin-right:10px;"> <br>
+            Thugged through the day without a nap like a champ
+          </li>
+        <li>If I bumped into someone I knew in the city, I’d order out. Otherwise, I’d just eat at home. Honestly didn’t think it would happen, felt way too random. But Jurgen ran into me at the tram stop while he was doing his own slave to the algoritms thing. Got Roll’d 😄.</li>
+
+        <li>Asked the magic 8 ball and changed my bedsheets instead during the weekend like I usually would.</li>
+        <li>Flipped a coin at the gym to decide whether to do arms or legs. Did legs and now I can't lift my arms</li>
+      </ul>
+    </div>
+
+  </div>
+<div class="footer">
+    <a href="index.html">Back</a>
+</div>
+    <!-- <img src="images/ball.avif" alt="Ball"> -->
+</body>
+</html>
