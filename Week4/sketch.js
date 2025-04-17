@@ -3,7 +3,7 @@
 let kusama, topImg, port, slave, learn;
 
 function preload() {
- topImg = loadImage('images/heart-doodle.png');
+ workshop = loadImage('images/fish-doodle.png');
  kusama = loadImage('images/smile-doodle.png');
  port = loadImage('images/heart-doodle.png');
  slave = loadImage('images/spiral doodle.png');
@@ -33,6 +33,8 @@ function setup() {
   createClickableImage('images/smile-doodle.png', 'clickable smile', 'self-potraint.html', 150, 150);
   createClickableImage('images/spiral doodle.png', 'clickable spiral', '8ball.html', 150, 150);
   createClickableImage('images/flower-doodle.png', 'clickable flower', 'kusama.html', 150, 150);
+  createClickableImage('images/fish-doodle.png', 'clickable fish', 'self-potraint.html', 150, 150);
+
 
   let titleImg = createImg('images/week-4 header.png', 'title');
   titleImg.size(450,450* (8 / 37)); //used chat to figure out the ratio for this image
