@@ -5,34 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
     <style>
+
+        .nanum-pen-script-regular {
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
         html, body {
         margin: 0;
         padding: 0;
         /* font-family: "Nanum Pen Script";
         font-size: 1.2em;*/
-        background-color: #f7eff5;
-        overflow: hidden;
+        font-family: sans-serif;
+
+        background-color: #e7a8a9;
+        overflow-x: hidden;
 
         }
-        .camera {
-          display: none;
-          background-color: white;
-          box-sizing: border-box;
+
+
+        /*main divs*/
+
+        .camera, .globes, .notepad, .randomshit2, .w5hunt, .colourMe{
           position: absolute;
-          top: 50%;
+          box-sizing: border-box;
+          border-radius: 10px;  
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.359); 
+
+        }
+
+        .camera{
+          /* display: none; */
+          background-color: white;
+          top: 60%;
           left: 50%;
           width: 50%;
           height: 60%;
           transform: translate(-50%, -50%);
           z-index: 3;
-          /* padding: 0.4%; */
-          border-radius: 10px;          
         }
+
+        .globes {
+          /* display: none; */
+          background-color: rgb(187, 222, 255);
+          top: 5%;
+          left: 3%;
+          z-index: 1;
+          width: 35%;
+          height: 38%;
+          /* padding: 1%; */
+        }
+
+        .notepad {
+          background-color: #F4B2C8;
+          width: 20%;
+          /* height: 400px; */
+          top: 60%;
+          left: 3%;
+          z-index: 2;
+          
+        }
+
+        .randomshit2 {
+          background-color: #f7b9b9;
+          width: 15%;
+          height: 90%;
+          top: 23%;
+          left: 84%;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          border-radius: 10px;          
+
+         /* justify-content: center; */
+          /* gap: 1%; */
+        }
+
+        .w5hunt {
+          /* background-color: #ffa0cc; */
+          /* display: none; */
+          background-color: #e0a2b0;
+          width: 35%;
+          height: 62%;
+          top: 8%;
+          left: 62%;
+          z-index: 1;
+          padding-bottom: 1% ;
+
+        }
+
+        .colourMe {
+          background-color: #FFCBCB;
+          width: 15%;
+          height: 5%;
+          top: 50%;
+          left: 5%;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2%;
+        }
+
+        /*main camera filter stuff*/
 
         .heart-filter{
           width: 100%; 
@@ -47,76 +130,38 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: rgb(238, 178, 190);
+          background-color:#ebdcdd;
           height: 15%; 
           border-radius: 0 0 10px 10px;
+          justify-content: space-around;
         }
+        
 
-        .camera-header, .pola-header, .hunt-header{
+        .camera-header, .pola-header, .hunt-header, .text-header{
           display: flex;
-          justify-content: center;
+          /* justify-content: center; */
           align-items: center;
-          font-size: 0.5em;
-          background-color: rgb(238, 178, 190);
+          font-size: 1em;
+          font-weight: bold;
+          background-color:#f0d9e4;
           height: 5%; 
           border-radius:10px 10px 0 0;
+          padding: 1% 1%;
+          position: relative;
         }
 
   
 
 
-        .globes {
-          display: none;
-
-          background-color: rgb(187, 222, 255);
-          position: absolute;
-          top: 10%;
-          left: 6%;
-          z-index: 2;
-          width: 35%;
-          height: 38%;
-          padding: 1%;
-          border-radius: 10px;
-          /* border: 1px solid #000; */
-        }
+        
 
         .globe-sketch {
           width: 100%;
           height: 100%;
-          border-radius: 10px;
+          border-radius: 0 0 10px 10px;
 
         }
-
-        .randomshit {
-          background-color: #FFC8DD;
-          width: 400px;
-          height: 600px;
-          position: absolute;
-          top: 70%;
-          left: 10%;
-          z-index: 1;
-        }
-
-        .randomshit2 {
-          box-sizing: border-box;
-          background-color: #fcd5e1;
-          width: 15%;
-          height: 90%;
-          position: absolute;
-          top: 7%;
-          left: 80%;
-          z-index: 2;
-          display: flex;
-          flex-direction: column;
-          border-radius: 10px;          
-
-         /* justify-content: center; */
-          /* gap: 1%; */
-        }
-
-        .pola-header{
-          background-color:#ddb9f0 ;
-        }
+        
 
         .pola-img{
           display: flex;
@@ -133,21 +178,9 @@
 
         }
 
-        .w5hunt {
-          /* background-color: #ffa0cc; */
-          background-color: #b1bdf1;
-          width: 35%;
-          height: 62%;
-          position: absolute;
-          top: 20%;
-          left: 20%;
-          z-index: 1;
-          border-radius: 10px;
-          padding-bottom: 1% ;
-
-        }
+      
         .hunt-header{
-          height: 8%;
+          /* height: 8%; */
           margin-bottom: 2%;
         }
 
@@ -185,8 +218,37 @@
             /* background-color: gray; */
         }
 
-       
-              
+        
+
+        .circles {
+          display: flex;
+          flex-direction: row;
+          gap: 0.2em;
+          padding-left: 1%;
+        }
+
+        .circle {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+
+        .red { background-color: #ff5f57; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #28c840; }
+
+
+        .Weekheader {
+          width: 100%;
+          position: relative;
+          top: 0%;
+          z-index: 10;
+          font-family: "Nanum Pen Script";
+          font-size: 5em;
+          /* background-color: #28c840; */
+          text-align: center;
+        }
+
 
        
 
@@ -197,24 +259,67 @@
   </head>
 
   <body>
-    <div class="header" id="drag">Week 5</div>
+    <div class="Weekheader"><p>Week 5</p></div>
     <div class="camera draggable" id="drag">
       <div class="camera-header">
-        <h1>Photo Booth</h1>
+        <div class="circles">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <span style="margin: 0 auto;">Photo Booth</span>
       </div>
-      <iframe class="heart-filter" src="filterCamera/heartFilter.html" frameborder="0"></iframe>
+      <iframe class="heart-filter draggable" src="filterCamera/heartFilter.html" frameborder="0"></iframe>
       <div class="camera-bottom">
         <img src="images/cameraButton.png" alt="camera-bottom" width="50px" height="50px">
       </div>
     </div>
     <div class="globes draggable" id="drag">
-      <iframe src="3d-interaction.html" frameborder="0" class="globe-sketch"></iframe>
+      <div class="camera-header">
+        <div class="circles">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <span style="margin: 0 auto;">Photo Booth</span>
+      </div>
+      <iframe src="3d-interaction.html" frameborder="0" class="globe-sketch draggable"></iframe>
     </div>
-    <div class="randomshit  draggable"  id="drag">
+    <div class="notepad  draggable"  id="drag">
+      <div class="text-header">
+        <div class="circles">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <span style="margin: 0 auto;">Photo Booth</span>
+      </div>
+      <div>
+        <p style="padding:2%;">
+          ୨୧ BLABLABLABLA...
+          BLABLABLABLA...
+          BLABLABLABLA...<br>BLABLABLABLA...
+          BLABLABLABLA...
+          BLABLABLABLA...<br>BLABLABLABLA...
+          BLABLABLABLA...
+          BLABLABLABLA...<br>blabla
+        </p>
+      </div>
+      <div class="camera-bottom">
+        <img src="images/cameraButton.png" alt="camera-bottom" width="50px" height="50px">
+      </div>
+    </div>
+    <div class="colourMe  draggable"  id="drag">
+      <button>Take a breather and colour</button>
     </div>
     <div class="w5hunt  draggable">
-      <div class="hunt-header">
-        <h1>Photo Booth</h1>
+      <div class="text-header">
+        <div class="circles">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <span style="margin: 0 auto;">Photo Booth</span>
       </div>
         <div class="hunt-grid">
           <div class="hunt-card">
@@ -237,7 +342,12 @@
       </div>
     <div class="randomshit2  draggable">
       <div class="pola-header">
-        <h1>Photo Booth</h1>
+        <div class="circles">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <span style="margin: 0 auto;">Photo Booth</span>
       </div>
       <div class="pola-img">
         <img src="images/imageGrid.png" class="polaroid">
