@@ -33,7 +33,7 @@ function setup() {
   createClickableImage('images/smile-doodle.png', 'clickable smile', 'self-potraint.html', 150, 150);
   createClickableImage('images/spiral doodle.png', 'clickable spiral', '8ball.html', 150, 150);
   createClickableImage('images/flower-doodle.png', 'clickable flower', 'kusama.html', 150, 150);
-  createClickableImage('images/fish-doodle.png', 'clickable fish', 'self-potraint.html', 150, 150);
+  createClickableImage('images/fish-doodle.png', 'clickable fish', 'w4hunt.html', 150, 150);
 
 
   let titleImg = createImg('images/week-4 header.png', 'title');
