@@ -4,8 +4,8 @@ let img2
 let starSphereSize
 
 function preload() {
-  img = loadImage('images/watertext1.jpg');  
-  img2 = loadImage('images/watertxt2.jpg');
+  img = loadImage('images/text3.jpg');  
+  img2 = loadImage('images/pinkglit-text1.jpg');
 }
 
 function setup() {
@@ -15,40 +15,35 @@ function setup() {
 }
 
 function draw() {
-background (198, 247, 247);  
+  background(158, 204, 248);
   orbitControl();
 
-
-  starSphereSize = width > height ? width : height
-  // create the starfield sphere
-  push()
+  rotateY(angle);
+  translate(25, 0, 100);
+  noFill();
   noStroke();
   texture(img);
-  translate(0, 0, 100);
-  rotateY(millis() / 100000);
-  sphere(starSphereSize);
-  pop();
-
-  rotateY(angle);
+  sphere(windowHeight/4, 400, 100);
   
-  translate(25, 0, 100);
-  strokeWeight(0.3);
-  noFill();
-
-noStroke();
-  texture(img2);
-  sphere(150);
-
   translate(250, 0, 200);
+  strokeWeight(0.7);
   noFill();
-  stroke(0, 255, 0);
+  stroke(0, 0, 0);
   sphere(100, 20, 10);
+  
 
-  rotateY(angle*-3);
-  translate(-500, 0, 200);
-noStroke();
-  texture(img);
-  sphere(50, 20, 10);
+  rotateZ(angle*3);
+  translate(-300, 0, 160);
+  noStroke();
+  texture(img2);
+  sphere(80, 400, 100);
 
-  angle= angle + 0.5;  // Increment the angle for rotation
+  angle= angle + 0.4;  // Increment the angle for rotation
+
+  // rotateY(angle*0);
+  // translate(0, 0, 0);
+  // strokeWeight(5);
+  // noFill();
+  // stroke(255, 160, 204);
+  // sphere(1800, 20, 10);
 }
