@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .notepad{
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            height: 80%;
+            transform: translate(-50%, -50%);
+        }
+
+        .note-bottom {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 9%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="notepad  draggable"  id="drag">
+        <div class="text-header">
+          <div class="circles">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+          </div>
+          <span style="margin: 0 auto;">Notes</span>
+        </div>
+        <div>
+          <p style="padding:2%; font-size: 1.1em;
+            font-family: 'Nanum Pen Script';color: #e98289;">
+            ୨୧ In Week 5, we explored using the webcam, video, and filters in P5.js, and experimented with image manipulation to create a simple colouring feature. I kept running into annoying typos in Processing, so nothing worked at first T^T. But once I got home and tried it in VS Code, everything clicked. I also tried out WEBGL and interactive 3D objects—the Solar System above is interactive!
+            ˖⁺‧₊˚♡˚₊‧⁺˖
+          </p>
+        </div>
+        <div class="note-bottom">
+          <a href="indexw5.html"><p>Back</p></a>
+          <a><p>Expreiments</p></a>
+        </div>
+      </div>
+    
+</body>
+</html>

@@ -6,3 +6,265 @@ html, body {
 canvas {
   display: block;
 }
+
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  }
+  html, body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Nanum Pen Script";
+  font-size: 1.2em;*/
+  font-family: sans-serif;
+  overflow-x: hidden;
+  }
+
+body{ /*found thrugh w3 schools*/
+  background-color: #e7a8a9;
+  background-image: radial-gradient(circle, #faa3b2, rgb(252, 218, 218));
+}
+
+
+  /*main divs*/
+
+  .camera, .globes, .notepad, .randomshit2, .w5hunt, .colourMe{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 10px;  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.359); 
+
+  }
+
+  .camera{
+    /* display: none; */
+    background-color: white;
+    top: 60%;
+    left: 50%;
+    width: 50%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+
+  .globes {
+    /* display: none; */
+    background-color: rgb(187, 222, 255);
+    top: 3%;
+    left: 3%;
+    z-index: 1;
+    width: 35%;
+    height: 38%;
+    /* padding: 1%; */
+  }
+
+  .notepad {
+    background-color: #fafafa;
+    width: 22%;
+    /* height: 400px; */
+    top: 55%;
+    left: 2%;
+    z-index: 2;
+    color: #f76d77;
+  }
+
+  .randomshit2 {
+    background-color: #f7b9b9;
+    width: 15%;
+    height: 90%;
+    top: 23%;
+    left: 84%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;          
+
+   /* justify-content: center; */
+    /* gap: 1%; */
+  }
+
+  .w5hunt {
+    /* background-color: #ffa0cc; */
+    /* display: none; */
+    background-color: #f4b2b4;
+    width: 35%;
+    height: 62%;
+    top: 8%;
+    left: 62%;
+    z-index: 1;
+    padding-bottom: 1% ;
+
+  }
+
+  .colourMe {
+    background-color: #fc9c9c;
+    width: 15%;
+    height: 5%;
+    top: 45%;
+    left: 5%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2% 0% 2% 0%;
+  }
+
+  .colourMe button{
+    width: 90%;
+  }
+
+  /*main camera filter stuff*/
+
+  .heart-filter{
+    width: 100%; 
+    height: 80%;
+    border: none;
+    background-color: white;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .camera-bottom, .note-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ebdcdd;
+    height: 15%; 
+    border-radius: 0 0 10px 10px;
+    justify-content: space-around;
+  }
+
+  .note-bottom{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(114, 54, 54);
+  }
+  
+  .globe-sketch {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+
+  }
+  
+
+  .pola-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+  }
+
+   .polaroid{
+    width: 80%;
+    padding: 2%;
+    border-radius: 10px;          
+
+  }
+
+
+  .hunt-header{
+    /* height: 8%; */
+    margin-bottom: 2%;
+  }
+
+  .hunt-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: 85%;
+    gap: 2%; 
+    padding: 2%;
+    margin: auto;
+    /* background-color: red; */
+  }
+  .hunt-card{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;  
+    box-shadow: 0px 3px 8px rgb(149, 127, 127);
+    background-color: white;
+  }
+
+  .hunt-card img {
+      display: block;
+      border-radius: 5px 5px 0 0 ;
+      width: 100%;
+      background-color: yellow;
+  }
+
+  .hunt-card p {
+      position: absolute;
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 2%;
+      /* background-color: gray; */
+  }
+
+  
+
+  .circles {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+    padding-left: 1%;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .red { background-color: #ff5f57; }
+  .yellow { background-color: #ffbd2e; }
+  .green { background-color: #28c840; }
+
+
+  .Weekheader {
+    width: 100%;
+    position: relative;
+    top: 0%;
+    z-index: 0;
+    font-family: "Nanum Pen Script";
+    font-size: 5em;
+    /* background-color: #28c840; */
+    text-align: center;
+    color: white;
+  }
+
+  .camera-header, .pola-header, .hunt-header, .text-header{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    background-color:#f0d9e4;
+    height: 5%; 
+    border-radius:10px 10px 0 0;
+    padding: 1% 1%;
+    position: relative;
+    color: rgb(114, 54, 54);
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(114, 54, 54);
+  }
+
+  a:hover{
+    cursor: pointer;
+    color: white;
+  }
+
+  .draggable:hover{
+    cursor:move;
+  }
+
+
+ 
+
+ 
