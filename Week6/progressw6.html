@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="w4huntstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Domine:wght@400..700&family=Doto:wght@100..900&family=Indie+Flower&family=Jersey+15&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+.nanum-pen-script-regular {
+font-family: "Nanum Pen Script", cursive;
+font-weight: 400;
+font-style: normal;
+}
+body {
+    background-color: #e8f0d5;
+    font-family: "Nanum Pen Script";
+    font-size: 1.5em;
+}
+
+h2{
+    padding-left: 2%;
+    font-family: "Domine";
+    color: #344306;
+  }
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+margin: 20px;
+
+}
+
+.progress-img {
+  background-color: #e8f0d5;
+}
+
+.progress-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.backStamp{
+    padding-right: 1%
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <h2>Workshop & Progress</h2>
+    <a href="indexW6.html" class="backStamp"><img src="images/tape.png" style="width: 6vw;"></a>
+  </div>
+  <div class="gallery">
+    <div class="progress-img">
+      <img src="images/Screenshot 2025-04-20 051939.png">
+        <p>Outer Wilds features has 3D immersive environments, where the low-gravity mechanics make movement feel both challenging and engaging. It was developed on unity</p>
+    </div>
+    <div class="progress-img">
+        <img src="images/Screenshot 2025-04-20 053002.png">
+          <p>Outer Wilds features has 3D immersive environments, where the low-gravity mechanics make movement feel both challenging and engaging. It was developed on unity</p>
+      </div>
+      <div class="progress-img">
+        <img src="images/Screenshot 2025-04-20 052542.png">
+          <p>Outer Wilds features has 3D immersive environments, where the low-gravity mechanics make movement feel both challenging and engaging. It was developed on unity</p>
+      </div>
+      <div class="progress-img">
+        <img src="images/Screenshot 2025-04-20 053247.png">
+          <p>Outer Wilds features has 3D immersive environments, where the low-gravity mechanics make movement feel both challenging and engaging. It was developed on unity</p>
+      </div>
+      <!-- <div class="progress-img">
+        <img src="images/cat.jpg">
+          <p>Outer Wilds features has 3D immersive environments, where the low-gravity mechanics make movement feel both challenging and engaging. It was developed on unity</p>
+      </div> -->
+  </div>
+</body>
+</html>

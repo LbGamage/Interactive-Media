@@ -1,95 +1,36 @@
+<!-- COPIED DIRECTLY FROM PROCESSING AFTER TUTORIAL -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop</title>
 
-    <style>
-        .notepad{
-            top: 50%;
-            left: 50%;
-            width: 90%;
-            height: 90%;
-            transform: translate(-50%, -50%);
-        }
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="camera.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
 
-        .text-header{
-            height: 3%; 
-        }
-        .note-bottom {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 5%;
-        }
+  <style>
+    body {
+      padding: 0%;
+      padding-top: 2%;
+      margin: 0;
+    }
+    canvas {
+  display: block;
+}
 
-        .hunt-card {
-            border-radius: 0 0 0 0;
-            padding-bottom: 3%;
-        }
-
-        .hunt-grid{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            width: 90%;
-            height: 100%;
-            gap: 6%; 
-            padding: 2%;
-            margin: auto;
-        }
-
-        .hunt-card span{
-            display: relative;
-            padding-left: 2%;
-            width: 100%;
-            height: 100%;
-            background-color: red;
-        }
-
-        
-
-      
-
-    </style>
+a{
+  position: absolute;
+  right: 2%;
+  font-size: 1.1em;
+}
+  </style>
 </head>
+
 <body>
-    <div class="notepad  draggable"  id="drag">
-        <div class="text-header" style="padding: 1%;">
-          <div class="circles">
-            <span class="circle red"></span>
-            <span class="circle yellow"></span>
-            <span class="circle green"></span>
-          </div>
-          <span style="margin: 0 auto;">Notes</span>
-        </div>
-        <div class="note-body">
-            <div class="hunt-grid">
-                <div class="hunt-card">
-                    <img  src="images/huntex.png">
-                    <span>Find the hidden objects!</span>
-                </div>
-                <div class="hunt-card">
-                  <img  src="images/huntex.png">
-                  <span>Find the hidden objects!</span>
-                </div>
-                <div class="hunt-card">
-                  <img  src="images/huntex.png">
-                  <span>Find the hidden objects!</span>
-                </div>
-                <div class="hunt-card">
-                  <img  src="images/huntex.png">
-                  <span>Find the hidden objects!</span>
-                </div>
-            </div>
-        </div>
-        <div class="note-bottom">
-          <a href="indexw5.html"><p>Back</p></a>
-          <a><p>Expreiments</p></a>
-        </div>
-      </div>
-    
+  <a href="indexw5.html">Back</a>
 </body>
 </html>

@@ -1,14 +1,16 @@
-var my8Ball; // variable to store 8 ball image
+//Base code was from https://editor.p5js.org/kmaschmeyer/sketches/DuUtDVOg1
+//remixed it a bit and changed the design.
 
-// variable to store the fortune that is picked
+var my8Ball; 
 var myFortune = "";
 
-// the list of possible fortunes
 var myFortuneArray = ["Yes!",
   "No",
   "Maybe so",
-  "Ask again",
-  "Absolutely!"
+  "Try Therapy",
+  "Absolutely!",
+  "Take a nap",
+  "Matcha? :D"
 ];
 
 function preload() {
@@ -24,16 +26,13 @@ function setup() {
 function draw() {
   background(0);
   imageMode(CENTER);
-  image(my8Ball, windowWidth/2, windowHeight/2, windowHeight, windowHeight);
-  //display instructions
+  image(my8Ball, windowWidth/2, windowHeight/1.8, windowHeight, windowHeight);
   textAlign(CENTER);
   textSize(windowHeight / 22);
   fill(0);
-  text(myFortune, windowWidth/1.9, windowHeight/2.1);
+  text(myFortune, windowWidth/1.95, windowHeight/2.1);
 
 }
-
-// when mouse is pressed, set my fortune to a random choice from my fortune list and make the ellipse fully opaque
 
 function mousePressed() {
   myFortune = random(myFortuneArray);

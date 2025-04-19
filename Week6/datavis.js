@@ -9,7 +9,7 @@ var colors = ["#d3d596","#FA9DA6", "#FBCCD4", "#Ffc98b", "#FBDFA2" ];
 var storageNames = ["A", "B", "C", "D", "E"];
 var total;
 function setup() {
- createCanvas(windowWidth, windowHeight);
+ createCanvas(windowWidth/1.5, windowHeight);
  noLoop();
  noStroke();
 }

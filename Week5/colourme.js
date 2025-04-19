@@ -1,8 +1,8 @@
 let bottomImg, topImg, topResized;
 
 function preload() {
-    bottomImg = loadImage('./images/pinkglit-text1.jpg');
-    topImg = loadImage('./images/text3.jpg');
+    topImg = loadImage('./images/colour.png');
+    bottomImg = loadImage('./images/bw.png');
 }
 
 function setup() {

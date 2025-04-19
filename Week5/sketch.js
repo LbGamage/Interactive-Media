@@ -1,6 +1,10 @@
+//Copied the draggable code from Matildas github repo: https://github.com/matildasutho/matildasutho.github.io/tree/main
+//Edited it so that when a div is clicked the z-index increases so it comes to the top
+
 
 // Get all the elements with class name "draggable":
 var draggableElements = document.getElementsByClassName("draggable");
+let zIndexCounter = 1000;
 
 // Apply dragElement function to each draggable element:
 for (var i = 0; i < draggableElements.length; i++) {
@@ -15,6 +19,7 @@ function dragElement(elmnt) {
   if (elmnt.getElementsByClassName(elmnt.className)[0]) {
     elmnt.getElementsByClassName(elmnt.className)[0].onmousedown =
       dragMouseDown;
+      
   } else {
     // move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
@@ -23,6 +28,8 @@ function dragElement(elmnt) {
   function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
+    elmnt.style.zIndex = ++zIndexCounter; // 
+
     // get the mouse cursor position at startup:
     pos3 = e.clientX;
     pos4 = e.clientY;

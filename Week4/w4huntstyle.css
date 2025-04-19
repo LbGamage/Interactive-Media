@@ -37,6 +37,10 @@ margin: 20px;
     padding-right: 1%
 }
 
+a{
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr;
