@@ -264,7 +264,7 @@ body{ /*found thrugh w3 schools*/
     cursor:move;
   }
 
-  .week4-navigation{
+  .week5-navigation{
     display: flex;
     flex-direction: row;
     gap: 1vw;
@@ -274,14 +274,14 @@ body{ /*found thrugh w3 schools*/
     padding-right: 3%;
     font-weight: bold;
     background-color: #f0d9e4;
-    
+    box-shadow: 0 6px 12px rgba(217, 117, 117, 0.221); 
   }
   
-  .week4-navigation a{
+  .week5-navigation a{
     text-decoration: none;
     
   }
-  .week4-navigation a:hover{
+  .week5-navigation a:hover{
     color: #cc7373;
   }
  
