@@ -51,7 +51,7 @@ body{ /*found thrugh w3 schools*/
   .globes {
     /* display: none; */
     background-color: rgb(187, 222, 255);
-    top: 3%;
+    top: 5%;
     left: 3%;
     z-index: 1;
     width: 35%;
@@ -72,7 +72,7 @@ body{ /*found thrugh w3 schools*/
   .randomshit2 {
     background-color: #f7b9b9;
     width: 15%;
-    height: 90%;
+    height: 78%;
     top: 23%;
     left: 84%;
     z-index: 2;
@@ -159,9 +159,9 @@ body{ /*found thrugh w3 schools*/
   }
 
    .polaroid{
-    width: 80%;
+    width: 70%;
     padding: 2%;
-    border-radius: 10px;          
+    border-radius: 8px;          
 
   }
 
@@ -226,8 +226,8 @@ body{ /*found thrugh w3 schools*/
 
   .Weekheader {
     width: 100%;
-    position: relative;
-    top: 0%;
+    height: 20%;
+    position: absolute;
     z-index: 0;
     font-family: "Nanum Pen Script";
     font-size: 5em;
@@ -264,7 +264,26 @@ body{ /*found thrugh w3 schools*/
     cursor:move;
   }
 
-
+  .week4-navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: flex-end;
+    padding: 0.5%;
+    color: rgb(114, 54, 54);
+    padding-right: 3%;
+    font-weight: bold;
+    background-color: #f0d9e4;
+    
+  }
+  
+  .week4-navigation a{
+    text-decoration: none;
+    
+  }
+  .week4-navigation a:hover{
+    color: #cc7373;
+  }
  
 
  
