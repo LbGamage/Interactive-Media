@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        body {
+            background-color:#e8f0d5;
+            font-family: 'Nanum Pen Script';
+        }
+        .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2%;
+        row-gap: 10%;
+        padding: 20px;
+        }
+
+.tile {
+  padding: 3%;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: rotate(var(--tilt));
+  transition: transform 0.3s ease;
+  background-image: url('images/workshopW4/painted-relief-texture copy.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 5%;
+  background-color: white;
+  }
+
+.wokrshop-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+    padding: 1%;
+    margin: auto;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+    opacity: 80%;
+}
+
+
+
+/* span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(20, 19, 19);
+    background-image: url('images/workshopW4/painted-relief-texture copy.jpg');
+    background-size: cover;
+    padding: 1%;
+} */
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding-left: 3%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tape {
+        position: absolute;
+        top: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 25%;
+        height: 10%;
+        background-color: #5f7830;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        z-index: 1;
+        clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+      }
+
+
+
+/* Just random tilts for the aesthetic */
+.tile:nth-child(1) { --tilt: 2deg; }
+.tile:nth-child(2) { --tilt: -3deg; }
+.tile:nth-child(3) { --tilt: 1deg; }
+.tile:nth-child(4) { --tilt: -2deg; }
+.tile:nth-child(5) { --tilt: 4deg; }
+.tile:nth-child(6) { --tilt: -1.5deg; }
+.tile:nth-child(7) { --tilt: 3deg; }
+.tile:nth-child(8) { --tilt: -2.5deg; }
+.tile:nth-child(9) { --tilt: 0.5deg; }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="indexW6.html">Back</a>
+    
+    <div class="wokrshop-header">
+        <h1>Hunt N' Gather</h1>
+    </div>
+    </div>  
+    <div class="grid">
+        <div class="tile" id="card">
+            <div class="tape"></div>
+            <iframe class="frame" src="https://www.codergb.art/"></iframe>
+            <div class="description" id="des">
+            <span>I played around a lot with P5.js. I kept making typos in Processing, so I ended up checking out p5js.org and figured out how to run it through VS Code instead. That made things way easier to manage and debug.</span>
+            </div>
+        </div>
+        <div class="tile" id="card">
+            <div class="tape"></div>
+            <iframe class="frame" src="https://www.codepalette.net/"></iframe>
+            <div class="description" id="des">
+            <span>I played around a lot with P5.js. I kept making typos in Processing, so I ended up checking out p5js.org and figured out how to run it through VS Code instead. That made things way easier to manage and debug.</span>
+            </div>
+        </div>
+        <div class="tile" id="card">
+            <div class="tape"></div>
+            <iframe class="frame" src="https://perthirtysix.com/explore-creative-coding-with-30-p5js-sketches"></iframe>
+            <div class="description" id="des">
+            <span>To make a Kusama-inspired sketch, I experimented with many different ideas and went through several iterations before landing on the final one I was happy with. It was really fun to see how I could utilize the different aspects of P5js</span>
+            </div>
+        </div>
+        
+      </div>
+      
+      <!-- <script>
+    document.querySelectorAll('#des').forEach(function(description) {
+        description.parentElement.addEventListener('mouseover', function() {
+            description.style.display = "block";
+        });
+        description.parentElement.addEventListener('mouseout', function() {
+            description.style.display = "none";
+        });
+    });
+      </script> -->
+</body>
+</html>
