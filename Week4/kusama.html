@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <style>
         html, body {
     margin: 0;
@@ -48,7 +51,7 @@ canvas {
 }
 
 .moreinfo{
-    font-size: large;
+    font-size: larger;
 }
 
 .moreinfo:hover{
@@ -96,57 +99,66 @@ canvas {
 .postcard-col {
     display: flex;
     position: absolute;
-    width: 100%;
+    flex-direction: row;
+    top: 5%;
+    left: 0;
     z-index: 3;
-    top: 15%;
     /* background-color: greenyellow; */
+    height: 95%;
 }
 
 .col1, .col2{
     flex:1;
-    height: 100%;
-    display: flex;
 }
 
 .vid{
-    width: 12vw;
+    width: 15vw;
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
 }
 
 .col1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10%;
-    padding-left: 2%;
+    grid-gap: 1%;
+    padding-left: 1%;
     /* background-color: #eccd01; */
     }
 
-.col2{
-        /* background-color: red; */
-        padding-left: 2%;
+.col2 {
+    /* background-color: red; */
+    padding: 1%;
+    padding-left: 2%;
+    padding-top: 25%;
+    line-height: 2;
+    font-family: "Caveat";
+    font-size: 1.3em;
+    font-weight: 500;
     }
 
     .vl {
-        border-left: 3px solid black;
-        height: 90%;
-        display: flex;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 3;
-        top: 5%;
+    border-left: 3px solid black;
+    height: 90%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    top: 5%;
     }
 
-    .stamp{
-        display: flex;
-        position: absolute;
-        z-index: 3;
-        width: 10vw;
-        top: 5%;
-        right: 3%;
+    .stamp {
+    display: flex;
+    position: absolute;
+    z-index: 6;
+    width: 10vw;
+    top: 5%;
+    right: 3%;
     }
-
-    .stamp:hover{
-        cursor: pointer;
+    .stamp-back:hover {
+    cursor: pointer;
     }
 </style>
 <script src="libraries/p5.min.js"></script>
@@ -171,19 +183,22 @@ canvas {
     <div class="info-about" id="postBack">
         <img src="images/paper-kusama.jpg" class="info-bg">
         <!-- copiliot was used to fix onclick function because it wasnt working. was missing the '' -->
-        <img src="images/stamp.png" class="stamp" onclick="closeFolder('postBack')">
+         <div class="stamp-back" onclick="closeFolder('postBack')">
+        <img src="images/stamp.png" class="stamp">
+        </div>
         <div class="vl"></div>
         <div class="postcard-col">
             <div class="col1">
-                <img src="images/week-4 header.png" class="vid">
-                <img src="images/week-4 header.png" class="vid">
-                <img src="images/week-4 header.png" class="vid">
-                <img src="images/week-4 header.png" class="vid">
-
+                <img src="images/tentaceslol.jpg" class="vid">
+                <img src="images/tadpoles.jpg" class="vid">
+                <img src="images/stairs.jpg" class="vid">
+                <img src="images/flowers.jpg" class="vid">
+                <img src="images/starts.jpg" class="vid">
+                <img src="images/kusama sculp.jpg" class="vid">
             </div>
             
             <div class="col2">
-                <p>This is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrptionThis is and descrption<br>This is and descrption</p>
+                <p>The Yayoi Kusama exhibit was super cool. Her focus on polka dots worked perfectly with P5.js since that was one of the first things we learned. The exhibit and our workshop really went hand in hand. I especially liked the “Ladder to Heaven” installation even though it wasn't focused around polka dots. I tried to make this skecth look like a postcard/artcard you would get at a museum gift shop. The front is interactive to both mouse clicks and movement, I had fun coding it and really love the graident affects you get when you move the mouse. I found it fun to watch and actually spend a good few minutes just playing with it haha</p>
             </div>
                
         </div>

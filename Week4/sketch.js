@@ -15,7 +15,7 @@ function setup() {
   let canvas = createCanvas(windowWidth / 1.03, windowHeight / 1.04);
   canvas.position((windowWidth - width) / 2, (windowHeight - height) / 2);
   background(0); 
-  // Function to create a clickable image
+  // Function to create a clickable image. Asked Copilot to help me figure out how to write this function
   function createClickableImage(imgPath, altText, link, width, height) {
     let linkedImg = createImg(imgPath, altText);
     // Resize it if needed
@@ -24,12 +24,12 @@ function setup() {
     linkedImg.style('cursor', 'pointer');
     // Link it to another URL
     linkedImg.mousePressed(() => {
-      window.open(link, '_blank');
+      window.open(link, '_self');
     });
   }
 
   // Create clickable images for each preloaded image. Co-pilot helped to edit this function so it applies to all images.
-  createClickableImage('images/heart-doodle.png', 'clickable heart', 'self-potraint.html', 150, 150);
+  createClickableImage('images/heart-doodle.png', 'clickable heart', 'workshop.html', 150, 150);
   createClickableImage('images/smile-doodle.png', 'clickable smile', 'self-potraint.html', 150, 150);
   createClickableImage('images/spiral doodle.png', 'clickable spiral', '8ball.html', 150, 150);
   createClickableImage('images/flower-doodle.png', 'clickable flower', 'kusama.html', 150, 150);
@@ -45,9 +45,9 @@ function draw() {
 
   if (mouseIsPressed) {
     let x = map(mouseX, 0, width, 0, 255); // Map mouseX to a color value
-    let y = map(mouseY, 0, width, 0, 255);
+    let y = map(mouseY, 0, height, 0, 255);
     stroke(x, y, 100); // Set stroke color based on mouse position
-    strokeWeight(2); // Set stroke weight
+    strokeWeight(4); // Set stroke weight
     line(mouseX, mouseY, pmouseX, pmouseY); 
   }
 

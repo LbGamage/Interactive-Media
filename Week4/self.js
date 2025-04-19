@@ -23,7 +23,9 @@ function setup() {
   fill(0);
   rect(windowWidth/2,windowHeight/2.9, 229, 450);
   rect(windowWidth/2,windowHeight/2.9, -229, 450);
-  fill(130, mouseX, mouseY);
+
+  //hair
+  fill(130, 34, mouseY);
   rect(mainX-230,windowHeight/2.9+350, 459, 100);
 
 
