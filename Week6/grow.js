@@ -64,7 +64,7 @@ const rules = {
       },
       "F": (t) => {
         // Draw line forward, then move to end of line
-        stroke("#9ea93f");
+        stroke("#9ea93f ");
         line(0, 0, 0, -len * t);
         translate(0, -len * t);
       },
@@ -84,7 +84,7 @@ const rules = {
   }
   
   function draw() {
-    background('#848B5D');
+    background('#727A46');
     if (currGeneration === maxGeneration && growthPercent >= 1) {
     //   drawLsysLerp(width/3, height, word, growthPercent);
       drawLsysLerp(width/2, height, word, growthPercent);    
