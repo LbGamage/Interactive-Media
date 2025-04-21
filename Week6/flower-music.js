@@ -1,28 +1,28 @@
-
+//Base from tutorial. Used chatCPT in order to create the flowerpetals
 var song, analyzer, vol, grow;
 
 function preload() {
-  song = loadSound('music/plants.mp3'); // Add your audio file here
+  song = loadSound('music/plants.mp3'); 
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  analyzer = new p5.Amplitude(); // Create amplitude analyzer
-  analyzer.setInput(song); // Hook the song into the amplitude analyzer
+  analyzer = new p5.Amplitude();
+  analyzer.setInput(song); 
 
-  // Your other setup stuff here
+
 }
 
 function draw() {
   background('#AEC289');
 
-  vol = analyzer.getLevel(); // Volume level (0 to ~1)
-  // Use volume to drive animation
-  grow = map(vol, 0, 0.3, 0, 1); // Adjust the max value based on your song's levels
+  vol = analyzer.getLevel(); 
+
+  grow = map(vol, 0, 0.3, 0, 1); 
 
   flowerSize = map(vol, 0, 0.3, 50, 200, true);
-  // Draw a simple flower with 5 petals
+ //ChatGPT was used to fix a bug, had issues with the rotate function when creating the flower petals
   push();
   translate(width / 2, height / 2);
   stroke('#67471A');
@@ -31,12 +31,11 @@ function draw() {
     ellipse(0, flowerSize / 2, flowerSize, flowerSize);
     rotate(TWO_PI / 5);
   }
-  // Center of flower
+
   fill('#FACD56');
   ellipse(0, 0, flowerSize / 2, flowerSize / 2);
   pop();
 
-  // OR use `growth` to tweak growthPercent in your L-System, etc.
 }
 
 function mousePressed() {

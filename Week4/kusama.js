@@ -14,7 +14,7 @@ function draw() {
   fill( 255, y, 0);
   noStroke();
   
-  
+  //https://www.youtube.com/thecodingtrain tutorial helped a lot understaing how to build this. Lost of experimenting was done
   // Loop through each circle
   for (let i = 0; i < circles.length; i++) {
     let d = dist(mouseX, mouseY, circles[i].x, circles[i].y);

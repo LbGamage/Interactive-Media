@@ -1,7 +1,8 @@
+// https://p5js.org/reference/p5/sphere/ Mainly followed the information on this page and a lot of experimentation
+
 let angle = 0;
 let img
 let img2
-let starSphereSize
 
 function preload() {
   img = loadImage('images/text3.jpg');  

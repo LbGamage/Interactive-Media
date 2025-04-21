@@ -1,5 +1,5 @@
-// Surrond items that we want to lerp with () in the rules
-// () characters are then stripped from the next generation
+// https://www.youtube.com/watch?v=TOPxa1xIG5Q found this tutorial by Barney codes and followed it to T. Tried editing various variables. 
+
 const rules = {
     X: [
       // Original rule
