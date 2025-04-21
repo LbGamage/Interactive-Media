@@ -83,6 +83,7 @@
     top: 40%;
     right: 20%;
     width: 17%;
+    height: 20%;
     z-index: 6;
   }
 
@@ -143,7 +144,7 @@
   
   /* key chain aniamtion from https://codepen.io/drewr/pen/porBwW by Andrew Ross */
 .keychain {
-    bottom: 19%;
+    bottom: 12%;
     right: 20%;
     width: 15%;
     z-index: 8;
@@ -168,11 +169,13 @@
     top: 55%;
     left: 3%;
     width: 20%;
-    transition: 0.9ms;
     z-index: 9999;
-
 }
-.cd:hover{
+
+.playmusic{
+  transition: transform 0.3s ease; 
+}
+.playmusic:hover{
     animation: spin 3.5s linear infinite;
 }
 
