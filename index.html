@@ -8,11 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index-stylesheet.css">
+ 
 </head>
 <body>
   
     <div class="pin-board">
-        <div id="shooting-stars" class="hidden">
+        <!-- <div id="shooting-stars" class="hidden">
             <div class="stars1" id="star1"><pre>⟡‘.•⁀જ</pre></div>
             <div class="stars1" id="star2"><pre>⟡‘.•⁀જ</pre></div>
             <div class="stars1" id="star3"><pre>⟡‘.•⁀જ</pre></div>
@@ -20,44 +21,47 @@
             <div class="stars1" id="star5"><pre>⟡‘.•⁀જ</pre></div>
             <div class="stars1" id="star6"><pre>⟡‘.•⁀જ</pre></div>
             <div class="stars1" id="star7"><pre>⟡‘.•⁀જ</pre></div>
-        </div>
+        </div> -->
         <div class="board">
             <div class="header">
-                <!-- <div id="circle">
-                </div> -->
-                <!-- <img class="sparkle" src="images/images.png"><p class="title">Lihini's Workbook</p><img class="sparkle" src="images/images.png"> -->
+                <img src="images/header.png" style="width: 100%;">
+               <!-- <p class="title">Lihini's Workbook</p> -->
             </div>
-            <!-- <img class="background-board" src="images/homebackground.png"> -->
-            <img class="board-bg" src="images/bg-brown.png">
-            <div class="board-content">
-                <div class="week1">
-                    <div id="circle">
-                    </div>
-                    <a href="week1.html">Week 1 </a>
-                </div>
-                <div class="week2">
-                    <div id="circle">
-                    </div>
-                    <a href="week2.html">Week 2 </a>
-                </div>
-                <div class="week3">
-                    <div id="circle">
-                    </div>
-                    <a href="week3.html">Week 3 </a>
-                </div>
-                <div class="week3">
-                    <div id="circle">
-                    </div>
-                    <!-- this link doesnt work sometimes -->
-                    <a href="./Week4/index.html">Week 3 </a> 
-                </div>
-                <div class="hunt">
-                    <div id="circle">
-                    </div>
-                    <a href="web-progress.html">Workbook Progress </a>
-                </div>
+            <div class="w1" onclick="window.location.href='week1.html';">
+                <img src="images/w1.png" style="width: 100%;">
             </div>
+            <div class="w2"  onclick="window.location.href='week2.html';">
+                <img src="images/w2.png" style="width: 100%;"></div>
+            <div class="w3" onclick="window.location.href='week3.html';">
+                <img src="images/w3.gif" style="width: 100%"></div>
+            <div class="w4"  onclick="window.location.href='Week4/index.html';">
+                <img src="images/w4.png" style="width: 100%;"></div>
+            <div class="w5" onclick="window.location.href='Week5/indexw5.html';">
+                <img src="images/w5.png" style="width: 100%;">
+            </div>
+            <div class="w6" onclick="window.location.href='Week6/indexW6.html';">
+                <img src="images/w6.png" style="width: 100%;">
+            </div>
+            <div class="prog" onclick="window.location.href='web-progress.html';">
+                <img src="images/progress.png" style="width: 100%;">
+            </div>
+
+            <!-- moveable objects -->
+            <div class="item1 bgitems draggable"><img src="images/list1.png" style="width: 100%;"></div>
+            <div class="number bgitems draggable"><img src="images/number.png" style="width: 100%;"></div>
+            <div class="cd bgitems"><img src="images/cd.png" style="width: 100%;"></div>
+            <div class="flowers bgitems draggable"><img src="images/flowers.png" style="width: 100%;"></div>
+            <div class="catcut bgitems draggable"><img src="images/catcut.png" style="width: 100%;"></div>
+            <div class="catcut2 bgitems draggable"><img src="images/catcut2.png" style="width: 100%;"></div>
+            <div class="recipt bgitems draggable"><img src="images/recipt.png" style="width: 100%;"></div>
+            <div class="kusama bgitems draggable"><img src="images/kusama.png" style="width: 100%;"></div>
+            <div class="totoro bgitems draggable"><img src="images/totoro (1).png" style="width: 100%;"></div>
+            <div class="keychain bgitems draggable"><img src="images/keychain.png" style="width: 100%;"></div>
+
+
+
         </div>
     </div>
+
+    <script src="Week5/sketch.js"></script>
 </body>
-</html>

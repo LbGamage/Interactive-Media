@@ -28,7 +28,8 @@ overflow:hidden;
   top: 12%;
   left: 3%;
   background-color: #f2f5ed;
-  
+  transition: transform .6s;
+
 }
 .data-vis{
   width: 30%;
@@ -43,6 +44,7 @@ overflow:hidden;
   top: 65%;
   left: 34%;
   background-color: rgb(116, 236, 164);
+  transition: transform .6s;
 }
 .reflec{
   width: 40%;
@@ -70,6 +72,8 @@ overflow:hidden;
   top: 65%;
   left: 55%;
   background-color: rgb(249, 255, 239);
+  transition: transform .6s;
+
 }
 .grow{
   width: 22%;
@@ -135,9 +139,19 @@ color: #e1bd61;
   right: 3%;
   font-size: 1.2em;
   color: black;
+  transition: 0.6ms;
 }
 
 .progress:hover{
   color: #fccc66;
   cursor: pointer;
+  transform: scale(1.2); 
+}
+
+/* found on w3 schools */
+.cat:hover, .hunt:hover, .flower-beat:hover{
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  z-index: 5;
+  box-shadow:0px 0px 30px rgb(141, 150, 121);
 }
