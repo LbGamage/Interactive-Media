@@ -6,99 +6,229 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Text+Me+One&display=swap" rel="stylesheet">
-    <title>Workbook Progress</title>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">    
+<title>Workbook Progress</title>
     <style>
-    body {
-        background-image: url(images/Progress/painted-relief-texture.jpg);
-        background-color: white;
-        font-family: 'Space Mono';
-        font-size: 0.9em;
-    }
+body {
+    background-color: rgb(255, 251, 237);
+    font-family: 'Space Mono';
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2%;
+row-gap: 5%;
+padding: 20px;
+}
 
-    h1{
-        padding-left: 2%;
-    }
-    .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    margin: 20px;
-    }
+.tile {
+padding: 3%;
+text-align: center;
+font-size: 1.5rem;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transform: rotate(var(--tilt));
+transition: transform 0.3s ease;
+background-image: url('images/Progress/painted-relief-texture.jpg');
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
-    .progress-img img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.menu-progress{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+line-height: 0.5;
+padding: 1%;
+margin: auto;
+}
 
-    .progress-img{
-        border: 1px black solid;
-        padding: 1%;
-    }
+img {
+width: 100%;
+z-index: 0;
+position: relative;
+opacity: 80%;
+}
 
-    .menu-progress{
+.description{
+display: none;
+}
+
+span {
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+color: rgb(20, 19, 19);
+background-image: url('images/Progress/painted-relief-texture.jpg');
+background-size: cover;
+padding: 1%;
+font-family: 'Nanum Pen Script';
+}
+
+.nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+a{
+text-decoration: none;
+color: black;
+padding-left: 3%;
+font-size: 2em;
+font-weight: bold;
+}
+
+.menu-progress{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
     }
 
     .prog-homelink{
-        font-size: 1.2em;
+        font-size: 0.6em;
         color: black;
         padding-right: 2%;
+        /* background-color: aquamarine; */
+        width: 50%;
+        text-align: right;
     }
 
     .prog-homelink a{
         color: black;
     }
 
-    @media (max-width: 768px) {
-        .gallery {
-            grid-template-columns: 1fr;
-        }
-    }
-    </style>
+
+
+
+/* Just random tilts for the aesthetic */
+.tile:nth-child(1) { --tilt: 2deg; }
+.tile:nth-child(2) { --tilt: -3deg; }
+.tile:nth-child(3) { --tilt: 1deg; }
+.tile:nth-child(4) { --tilt: -2deg; }
+.tile:nth-child(5) { --tilt: 4deg; }
+.tile:nth-child(6) { --tilt: -1.5deg; }
+.tile:nth-child(7) { --tilt: 3deg; }
+.tile:nth-child(8) { --tilt: -2.5deg; }
+.tile:nth-child(9) { --tilt: 0.8deg; }
+.tile:nth-child(10) { --tilt: -1deg; }
+.tile:nth-child(11) { --tilt: 2.5deg; }
+.tile:nth-child(12) { --tilt: -1.5deg; }
+.tile:nth-child(13) { --tilt: 3deg; }
+</style>
 </head>
 <body>
     <div class="menu-progress">
     <h1>Workbook Progress</h1>
     <div class="prog-homelink">
     <a href="index.html">Home</a>
-    <a href="week1.html">Week 1</a>
-    <a href="week2.html">Week 2</a>
-    <a href="week3.html">Week 3</a>
+    <a href="week1.html">Assignment 1</a>
+    <a href="Week4/index.html">Assigment 2</a>
     </div>
     </div>
 
-    <div class="gallery">
-        <div class="progress-img">
+    <div class="grid">
+        <div class="tile" id="card">
             <img src="images/Week 2/Crazy8/3.png">
-            <p>This is the sketch I chose as my initial idea from the crazy 8s we did in class.</p>
+            <div class="description" id="des">
+            <span>This is the sketch I chose as my initial idea from the crazy 8s we did in class.</span>
+            </div>
         </div>
-        <div class="progress-img">
+        <div class="tile" id="card">
             <img src="images/Week 2/At home.png">
-            <p>Building on the initial sketch, I created several more iterations to further develop my idea.</p>
+            <div class="description" id="des">
+            <span>Building on the initial sketch, I created several more iterations to further develop my idea.</span>
+            </div>
         </div>
-        <div class="progress-img">
+        <div class="tile" id="card">
             <img src="images/Week 2/background-details.png">
-            <p>Once I settled on a clear direction, I sketched a draft image for the homepage to visualise how I wanted it to appear.</p>
+            <div class="description" id="des">
+            <span>Once I settled on a clear direction, I sketched a draft image for the homepage to visualise how I wanted it to appear.</span>
+            </div>
         </div>
-        <div class="progress-img">
+        <div class="tile" id="card">
             <img src="images/Progress/home.png">
-            <p>Using the draft image as a reference, I attempted to code a basic homepage with HTML and CSS, incorporating PNGs for the background, to better conceptualise my idea.</p>
+            <div class="description" id="des">
+            <span>Using the draft image as a reference, I attempted to code a basic homepage with HTML and CSS, incorporating PNGs for the background, to better conceptualise my idea.</span>
+            </div>
         </div>
-        <div class="progress-img">
+        <div class="tile" id="card">
             <img src="images/Progress/w1.png">
-            <p>Initially, I didn’t have a clear vision for Week 1, but I wanted to experiment with ASCII art. After several attempts, I managed to create an old-fashioned command prompt window look (which is the current design on the website) (homepage- item: doodle)</p>
+            <div class="description" id="des">
+            <span>Initially, I didn’t have a clear vision for Week 1, but I wanted to experiment with ASCII art. After several attempts, I managed to create an old-fashioned command prompt window look (which is the current design on the website) (homepage- item: doodle).</span>
+            </div>
         </div>
-        <div class="progress-img">
+        <div class="tile" id="card">
             <img src="images/Progress/w2.png">
-            <p>For Week 2, I aimed to keep the HTML simple, almost like a basic text document, while focusing on CSS practice. I particularly enjoyed creating a vibrant sunset gradient (homepage item: polaroid).</p>
+            <div class="description" id="des">
+            <span>For Week 2, I aimed to keep the HTML simple, almost like a basic text document, while focusing on CSS practice. I particularly enjoyed creating a vibrant sunset gradient (homepage item: polaroid).</span>
+            </div>
         </div>
-        <div class="progress-img">
+        <div class="tile" id="card">
             <img src="images/Progress/w3.png">
-            <p>In Week 3, I began experimenting with JS and pop-ups. This page really helped me understand how to use divs, positioning, and other concepts. I feel like I can truly see my progress from Day 1 to the final Week 3 website.</p>
+            <div class="description" id="des">
+            <span>In Week 3, I began experimenting with JS and pop-ups. This page really helped me understand how to use divs, positioning, and other concepts. I feel like I can truly see my progress from Day 1 to the final Week 3 website.</span>
+            </div>
         </div>
+        <div class="tile" id="card">
+            <img src="images/Progress/Screenshot 2025-04-18 094904.png">
+            <div class="description" id="des">
+            <span>After learning P5 and the feedback I got on my A1 I tried to incorporate more interactive elements into my A2. Week 4 was meant to look like scratch art kids used to do. I also started using more pages instead of keeping things on one page</span>
+            </div>
+        </div>
+        <div class="tile" id="card">
+            <img src="images/Progress/Screenshot 2025-04-18 161341.png">
+            <div class="description" id="des">
+            <span>Week 5 was a bit of a process. I tried out a bunch of things and ended up going with a MacBook-style look, with a girly/coquette vibe. It really helped me get used to placing things on the page in a structured manner.</span>
+            </div>
+        </div>
+        <div class="tile" id="card">
+            <img src="images/Progress/Screenshot 2025-04-20 053247.png">
+            <div class="description" id="des">
+            <span>Week 6 is probably my favourite design so far. I went for a bento grid style. I love the plant theme. The trickiest part was sorting out the measurements and tying the theme in with p5.</span>
+            </div>
+        </div>
+        <div class="tile" id="card">
+            <img src="images/Progress/sketch.jpg">
+            <div class="description" id="des">
+            <span>I improved the homepage quite a bit after A1. First, I loosely layered my idea on procreate with different assest</span>
+            </div>
+        </div>
+        <div class="tile" id="card">
+            <img src="images/Progress/Screenshot 2025-04-21 112823.png">
+            <div class="description" id="des">
+            <span>I improved the homepage quite a bit after A1. First, I rewrote the code and added divs for the objects. I used the drag code from Matilda’s GitHub to make it feel like you could customise the noticeboard.</span>
+            </div>
+        </div>
+        <div class="tile" id="card">
+            <img src="images/Progress/drawing.png">
+            <div class="description" id="des">
+            <span>I used Illustrator and Procreate to make most of the elements on the homepage. I also found a few assets online, like the Arctic Monkeys receipt, but most of it is hand-drawn or made by me.</span>
+            </div>
+        </div>
+        
+        
     </div>
+<!-- Created it by looking at w3 school and the help of copilot. same as the one is week 4 -->
+    <script>
+        document.querySelectorAll('#des').forEach(function(description) {
+            description.parentElement.addEventListener('mouseover', function() {
+                description.style.display = "block";
+            });
+            description.parentElement.addEventListener('mouseout', function() {
+                description.style.display = "none";
+            });
+        });
+          </script>
 </body>
 </html>
