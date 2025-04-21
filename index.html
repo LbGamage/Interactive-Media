@@ -6,7 +6,7 @@
     <title>Woorkbook 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Domine:wght@400..700&family=Doto:wght@100..900&family=Indie+Flower&family=Jersey+15&family=Nanum+Pen+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index-stylesheet.css">
  
 </head>
@@ -45,11 +45,12 @@
             <div class="prog" onclick="window.location.href='web-progress.html';">
                 <img src="images/progress.png" style="width: 100%;">
             </div>
-
+            <!-- Audio for CD -->
+              <audio id="cd-audio" src="images/Week 3/(FREE) Lo-fi Type Beat - Starry night.mp3" preload="auto"></audio>
             <!-- moveable objects -->
             <div class="item1 bgitems draggable"><img src="images/list1.png" style="width: 100%;"></div>
             <div class="number bgitems draggable"><img src="images/number.png" style="width: 100%;"></div>
-            <div class="cd bgitems"><img src="images/cd.png" style="width: 100%;"></div>
+            <div class="cd bgitems" onmouseenter="playAudio()" onmouseleave="pauseAudio()"><img src="images/cd.png" style="width: 100%;"></div>
             <div class="flowers bgitems draggable"><img src="images/flowers.png" style="width: 100%;"></div>
             <div class="catcut bgitems draggable"><img src="images/catcut.png" style="width: 100%;"></div>
             <div class="catcut2 bgitems draggable"><img src="images/catcut2.png" style="width: 100%;"></div>
@@ -58,10 +59,28 @@
             <div class="totoro bgitems draggable"><img src="images/totoro (1).png" style="width: 100%;"></div>
             <div class="keychain bgitems draggable"><img src="images/keychain.png" style="width: 100%;"></div>
 
+            <div class="footer">
+              <span>Move items around and customize!</span>
+            </div>
+
 
 
         </div>
     </div>
 
     <script src="Week5/sketch.js"></script>
+    <script>
+      // chatGPT helped create this function 
+      const audio = document.getElementById('cd-audio');
+
+      function playAudio() {
+        audio.currentTime = 0; // Start from beginning
+        audio.play();
+      }
+
+      function pauseAudio() {
+        audio.pause();
+        audio.currentTime = 0; // Optional: reset to start
+      }
+    </script>
 </body>
