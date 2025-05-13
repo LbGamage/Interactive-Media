@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Dropdown Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #9AA28D;
+    background-image: 
+      linear-gradient(to right, #A0A893 2px, transparent 1px),
+      linear-gradient(to bottom, #A0A893 2px, transparent 1px);
+    background-size: 20px 20px; /* Size of each square */
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header {
+    width: 50%;
+    font-family: "Pixelify Sans", sans-serif;
+    padding-left: 5%;
+    font-size: 1.5rem;
+  }
+
+  .twocNav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* background-color: aqua; */
+    align-items: center;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .smol{
+    display: none;
+  }
+
+ 
+
+  /* Responsive styling */
+  @media (max-width: 700px) {
+    .twocNav {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+   .smol{
+    display: block;
+    width: 60%;
+  }
+
+  .full{
+    display: none;
+  }
+}
+</style>
+
+  </style>
+</head>
+<body>
+<div class="head">
+  <header>
+    <h1>2C Physical Computing</h1>
+  </header>
+
+  <div class="twocNav">
+    <div class="dropoption">
+       <img src="images/w7black.png" class="drophead full">
+       <img src="images/w7blacksmolopt.png" class="drophead smol">
+    </div>
+    <div class="dropoption">
+       <img src="images/w8black.png" class="drophead full">
+      <img src="images/w8blacksmolopt.png" class="drophead smol">
+
+    </div>
+    <div class="dropoption">
+       <img src="images/w9black.png" class="drophead full">
+        <img src="images/w9blacksmolopt.png" class="drophead smol">
+
+    </div>
+
+  </div>
+  
+  </div>
+
+  <main>
+    <div id="content1" class="content-section">
+      <div>This is content for Option 1-1</div>
+    </div>
+    <div id="content2" class="content-section">
+      <div>This is content for Option 1-2</div>
+    </div>
+    <div id="content3" class="content-section">
+      <div>This is content for Option 2-1</div>
+    </div>
+    <div id="content4" class="content-section">
+      <div>This is content for Option 2-2</div>
+    </div>
+    <div id="content5" class="content-section">
+      <div>This is content for Option 3-1</div>
+    </div>
+    <div id="content6" class="content-section">
+      <div>This is content for Option 3-2</div>
+    </div>
+  </main>
+
+</body>
+</html>
