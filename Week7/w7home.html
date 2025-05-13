@@ -8,14 +8,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 <style>
+
+  @font-face {
+  font-family: 'DS Digital';
+  src: url('../Fonts/DS-DIGIB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
   * {
     box-sizing: border-box;
   }
 
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
+font-family: "Pixelify Sans", sans-serif;   overflow-x: hidden;
     background-color: #9AA28D;
     background-image: 
       linear-gradient(to right, #A0A893 2px, transparent 1px),
@@ -30,7 +36,6 @@
 
   header {
     width: 50%;
-    font-family: "Pixelify Sans", sans-serif;
     padding-left: 5%;
     font-size: 1.5rem;
   }
@@ -42,6 +47,7 @@
     gap: 1rem;
     /* background-color: aqua; */
     align-items: center;
+    padding-right: 2%;
   }
 
   img{
@@ -52,26 +58,152 @@
     display: none;
   }
 
+
+  /* --------------- */
+  .dropoption {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  gap: 0.1rem;
+  right: 0;
+  width: 100%;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  border: 0.1em solid black;
+  background-color: #9AA28D;
+  z-index: 10;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+/* Show menu on hover */
+.dropoption:hover .dropdown-content:hover, .drophead:hover{
+  cursor: pointer;
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+.projectsw7{
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+    .container {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      /* background-color: red; */
+      width: 80%;
+      /* border: 2px solid #000; */
+    }
+
+    
+    .video-box, .text-box {
+      flex: 1 1;
+    }
+
+    .text-box{
+      /* background-color:aqua ; */
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+    }
+      .video-box video {
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
  
+    /* ------------------------ */
+ .section-header {
+font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
+  width: 100%;
+  background-color: rgba(38, 38, 38, 0.185);
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.collapsible-content {
+  display: none;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.collapsible-content.show {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scaleY(0.95); }
+  to { opacity: 1; transform: scaleY(1); }
+}
+
+@media (max-width: 700px) {
+  .collapsible-content.show {
+    flex-direction: column;
+  }
+}
+
 
   /* Responsive styling */
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     .twocNav {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    justify-content:center;
+    align-items: baseline;
+    padding-right: 0px;
+    /* background-color: yellow; */
+    margin: 0;
+    padding: 2%;
+    width: 20%;
   }
 
    .smol{
     display: block;
-    width: 60%;
+    width: 50px;
+    /* background-color: red; */
   }
 
   .full{
     display: none;
   }
+
+     .container {
+        flex-direction: column;
+        /* background-color: blueviolet; */
+      }
+
+
 }
 </style>
 
@@ -85,44 +217,159 @@
 
   <div class="twocNav">
     <div class="dropoption">
-       <img src="images/w7black.png" class="drophead full">
-       <img src="images/w7blacksmolopt.png" class="drophead smol">
-    </div>
-    <div class="dropoption">
-       <img src="images/w8black.png" class="drophead full">
-      <img src="images/w8blacksmolopt.png" class="drophead smol">
+  <div onclick="toggleDropdown(this)"> 
+  <img  class="drophead full" src="images/bighome.png">
+  <img src="images/smolhome.png" class="drophead smol">
+  </div>
+  </div>
+  <div class="dropoption">
+  <div onclick="toggleDropdown(this)"> 
+  <img  class="drophead full" src="images/w7black.png">
+  <img src="images/w7blacksmolopt.png" class="drophead smol">
+  </div>
 
-    </div>
-    <div class="dropoption">
-       <img src="images/w9black.png" class="drophead full">
-        <img src="images/w9blacksmolopt.png" class="drophead smol">
+  <div id="myDropdown" class="dropdown-content">
+    <a class="options" href="#home">Home</a>
+    <a class="options" href="#about">About</a>
+    <a class="options" href="#contact">Contact</a>
+  </div>
+  </div>
+ <div class="dropoption">
+  <div onclick="toggleDropdown(this)"> 
+  <img  class="drophead full" src="images/w8black.png">
+  <img src="images/w8blacksmolopt.png" class="drophead smol">
+  </div>
 
-    </div>
+  <div id="myDropdown" class="dropdown-content">
+    <a class="options" href="#home">Home</a>
+    <a class="options" href="#about">About</a>
+    <a class="options" href="#contact">Contact</a>
+  </div>
+  </div>
+    <div class="dropoption">
+  <div onclick="toggleDropdown(this)"> 
+  <img  class="drophead full" src="images/w9black.png">
+  <img src="images/w9blacksmolopt.png" class="drophead smol">
+  </div>
+
+  <div id="myDropdown" class="dropdown-content">
+    <a class="options" href="#home">Home</a>
+    <a class="options" href="#about">About</a>
+    <a class="options" href="#contact">Contact</a>
+  </div>
+  </div>
 
   </div>
   
   </div>
+  <div class="content">
+    <!-- <div class="kit">
+    <h2>Parts of an Ardunio Starter kit</h2>
+    <img src="images/arduino parts-desktop.png" class="kitimg full" />
+    <img src="images/arduino parts-mobile.png" class="kitimg smol" />
+    </div> -->
 
-  <main>
-    <div id="content1" class="content-section">
-      <div>This is content for Option 1-1</div>
+    <div class="projectsw7">
+     <!-- Collapsible Section 1 -->
+      <div class="container">
+  <button class="section-header" onclick="toggleSection(this)">Parts of an Ardunio Starter kit</button>
+  <div class="collapsible-content">
+    <div class="kit">
+    <!-- <h2>Parts of an Ardunio Starter kit</h2> -->
+    <img src="images/arduino parts-desktop.png" class="kitimg full" />
+    <img src="images/arduino parts-mobile.png" class="kitimg smol" />
     </div>
-    <div id="content2" class="content-section">
-      <div>This is content for Option 1-2</div>
-    </div>
-    <div id="content3" class="content-section">
-      <div>This is content for Option 2-1</div>
-    </div>
-    <div id="content4" class="content-section">
-      <div>This is content for Option 2-2</div>
-    </div>
-    <div id="content5" class="content-section">
-      <div>This is content for Option 3-1</div>
-    </div>
-    <div id="content6" class="content-section">
-      <div>This is content for Option 3-2</div>
-    </div>
-  </main>
+  </div>
+</div>
 
+
+<div class="container">
+  <button class="section-header" onclick="toggleSection(this)">Ultrasonic Buzzer</button>
+  <div class="collapsible-content">
+    <div class="video-box">
+       <video controls>
+        <source src="images/ultrasonic - Made with Clipchamp (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-box">
+      <p>This is a sample paragraph alongside a video...</p>
+    </div>
+  </div>
+</div>
+
+       <div class="container">
+  <button class="section-header" onclick="toggleSection(this)">Surprising Gaaris</button>
+  <div class="collapsible-content">
+    <div class="video-box">
+        <video controls>
+        <source src="images/potato - Made with Clipchamp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-box">
+      <p>This is a sample paragraph alongside a video...</p>
+      <img src="images/Copy of POT_LIGHT_DIMMER.png" alt="blueprint" class="popup-image" style="display:none;">
+    </div>
+  </div>
+</div>
+       <div class="container">
+  <button class="section-header" onclick="toggleSection(this)">POT LIGHT DIMMER</button>
+  <div class="collapsible-content">
+    <div class="video-box">
+        <img src="images/pot - Made with Clipchamp.gif">
+     </div>
+    <div class="text-box">
+      <p>This is a sample paragraph alongside a video...</p>
+    </div>
+  </div>
+</div>
+      <div class="container">
+  <button class="section-header" onclick="toggleSection(this)">10 LEDs controlled by Remote - Incomplete</button>
+  <div class="collapsible-content">
+    <div class="video-box">
+        <img src="images/ultrasonic.gif" type="video/mp4">
+    </div>
+    <div class="text-box">
+      <p>This is a sample paragraph alongside a video...</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <script>
+ function toggleDropdown(img) {
+  const dropdown = img.nextElementSibling;
+  dropdown.classList.toggle('show');
+  // Close others
+  document.querySelectorAll('.dropdown-content').forEach(el => {
+    if (el !== dropdown) el.classList.remove('show');
+  });
+}
+
+window.addEventListener('click', function(e) {
+  if (!e.target.classList.contains('drophead')) {
+    document.querySelectorAll('.dropdown-content').forEach(el => el.classList.remove('show'));
+  }
+});
+
+ function toggleImage() {
+              const img = document.getElementById('popupImage');
+              img.style.display = img.style.display === 'block' ? 'none' : 'block';
+            }
+
+            function toggleSection(button) {
+  const content = button.nextElementSibling;
+  content.classList.toggle("show");
+}
+
+function toggleImage(btn) {
+  const img = btn.nextElementSibling;
+  img.style.display = img.style.display === 'block' ? 'none' : 'block';
+}
+
+  </script>
 </body>
 </html>
