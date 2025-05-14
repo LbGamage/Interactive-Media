@@ -162,6 +162,21 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
   justify-content: center;
 }
 
+.subcontent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+.HnGw7{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
 @keyframes fadeIn {
   from { opacity: 0; transform: scaleY(0.95); }
   to { opacity: 1; transform: scaleY(1); }
@@ -170,6 +185,11 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
 @media (max-width: 700px) {
   .collapsible-content.show {
     flex-direction: column;
+  }
+
+  .subcontent{
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
@@ -269,6 +289,24 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
     <img src="images/arduino parts-mobile.png" class="kitimg smol" />
     </div> -->
 
+    <div class="subcontent">
+      <div class="HnGw7">
+        <img src="images/tamgotchi.gif" style="width: 150px;">
+        Week 7 Reflection
+      </div>
+       <div class="HnGw7">
+        <img src="images/tamgotchi.gif" style="width: 150px;">
+          Week 8 Reflection
+      </div>
+       <div class="HnGw7">
+        <img src="images/tamgotchi.gif" style="width: 150px;">
+                Hunt n' Gather
+      </div>
+      <div class="HnGw7">
+        <img src="images/tamgotchi.gif" style="width: 150px;">
+                Chindogu
+      </div>
+    </div>
     <div class="projectsw7">
      <!-- Collapsible Section 1 -->
       <div class="container">
