@@ -51,7 +51,8 @@ margin: 20px;
 }
   
 .backStamp{
-    padding-right: 1%
+    padding-right: 1%;
+    cursor: pointer;
 }
 
 a{
@@ -69,7 +70,8 @@ a{
 <body>
      <div class="header">
     <h1>Hunt N' Gather</h1>
-    <a href="w7home.html" class="backStamp"><h2>█ Return</h2></a>
+    <div onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w7home.html'; }, 200);" class="backStamp"><h2>█ Return</h2></div>
+     <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
   </div>
   <div class="gallery">
     <div class="progress-img">

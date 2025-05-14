@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+
+      body{
+        background-color: black;
+        font-family: "Orbitron", sans-serif;
+        color: white;
+      }
+      .head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header {
+    width: 50%;
+    padding-left: 5%;
+    font-size: 1.5rem;
+  }
+
+  .twocNav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* background-color: aqua; */
+    align-items: center;
+    padding-right: 2%;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .smol{
+    display: none;
+  }
+
+  .reflec{
+    position: relative;
+    width: 40%;
+    padding-top: 2%;
+    /* background-color: blue; */
+  }
+
+  .ref-info{
+    position: absolute; 
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    color: white;
+    /* background-color: red; */
+    width: 80%;
+      max-width: 400px;
+      min-width: 280px;
+  }
+
+  .project{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 50%;
+    /* background-color: blueviolet; */
+  }
+
+
+
+  .container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    padding: 2%;
+  }
+
+@media (max-width: 1000px) {
+    .twocNav {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: baseline;
+    padding-right: 0px;
+    /* background-color: yellow; */
+    margin: 0;
+    padding: 2%;
+    width: 20%;
+  }
+
+   .smol{
+    display: block;
+    width: 350px;
+    /* background-color: red; */
+  }
+
+  .full{
+    display: none;
+  }
+
+  .reflec {
+    position: relative; 
+    margin: 0 auto; 
+    width: 350px;
+  }
+
+  .ref-info{
+    width: 30vw;
+     position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+  }
+
+     .container1 {
+        flex-direction: column;
+        /* background-color: blueviolet; */
+      }
+
+      .project{
+        width: 100%;
+        /* background-color: blueviolet; */
+      }
+
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="head">
+  <header>
+    <h1>2C Physical Computing</h1>
+  </header>
+
+  <div class="twocNav">
+    <div class="dropoption">
+  <div onclick="window.location.href='../index.html'">
+  <img  class="drophead full" src="images/bighomewhite.png">
+  <img src="images/smolhome.png" class="drophead smol">
+  </div>
+  </div>
+  <div class="dropoption">
+  <div> 
+  <img  class="drophead full" src="images/w7white.png">
+  <img src="images/w7blacksmolopt.png" class="drophead smol">
+  </div>
+
+  
+  </div>
+ <div class="dropoption">
+  <div> 
+  <img  class="drophead full" src="images/w8white.png">
+  <img src="images/w8blacksmolopt.png" class="drophead smol">
+  </div>
+
+  
+  </div>
+    <div class="dropoption">
+  <div> 
+  <img  class="drophead full" src="images/w9white.png">
+  <img src="images/w9blacksmolopt.png" class="drophead smol">
+  </div>
+
+ 
+  </div>
+
+  </div>
+  
+  </div>
+
+  <div class="container1">
+
+  <div class="reflec" style="position: relative; text-align: center;">
+    <img class="text-border full" src="images/textbox.png" >
+    <img class="text-border smol" src="images/textboxsmol.png" >
+    <p class="ref-info">We didnt do much this week. learned how to use ardunio with p5. We didnt do much this week. learned how to use ardunio with p5. We didnt do much this week. learned how to use ardunio with p5. We didnt do much this week. learned how to use ardunio with p5 </p>
+  </div>
+
+  <div class="project">
+    <div class="project-title">
+      <h1>Meshing with p5 and arduino</h1>
+    </div>
+    <video width="100%" height="auto" controls>
+      <source src="images/20250508_104904.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  </div>
+    
+  <div class="container2">
+  
+   
+    <img src="images/divider.svg">
+     <h1>please god end my suffering</h1>
+
+     <div class="Hunt n' gather">
+      <h1>Hunt n' gather</h1>
+      <img src="images/huntngather.png">
+     </div>
+  </div>
+</body>
+</html>

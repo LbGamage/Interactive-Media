@@ -78,6 +78,7 @@ font-family: 'DS Digital';  overflow-x: hidden;
         cursor: pointer;
         /* background-color: yellow; */
         white-space: nowrap;
+        
     }
 
     .nav{
@@ -90,6 +91,10 @@ font-family: 'DS Digital';  overflow-x: hidden;
     .return{
         /* background-color: red; */
         cursor: pointer;
+    }
+
+    p{
+          font-size: 1.3em;
     }
 
     a{
@@ -129,24 +134,18 @@ font-family: 'DS Digital';  overflow-x: hidden;
         <h1 class="w8ref" style="color: rgba(0, 0, 0, 0.5);" onclick="openFolder('w8reftext')">Week 8 Reflection</h1> 
     </div>
      <div class="return">
-        <a href="w7home.html">
-       <h2>█ Return</h2>
-       </a>
+      <div onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w7home.html'; }, 200);" class="backStamp"><h2>█ Return</h2></div>
+     <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
     </div>
     </div>
     <div class="body-refstuff">
     <div class="text-body" id="w7reftext">
-        <p>WEEK 7, we delved into the intricacies of CSS and its role in web design. We explored various properties and techniques that enhance the visual appeal of web pages. The hands-on exercises allowed us to apply these concepts practically, solidifying our understanding.</p>
-        <p>One of the key takeaways was the importance of responsive design. We learned how to use media queries to ensure that our designs adapt seamlessly to different screen sizes. This knowledge is crucial in today's mobile-first world.</p>
-        <p>Additionally, we discussed the significance of typography and color theory in web design. Choosing the right fonts and color schemes can greatly impact user experience and engagement.</p>
-        <p>Overall, this week's lesson was both informative and practical, providing us with valuable skills for our future projects.</p>
+        <p>In Week 7, we began learning about physical computing. I was a bit nervous at first because it had been a long time since I’d done anything with circuits. The last time I used a resistor was back in Grade 10 when I was 15, so it felt like I was starting from scratch. On top of that, I had never used a breadboard before, which made the first few projects a bit confusing. <br><br>At first, figuring out how to make the circuits work took some trial and error. There were a lot of wires, and it was sometimes hard to keep track of everything. But once I got the hang of it, it became easier. <br><br> We also got to see examples of physical computing projects displayed in the Telstra space, which was really inspiring. I especially liked the “Moth to the Flame” installation, where a moth figure moved toward a lamp that lit up. Being in the Telstra space itself was exciting, it’s such a cool environment, and I’d never had a class there before. </p>
 
     </div>
     <div class="text-body" id="w8reftext">
-        <p>WEEK 8 cies of CSS and its role in web design. We explored various properties and techniques that enhance the visual appeal of web pages. The hands-on exercises allowed us to apply these concepts practically, solidifying our understanding.</p>
-        <p>One of the key takeaways was the importance of responsive design. We learned how to use media queries to ensure that our designs adapt seamlessly to different screen sizes. This knowledge is crucial in today's mobile-first world.</p>
-        <p>Additionally, we discussed the significance of typography and color theory in web design. Choosing the right fonts and color schemes can greatly impact user experience and engagement.</p>
-        <p>Overall, this week's lesson was both informative and practical, providing us with valuable skills for our future projects.</p>
+        <p>In Week 8, which took place after the mid-semester break, we continued learning the basics of physical computing using Arduino. Week 8 felt so much like a continuation of Week 7 that, in my mind, they genuinely merged into one long class. Thats why they share the space and aestetic in my workbook. <br><br> We built more interactive circuits this week, including the Surprising Gaaris project. I especially enjoyed the potato music. It was silly in the best way, and it made learning about sensors and conductivity more engaging and memorable.<br><br>
+        Karen showed us this really cool project of circuit sewen onto fabric using conductive thread why I found to be really neat, I'd never thought about using fabric as a base for a ciruit till then</p>
 
     </div>
     </div>

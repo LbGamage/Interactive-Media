@@ -21,7 +21,8 @@
 
   body {
     margin: 0;
-font-family: 'DS Digital';  overflow-x: hidden;
+font-family: 'pixelify sans', sans-serif;
+overflow-x: hidden;
     background-color: #9AA28D;
     background-image: 
       linear-gradient(to right, #A0A893 2px, transparent 1px),
@@ -146,6 +147,10 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
   text-align: left;
   border: none;
   outline: none;
+}
+
+.section-header:hover {
+  background-color: rgba(38, 38, 38, 0.674);
 }
 
 .collapsible-content {
@@ -291,24 +296,27 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
     </div> -->
 
     <div class="subcontent">
-      <div class="HnGw7" onclick="window.location.href='week7Reflect.html'">
-        <img src="images/tamgotchi.gif" style="width: 150px;">
+      <div class="HnGw7" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='week7Reflect.html'; }, 200)">
+        <img src="images/tumblr_2428b8982b78f6fbf397cdf98735dc00_5c045888_400.gif" style="width: 150px;">
+        <audio id="click1" src="images/22-101soundboards.mp3" preload="auto"></audio>
        Reflections
       </div>
       
-       <div class="HnGw7" onclick="window.location.href='w7hng.html'">
+       <div class="HnGw7" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='w7hng.html'; }, 200)">
         <img src="images/tamgotchi.gif" style="width: 150px;">
+    
                 Hunt n' Gather
       </div>
-      <div class="HnGw7" onclick="window.location.href='chindogu.html'">
-        <img src="images/tamgotchi.gif" style="width: 150px;">
+      <div class="HnGw7" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='chindogu.html'; }, 200)">
+        <img src="images/tumblr_df2914832da7cc921df95be25a4770d8_3790e105_400.gif" style="width: 150px;">
                 Chindogu
       </div>
     </div>
     <div class="projectsw7">
-     <!-- Collapsible Section 1 -->
+   
+          <audio id="click3" src="images/24-101soundboards.mp3" preload="auto"></audio>
       <div class="container">
-  <button class="section-header" onclick="toggleSection(this)">Parts of an Ardunio Starter kit</button>
+  <button class="section-header" onclick="toggleSection(this); document.getElementById('click3').play();">Parts of an Ardunio Starter kit</button>
   <div class="collapsible-content">
     <div class="kit">
     <!-- <h2>Parts of an Ardunio Starter kit</h2> -->
@@ -317,10 +325,34 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
     </div>
   </div>
 </div>
+  <div class="container">
+  <button class="section-header"  onclick="toggleSection(this); document.getElementById('click3').play();">LED Button</button>
+  <div class="collapsible-content">
+    <div class="video-box">
+        <img src="images/light-button.jpg" type="video/mp4">
+    </div>
+    <div class="text-box">
+      <p>This was the first project we did using the Arduino. The goal was to turn an LED light on by pressing a button. It was a relatively simple circuit, but at first, I had trouble getting it to work because I didn’t fully understand how a breadboard functions or how power flows through it. The code for it was off Tinkercad.</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <button class="section-header" onclick="toggleSection(this); document.getElementById('click3').play();">POT LIGHT DIMMER</button>
+  <div class="collapsible-content">
+    <div class="video-box">
+        <img src="images/pot - Made with Clipchamp.gif">
+     </div>
+    <div class="text-box">
+      <p>We created a light dimmer using a potentiometer. The potentiometer had three legs, and it took a bit of trial and error to figure out how to connect it properly. Since this was one of the first projects we worked on in Week 7, it was a learning experience in understanding how different components are wired on the breadboard.
+
+Once we got it connected correctly, we were able to adjust the brightness of an LED by turning the potentiometer knob. The code for this project, like many of the others, was taken from Tinkercad. I</p>
+    </div>
+  </div>
+</div>
 
 
 <div class="container">
-  <button class="section-header" onclick="toggleSection(this)">Ultrasonic Buzzer</button>
+  <button class="section-header" onclick="toggleSection(this); document.getElementById('click3').play();">Ultrasonic Buzzer</button>
   <div class="collapsible-content">
     <div class="video-box">
        <video controls>
@@ -329,13 +361,13 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
       </video>
     </div>
     <div class="text-box">
-      <p>This is a sample paragraph alongside a video...</p>
+      <p>In this project, we built a simple system using an ultrasonic sensor that triggers a buzzer when it detects an object within a certain distance. We were able to adjust the detection range, which allowed us to control how close an object needed to be before the buzzer would activate. I was surprised by how far the sensor could detect objects. The code we used for this setup was sourced from Tinkercad, similar to the code we've used in previous projects</p>
     </div>
   </div>
 </div>
 
        <div class="container">
-  <button class="section-header" onclick="toggleSection(this)">Surprising Gaaris</button>
+  <button class="section-header" onclick="toggleSection(this); document.getElementById('click3').play();">Surprising Gaaris</button>
   <div class="collapsible-content">
     <div class="video-box">
         <video controls>
@@ -344,33 +376,24 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
       </video>
     </div>
     <div class="text-box">
-      <p>This is a sample paragraph alongside a video...</p>
+      <p>In this project, we built a simple touch-sensitive circuit using open wires and a buzzer. When we touched the exposed ends of the wires, the buzzer would activate. When we complete the circuit by touching the wires we allow a small electrical current to flow, which triggers the buzzer to make sound. To make it even more entertaining, we stuck the wires into different potatoes. When we tapped on the potatoes, it would play musical notes through the buzzer. This was my favorite project because it was such a silly and unexpected way to make a circuit interactive,</p>
       <img src="images/Copy of POT_LIGHT_DIMMER.png" alt="blueprint" class="popup-image" style="display:none;">
     </div>
   </div>
 </div>
-       <div class="container">
-  <button class="section-header" onclick="toggleSection(this)">POT LIGHT DIMMER</button>
-  <div class="collapsible-content">
-    <div class="video-box">
-        <img src="images/pot - Made with Clipchamp.gif">
-     </div>
-    <div class="text-box">
-      <p>This is a sample paragraph alongside a video...</p>
-    </div>
-  </div>
-</div>
+       
       <div class="container">
-  <button class="section-header" onclick="toggleSection(this)">10 LEDs controlled by Remote - Incomplete</button>
+  <button class="section-header" onclick="toggleSection(this); document.getElementById('click3').play();">10 LEDs controlled by Remote - Incomplete</button>
   <div class="collapsible-content">
     <div class="video-box">
         <img src="images/ultrasonic.gif" type="video/mp4">
     </div>
     <div class="text-box">
-      <p>This is a sample paragraph alongside a video...</p>
+      <p>We attemped to create a remote control LED circuit but due to an issue with the circuit, I think it had something to do with the ressitors, it didn't workout.</p>
     </div>
   </div>
 </div>
+ 
 
     </div>
   </div>
