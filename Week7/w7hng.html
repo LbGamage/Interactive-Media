@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+
+  @font-face {
+  font-family: 'DS Digital';
+  src: url('../Fonts/DS-DIGIB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+font-family: 'DS Digital';  overflow-x: hidden;
+    background-color: #9AA28D;
+    background-image: 
+      linear-gradient(to right, #A0A893 2px, transparent 1px),
+      linear-gradient(to bottom, #A0A893 2px, transparent 1px);
+    background-size: 20px 20px; /* Size of each square */
+  }
+
+  .gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+margin: 20px;
+}
+
+.progress-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+  
+.backStamp{
+    padding-right: 1%
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+  </style>
+</head>
+<body>
+     <div class="header">
+    <h1>Hunt N' Gather</h1>
+    <a href="w7home.html" class="backStamp"><h2>█ Return</h2></a>
+  </div>
+  <div class="gallery">
+    <div class="progress-img">
+      <a href="https://store.steampowered.com/app/753640/Outer_Wilds/"><img src="images/outer-wilds.jpg"></a>
+        <p>Outer Wilds features has 3D immersive environments, where the low-gravity mechanics make movement feel both challenging and engaging. It was developed on unity</p>
+    </div>
+    <div class="progress-img">
+      <a href="https://store.steampowered.com/app/1801110/BOKURA/"><img src="images/bokura.png"></a>
+      <p>Bokura's environment is  intriguing because each player experiences a different visual perspective of the same scene.</p>
+    </div>
+    <div class="progress-img">
+      <a href="https://store.steampowered.com/app/2198150/Tiny_Glade/"><img src="images/tinygalde.jpg"></a>
+      <p>Tiny Glade is a relaxing diorama builder where you freely doodle charming castles and cottages, with no goals or combat</p>
+    </div>
+    <div class="progress-img">
+      <a href="https://store.steampowered.com/app/1426210/It_Takes_Two/"><img src="images/ittakestwo.jpg"></a>
+      <p>It takes two has two players work on challanges together and the way they make mundane enviroments into adventures is really cool.</p>
+    </div>
+    <div class="progress-img">
+      <a href="https://alexander-kam.itch.io/octosumo"><img src="images/octosumo.png"></a>
+      <p>This was made on Godot in a gamejam I participated in and I found the enviroment and mechanics to be very interesting. It works best with controllers</p>
+    </div>
+  </div>
+</body>
+</html>

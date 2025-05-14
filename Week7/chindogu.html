@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+
+  @font-face {
+  font-family: 'DS Digital';
+  src: url('../Fonts/DS-DIGIB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+font-family: 'DS Digital';  overflow-x: hidden;
+    background-color: #9AA28D;
+    background-image: 
+      linear-gradient(to right, #A0A893 2px, transparent 1px),
+      linear-gradient(to bottom, #A0A893 2px, transparent 1px);
+    background-size: 20px 20px; /* Size of each square */
+  }
+.container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+    .video-box, .text-box {
+      flex: 1 1;
+    }
+
+.collapsible-content{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  justify-content: center;
+}
+
+.text-box{
+      /* background-color:aqua ; */
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+    }
+      .video-box video {
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+  
+.backStamp{
+    padding-right: 1%
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 700px) {
+  .collapsible-content {
+    flex-direction: column;
+  }
+}
+  
+
+  </style>
+</head>
+<body>
+    <div class="header">
+    <h1>Hunt N' Gather</h1>
+    <a href="w7home.html" class="backStamp"><h2>█ Return</h2></a>
+  </div>
+    <div class="container">
+    <div class="collapsible-content">
+    <div class="video-box">
+       <video controls>
+        <source src="images/ultrasonic - Made with Clipchamp (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-box">
+      <p>This is a sample paragraph alongside a video...</p>
+    </div>
+  </div>
+
+    <div class="collapsible-content">
+    <div class="video-box">
+       <video controls>
+        <source src="images/ultrasonic - Made with Clipchamp (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-box">
+      <p>This is a sample paragraph alongside a video...</p>
+    </div>
+  </div>
+        </div>
+</body>
+</html>
