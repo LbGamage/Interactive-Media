@@ -319,7 +319,7 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
   </div>
 </div>
 <div class="container">
-  <button class="section-header" onclick="toggleSection(this); document.getElementById('click3').play();">POT LIGHT DIMMER</button>
+  <button class="section-header" onclick="toggleSection(this); document.getElementById('click3').play();">Pot Light Dimmer</button>
   <div class="collapsible-content">
     <div class="video-box">
         <img src="images/pot - Made with Clipchamp.gif">
@@ -327,7 +327,7 @@ font-family: "Pixelify Sans", sans-serif;  font-weight: bold;
     <div class="text-box">
       <p>We created a light dimmer using a potentiometer. The potentiometer had three legs, and it took a bit of trial and error to figure out how to connect it properly. Since this was one of the first projects we worked on in Week 7, it was a learning experience in understanding how different components are wired on the breadboard.
 
-Once we got it connected correctly, we were able to adjust the brightness of an LED by turning the potentiometer knob. The code for this project, like many of the others, was taken from Tinkercad. I</p>
+Once we got it connected correctly, we were able to adjust the brightness of an LED by turning the potentiometer knob. The code for this project, like many of the others, was taken from Tinkercad. </p>
     </div>
   </div>
 </div>
@@ -381,20 +381,6 @@ Once we got it connected correctly, we were able to adjust the brightness of an 
   </div>
 
   <script>
- function toggleDropdown(img) {
-  const dropdown = img.nextElementSibling;
-  dropdown.classList.toggle('show');
-  // Close others
-  document.querySelectorAll('.dropdown-content').forEach(el => {
-    if (el !== dropdown) el.classList.remove('show');
-  });
-}
-
-window.addEventListener('click', function(e) {
-  if (!e.target.classList.contains('drophead')) {
-    document.querySelectorAll('.dropdown-content').forEach(el => el.classList.remove('show'));
-  }
-});
 
  function toggleImage() {
               const img = document.getElementById('popupImage');

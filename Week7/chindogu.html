@@ -21,7 +21,8 @@
 
   body {
     margin: 0;
-font-family: 'DS Digital';  overflow-x: hidden;
+font-family: 'pixelify sans'; 
+overflow-x: hidden;
     background-color: #9AA28D;
     background-image: 
       linear-gradient(to right, #A0A893 2px, transparent 1px),
@@ -35,6 +36,7 @@ font-family: 'DS Digital';  overflow-x: hidden;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    padding-top: 3%;
 }
     .video-box, .text-box {
       flex: 1 1;
@@ -65,6 +67,7 @@ font-family: 'DS Digital';  overflow-x: hidden;
     justify-content: space-between;
     align-items: center;
     padding: 2%;
+    font-family: 'DS Digital';
 }
   
 .backStamp{
@@ -75,6 +78,18 @@ font-family: 'DS Digital';  overflow-x: hidden;
 a{
     text-decoration: none;
     color: black;
+}
+.text-body {
+  border: 3px black solid;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); 
+  background-color: #A0A893;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content horizontally */
+  padding: 0% 2%;
+  width: 80%;
+  margin: 0 auto; /* Center align the element itself horizontally */
 }
 
 @media (max-width: 700px) {
@@ -88,10 +103,17 @@ a{
 </head>
 <body>
     <div class="header">
-    <h1>Hunt N' Gather</h1>
+    <h1>Chindogu</h1>
     <div onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w7home.html'; }, 200);" class="backStamp"><h2>█ Return</h2></div>
      <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
   </div>
+
+  <div class="text-body">
+    <h2>What is Chindogu?</h2>
+    <p>Chindogu is a Japanese term that refers to a unique and humorous concept of "unuseless" inventions. These are gadgets or devices that are designed to solve a problem, but are so impractical or absurd that they become more of a joke than a useful tool. The term combines the words "chin" (meaning "novelty") and "dogu" (meaning "tool"). Chindogu often highlights the creativity and ingenuity of inventors while also poking fun at the sometimes ridiculous nature of modern technology.</p>
+
+  </div>
+
     <div class="container">
     <div class="collapsible-content">
     <div class="video-box">
