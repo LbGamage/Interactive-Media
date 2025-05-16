@@ -75,16 +75,28 @@ a{
     color: black;
 }
 
+h1{
+  font-size: 3em;
+}
+
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr;
+    }
+
+    .header{
+      text-wrap: nowrap;
+    }
+
+    h1{
+      font-size: 2em;
     }
 }
   </style>
 </head>
 <body>
      <div class="header">
-    <h1 style="font-size: 3em;">Hunt N' Gather</h1>
+    <h1>Hunt N' Gather</h1>
     <div onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w7home.html'; }, 200);" class="backStamp"><h2>█ Return</h2></div>
      <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
   </div>
@@ -107,7 +119,7 @@ a{
       <p>Maelstrom<br>Maelstrom is a real-time sound installation that transforms the constant stream of user-uploaded online audio into an immersive sonic experience. Drawing on thousands of audio fragments, it organises them by tonal qualities to create a dynamic, ever-changing instrument. It creates a soundscape that reflects the overwhelming flow of digital information in contemporary life.</p>
     </div>
      <div class="progress-img">
-      <a href="https://alexander-kam.itch.io/octosumo"><img src="images/telegarden-8x6-72dpi.jpg"></a>
+      <a href="https://goldberg.berkeley.edu/garden/Ars/"><img src="images/telegarden-8x6-72dpi.jpg"></a>
       <p>The Telegarden <br> This is an art installation that allowed web users to view and interact with a remote garden filled with living plants. Anyone online could plant, water, and monitor the progress of seedlings via the tender movements of an industrial robot arm.</p>
     </div>
      <div class="progress-img">
