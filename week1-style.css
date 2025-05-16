@@ -114,3 +114,28 @@ font-style: normal;
        color: black;
    }
   }
+
+  @media (max-width: 768px) {
+    .www{
+        display: flex;
+        flex-direction: column;
+    }
+   .huntweek1{
+       flex-direction: column;
+       align-items: center;
+   }
+   .gesture-box{
+         flex-direction: column;
+         align-items: center;
+   }
+   .hng-container{
+       width: 100%;
+   }
+   .tag-images{
+       width: 100%;
+   }
+   .watch-container{
+       flex-direction: column;
+       align-items: center;
+   }
+  }
