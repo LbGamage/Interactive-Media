@@ -252,8 +252,7 @@ color: rgb(255, 255, 255);
     </style>
 </head>
 <body>
-
-    <div class="head">
+<div class="head" style="position: relative; z-index: 1;">
   <header>
     <h1>Week 9</h1>
   </header>
@@ -261,40 +260,35 @@ color: rgb(255, 255, 255);
   <div class="twocNav">
 
     <div class="dropoption">
-  <div onclick="window.location.href='../index.html'">
-  <img  class="drophead full" src="images/bighomewhite.png">
-  <img src="images/smolhome.png" class="drophead smol">
-  </div>
-  </div>
+      <div onclick="document.getElementById('click2').play(); setTimeout(() => { window.location.href='../index.html'; }, 200)">
+        <img class="drophead full" src="images/bighomewhite.png">
+        <img src="images/smolhome.png" class="drophead smol">
+      </div>
+    </div>
 
-  <div class="dropoption">
-  <div onclick="window.location.href='../Week7/w7home.html'"> 
-  <img  class="drophead full" src="images/w7white.png">
-  <img src="images/w7blacksmolopt.png" class="drophead smol">
+    <div class="dropoption">
+      <div  onclick="document.getElementById('click2').play(); setTimeout(() => { window.location.href='../Week7/w7home.html'; }, 200)">
+        <img class="drophead full" src="images/w7white.png">
+        <img src="images/w7blacksmolopt.png" class="drophead smol">
+      </div>
+    </div>
+    <audio id="click2" src="images/mixkit-sci-fi-confirmation-914.mp3" preload="auto"></audio>
   </div>
-  </div>
-  
-  </div>
+</div>
 
-  </div>
-  
-  </div>
+<img src="images/divider.svg" class="divider1">
 
-   <img src="images/divider.svg" class="divider1">
-     
-     
-     <div class="sub-pages">
-     <a class="divider1" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='w9prog.html'; }, 200)"><img src="images/prog.png"  class="fakebuttons" ></a>
-     <a class="divider2" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='finalproj.html'; }, 200)"><img src="images/fin.png"  class="fakebuttons"></a>
- 
-     </div>
-    <img src="images/divider2.svg" class="divider2">
+<div class="sub-pages">
+  <a class="divider1" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='w9prog.html'; }, 200)"><img src="images/prog.png" class="fakebuttons"></a>
+  <a class="divider2" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='finalproj.html'; }, 200)"><img src="images/fin.png" class="fakebuttons"></a>
+</div>
+<img src="images/divider2.svg" class="divider2">
 
-  <div class="container1">
+<div class="container1">
 
   <div class="reflec" style="position: relative; text-align: center;">
-    <img class="text-border full-bod" src="images/textbox2.png" >
-    <img class="text-border smol-bod" src="images/textboxsmol.png" >
+    <img class="text-border full-bod" src="images/textbox2.png">
+    <img class="text-border smol-bod" src="images/textboxsmol.png">
     <p class="ref-info">This week, we explored physical computing in more depth, focusing on how to connect Arduino components to p5.js. We experimented with using Arduino inputs to control elements in p5.js sketches, such as changing colours and positions, using a potentiometer and the 'serial.js' library. I'd love to explore it more. We also reviewed the Chindogu sketches everyone created, based on last week’s discussions. My own sketches are included on the Week 7–8 page, as they felt more relevant since thats when we first talked about Chindogu. In the latter part of the session, we discussed and received feedback on our final project ideas through individual consultations. </p>
   </div>
 
@@ -307,21 +301,26 @@ color: rgb(255, 255, 255);
       Your browser does not support the video tag.
     </video>
   </div>
-  </div>
-    
-  <div class="container2">
-  
-   
-   
+</div>
 
-     <div class="Hunt n' gather">
-      <h1>Hunt n' gather</h1>
-      
+<div class="container2">
 
-      <div class="gallery">
-    <div class="progress-img">
-      <a href="http://braintoneart.com/"><img src="images/braintone.jpg"></a>
+  <div class="Hunt n' gather">
+    <h1>Hunt n' gather</h1>
+
+    <div class="gallery">
+      <div class="progress-img">
+        <a href="http://braintoneart.com/"><img src="images/braintone.jpg"></a>
         <p>Braintone Art<br><br> an interactive system that turns brainwaves into digital artwork using EEG headsets. As users focus or relax, their mental states shape abstract visuals in real time, creating a personalised piece of art.</p>
+      </div>
+
+      <div class="progress-img">
+        <a href="https://hugease.com.au/products/hug-duo"><img src="images/hugtoy.png"></a>
+        <p>Hug Ease <br><br> Soft toys that simulate gentle breathing to create a calming effect and help in reducin anxiety and aide in sleeping. I know it's aimed towards children but as someone who struggled to sleep, I feel like this would be a game changer.</p>
+      </div>
+      <div class="progress-img">
+        <a href=https://www.freethink.com/consumer-tech/how-one-streamer-plays-video-games-using-only-her-mind#:~:text=During%20her%20streams%2C%20Perri%20plays,be%20translated%20into%20digital%20commands.><img src="images/Frame 32.png"></a>
+        <p>Play Video Games with your mind<br><br> Perrikaryal is a twitch streamer that uses an EEG headset to playview games. When I first came across
     </div>
   
     <div class="progress-img">
@@ -332,12 +331,25 @@ color: rgb(255, 255, 255);
       <a href=https://www.freethink.com/consumer-tech/how-one-streamer-plays-video-games-using-only-her-mind#:~:text=During%20her%20streams%2C%20Perri%20plays,be%20translated%20into%20digital%20commands.><img src="images/Frame 32.png"></a>
       <p>Play Video Games with your mind<br><br> Perrikaryal is a twitch streamer that uses an EEG headset to playview games. When I first came across her on TikTok I was so schocked at what she was going and it is so cool. The possibilities are endless.  </p>
     </div>
+
+  </div>
+     </div>
+
+
+     <div class="Hunt n' gather">
+    <h1>Experimentation</h1>
+    <div class="progress-img">
+          <iframe class="glitchbg" src="index.html" frameborder="0" style="width: 100%;"></iframe>
+      <p>P5 GLicth sketch<br><br> Experimenting with p5js glicthing affects. Original code by by nikiafenix on p5js.org</p>
+    </div>
    
+
+
   </div>
      </div>
   </div>
 <audio id="click1" src="images/mixkit-sci-fi-click-900.mp3" preload="auto"></audio>
 
-  <p style="font-size: 0.4em;">≛ please gods I've seen too many sunrises from the study room this month, lemme sleep</p>
+  <p style="font-size: 0.5em;">≛ please gods I've seen too many sunrises from the study room this month, lemme sleep</p>
 </body>
 </html>
