@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <style>
-
-      body{
-        background-color: black;
-        font-family: "Orbitron", sans-serif;
-        color: white;
-        padding-left: 2%;
-        padding-right: 2%;
-      }
-      .head {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  a{
-    text-decoration: none;
-    color: white;
-}
-
-
-  .gallery {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 20px;
-margin: 20px;
-}
-
-.progress-img {
-  border: 2px solid #000000;
-  padding: 10px;
-
-}
-
-.progress-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
- 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-  
-.backStamp{
-    padding-right: 1%;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-}
-
-img{
-    width: 100%;
-}
-  
-
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      font-family: "Orbitron", sans-serif;
+      color: white;
+      padding-left: 2%;
+      padding-right: 2%;
     }
-}
-</style>
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin: 20px;
+    }
+
+    .progress-img {
+      border: 2px solid #000000;
+      padding: 10px;
+
+    }
+
+    .progress-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .backStamp {
+      padding-right: 1%;
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+    }
+
+    img {
+      width: 100%;
+    }
+
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="header">
+  <div class="header">
     <h1>My Final Project Idea</h1>
-    <div><a href="w9home.html"><h2>█ Return</h2></a></div>
-     <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
+    <div><a onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w9home.html'; }, 200);" class="backStamp">
+        <h2>█ Return</h2>
+      </a></div>
+    <audio id="click2" src="images/mixkit-sci-fi-click-900.mp3" preload="auto"></audio>
   </div>
-   <img src="images/billdivider.svg">
+  <img src="images/billdivider.svg">
 
   <div class="explain-proj">
-     
-  <p>I want to create a horror story website, something immersive and narrative-driven, inspired by those fake blogs or ARG-style experiences that feel like you’ve stumbled onto something you shouldn’t have. It might unfold as a story or maybe even a puzzle (I won’t spoil the specifics), guiding the user through a journey where they're slowly pulled deeper into the mystery.</p>
 
-  <p>The idea began as an interactive haunted website with a physical component, inspired by the Dead Internet Theory. The physical aspect would be an Ouija board that appears to “speak” to the user, creating a bridge between the digital and physical worlds. As I researched further, the concept began to evolve. I started drawing inspiration from things I had forgotten—like creepypastas and other forms of internet horror that were a big part of my childhood. That sense of eerie nostalgia really resonated with me.</p>
+    <p>I want to create a horror story website, something immersive and narrative-driven, inspired by those fake blogs
+      or ARG-style experiences that feel like you’ve stumbled onto something you shouldn’t have. It might unfold as a
+      story or maybe even a puzzle (I won’t spoil the specifics), guiding the user through a journey where they're
+      slowly pulled deeper into the mystery.</p>
 
-  <p>The idea ties back to my main workbook. Initially, the pinboard (homepage) was meant to represent me, but when I shared it with friends, they started seeing themselves in it too and matilda's comment about how the objects represent an everyday girl all kinda inspired me. It made me think back to my teenage years and how ny friends and I spent our time and how many other girls I know had an era where they were really into horror or occult or something supernatural.There was something magical and eerie about that era. So now, I want to make something that captures that feeling. A site that tells a story those teenage girls (us back then) would have absolutely lost their minds over. </p>
-</div>
+    <p>The idea began as an interactive haunted website with a physical component, inspired by the Dead Internet Theory.
+      The physical aspect would be an Ouija board that appears to “speak” to the user, creating a bridge between the
+      digital and physical worlds. As I researched further, the concept began to evolve. I started drawing inspiration
+      from things I had forgotten—like creepypastas and other forms of internet horror that were a big part of my
+      childhood. That sense of eerie nostalgia really resonated with me.</p>
 
-<h2>Some Sketches and Inspiration</h2>
+    <p>The idea ties back to my main workbook. Initially, the pinboard (homepage) was meant to represent me, but when I
+      shared it with friends, they started seeing themselves in it too and matilda's comment about how the objects
+      represent an everyday girl all kinda inspired me. It made me think back to my teenage years and how ny friends and
+      I spent our time and how many other girls I know had an era where they were really into horror or occult or
+      something supernatural.There was something magical and eerie about that era. So now, I want to make something that
+      captures that feeling. A site that tells a story those teenage girls (us back then) would have absolutely lost
+      their minds over. </p>
+  </div>
+
+  <h2>Some Sketches and Inspiration</h2>
 
 
-    <div class="gallery">
+  <div class="gallery">
     <div class="progress-img">
       <img src="images/Screenshot 2025-05-15 005806.png">
     </div>
     <div class="progress-img">
-    <img src="images/Screenshot 2025-05-15 011545.png">
+      <img src="images/Screenshot 2025-05-15 011545.png">
 
     </div>
     <div class="progress-img">
-    <img src="images/0c53da49ac35b4f730731079a48209c4.jpg">
-   
+      <img src="images/0c53da49ac35b4f730731079a48209c4.jpg">
+
     </div>
   </div>
 </body>
+
 </html>

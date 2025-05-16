@@ -1,355 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <style>
-
-      body{
-        background-color: rgb(0, 0, 0);
-        font-family: "Orbitron", sans-serif;
-        color: #e756b7;
-        overflow-x: hidden;
-      }
-      .head {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  header {
-    width: 50%;
-    padding-left: 5%;
-    font-size: 1.5rem;
-  }
-
-  .twocNav {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    /* background-color: aqua; */
-    align-items: center;
-    padding-right: 2%;
-  }
-
-  img{
-    width: 100%;
-  }
-
-  .dropoption{
-    cursor: pointer;
-  }
-
-  .full-bod{
-    /* background-color: red; */
-    width: 550px;
-  }
-
-  .smol, .smol-bod{
-    display: none;
-  }
-
-  .reflec{
-    position: relative;
-    width: 50%;
-    padding-top: 2%;
-    padding-right: 1%;
-    /* background-color: blue; */
-  }
-
-  .ref-info{
-    position: absolute; 
-    top: 40%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    margin: 0; 
-    color: rgb(255, 255, 255);
-    /* background-color: rgba(0, 255, 255, 0.451); */
-    width: 90%;
-      max-width: 450px;
-      min-width: 400px;
-  }
-
-  .project{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    width: 50%;
-    /* background-color: blueviolet; */
-  }
-
-
-
-  .container1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* background-color: blueviolet; */
-    padding: 2%;
-  }
-
-  a{
-    text-decoration: none;
-    color: black;
-}
-
-
-  .gallery {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 20px;
-margin: 20px;
-color: rgb(255, 255, 255);
-      }
-
-
-.progress-img {
-  border: 4px solid #5AFFF1;
-  padding: 10px;
-
-}
-
-.progress-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.sub-pages{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  position: relative;
-  left: 20%;
-  gap: 1rem;
-  padding-bottom: 1%;
-  /* background-color: antiquewhite; */
-}
-
-
-.divider1{
-    animation: slideIn 2s ease-out forwards;
-    opacity: 0; 
-    transform: translateX(-100%); /* Start off-screen to the left */
-}
-
-.divider2{
-    animation: slideIn 1s ease-out forwards;
-    opacity: 0; 
-    transform: translateX(100%); /* Start off-screen to the right */
-}
-
-@keyframes slideIn {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-.fakebuttons{
-  width: 50%;
-  cursor: pointer;
-    transition: transform 0.2s ease;
-    transform-origin: center center;
-  /* background-color: aqua; */
-}
- .fakebuttons:hover {
-    transform: scale(1.2); 
-}
-
-
-
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 1200px) {
-
-  .twocNav {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: baseline;
-    padding-right: 0px;
-    /* background-color: yellow; */
-    margin: 0;
-    padding: 2%;
-    width: 20%;
-  }
-
-   
-  .reflec {
-    position: relative; 
-    margin: 0 auto; 
-    width: 100%;
-  }
-
-
-
-    .smol-bod{
-      max-width: 500px;
-       position: relative; 
-    margin: 0 auto; 
-    }
-
-
-   
-     .container1 {
-        flex-direction: column;
-        /* background-color: blueviolet; */
-      }
-
-      .project{
-        width: 100%;
-        /* background-color: blueviolet; */
-      }
-.ref-info{
-    
-    top: 50%;}
-
-
-
-
-      /* ----------test----- */
-
-      
-}
-
-@media (max-width: 550px) {
-.sub-pages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    left: 25%;
-    /* background-color: blue; */
-  }
-    
-  .smol, .smol-bod{
-    display: block;}
-
-    .full, .full-bod{
-    display: none;}
-
-    .smol-bod{
-      max-width: 480px;
-       position: relative; 
-    margin: 0 auto; 
-    }
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="w9home-style.css">
 </head>
+
 <body>
-<div class="head" style="position: relative; z-index: 1;">
-  <header>
-    <h1>Week 9</h1>
-  </header>
+  <div class="head" style="position: relative; z-index: 1;">
+    <header>
+      <h1>Week 9</h1>
+    </header>
 
-  <div class="twocNav">
+    <div class="twocNav">
 
-    <div class="dropoption">
-      <div onclick="document.getElementById('click2').play(); setTimeout(() => { window.location.href='../index.html'; }, 200)">
-        <img class="drophead full" src="images/bighomewhite.png">
-        <img src="images/smolhome.png" class="drophead smol">
+      <div class="dropoption">
+        <div
+          onclick="document.getElementById('click2').play(); setTimeout(() => { window.location.href='../index.html'; }, 200)">
+          <img class="drophead full" src="images/bighomewhite.png">
+          <img src="images/smolhome.png" class="drophead smol">
+        </div>
+      </div>
+
+      <div class="dropoption">
+        <div
+          onclick="document.getElementById('click2').play(); setTimeout(() => { window.location.href='../Week7/w7home.html'; }, 200)">
+          <img class="drophead full" src="images/w7white.png">
+          <img src="images/w7blacksmolopt.png" class="drophead smol">
+        </div>
+      </div>
+      <audio id="click2" src="images/mixkit-sci-fi-confirmation-914.mp3" preload="auto"></audio>
+    </div>
+  </div>
+
+  <img src="images/divider.svg" class="divider1">
+
+  <div class="sub-pages">
+    <a class="divider1"
+      onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='w9prog.html'; }, 200)"><img
+        src="images/prog.png" class="fakebuttons"></a>
+    <a class="divider2"
+      onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='finalproj.html'; }, 200)"><img
+        src="images/fin.png" class="fakebuttons"></a>
+  </div>
+  <img src="images/divider2.svg" class="divider2">
+
+  <div class="container1">
+
+    <div class="reflec" style="position: relative; text-align: center;">
+      <img class="text-border full-bod" src="images/textbox2.png">
+      <img class="text-border smol-bod" src="images/textboxsmol.png">
+      <p class="ref-info">This week, we explored physical computing in more depth, focusing on how to connect Arduino
+        components to p5.js. We experimented with using Arduino inputs to control elements in p5.js sketches, such as
+        changing colours and positions, using a potentiometer and the 'serial.js' library. I'd love to explore it more.
+        We also reviewed the Chindogu sketches everyone created, based on last week’s discussions. My own sketches are
+        included on the Week 7–8 page, as they felt more relevant since thats when we first talked about Chindogu. In
+        the latter part of the session, we discussed and received feedback on our final project ideas through individual
+        consultations. </p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">
+        <h1>Meshing with p5 and arduino</h1>
+      </div>
+      <video width="100%" height="auto" controls>
+        <source src="images/20250508_104904.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="container2">
+
+    <div class="Hunt n' gather">
+      <h1>Hunt n' gather</h1>
+
+      <div class="gallery">
+        <div class="progress-img">
+          <a href="http://braintoneart.com/"><img src="images/braintone.jpg"></a>
+          <p>Braintone Art<br><br> an interactive system that turns brainwaves into digital artwork using EEG headsets.
+            As users focus or relax, their mental states shape abstract visuals in real time, creating a personalised
+            piece of art.</p>
+        </div>
+
+        <div class="progress-img">
+          <a href="https://hugease.com.au/products/hug-duo"><img src="images/hugtoy.png"></a>
+          <p>Hug Ease <br><br> Soft toys that simulate gentle breathing to create a calming effect and help in reducin
+            anxiety and aide in sleeping. I know it's aimed towards children but as someone who struggled to sleep, I
+            feel like this would be a game changer.</p>
+        </div>
+        <div class="progress-img">
+          <a
+            href=https://www.freethink.com/consumer-tech/how-one-streamer-plays-video-games-using-only-her-mind#:~:text=During%20her%20streams%2C%20Perri%20plays,be%20translated%20into%20digital%20commands.><img
+              src="images/Frame 32.png"></a>
+          <p>Play Video Games with your mind<br><br> Perrikaryal is a twitch streamer that uses an EEG headset to
+            playview games. When I first came across her on TikTok I was so schocked at what she was going and it is so
+            cool. The possibilities are endless. </p>
+        </div>
+
       </div>
     </div>
 
-    <div class="dropoption">
-      <div  onclick="document.getElementById('click2').play(); setTimeout(() => { window.location.href='../Week7/w7home.html'; }, 200)">
-        <img class="drophead full" src="images/w7white.png">
-        <img src="images/w7blacksmolopt.png" class="drophead smol">
-      </div>
-    </div>
-    <audio id="click2" src="images/mixkit-sci-fi-confirmation-914.mp3" preload="auto"></audio>
-  </div>
-</div>
 
-<img src="images/divider.svg" class="divider1">
-
-<div class="sub-pages">
-  <a class="divider1" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='w9prog.html'; }, 200)"><img src="images/prog.png" class="fakebuttons"></a>
-  <a class="divider2" onclick="document.getElementById('click1').play(); setTimeout(() => { window.location.href='finalproj.html'; }, 200)"><img src="images/fin.png" class="fakebuttons"></a>
-</div>
-<img src="images/divider2.svg" class="divider2">
-
-<div class="container1">
-
-  <div class="reflec" style="position: relative; text-align: center;">
-    <img class="text-border full-bod" src="images/textbox2.png">
-    <img class="text-border smol-bod" src="images/textboxsmol.png">
-    <p class="ref-info">This week, we explored physical computing in more depth, focusing on how to connect Arduino components to p5.js. We experimented with using Arduino inputs to control elements in p5.js sketches, such as changing colours and positions, using a potentiometer and the 'serial.js' library. I'd love to explore it more. We also reviewed the Chindogu sketches everyone created, based on last week’s discussions. My own sketches are included on the Week 7–8 page, as they felt more relevant since thats when we first talked about Chindogu. In the latter part of the session, we discussed and received feedback on our final project ideas through individual consultations. </p>
-  </div>
-
-  <div class="project">
-    <div class="project-title">
-      <h1>Meshing with p5 and arduino</h1>
-    </div>
-    <video width="100%" height="auto" controls>
-      <source src="images/20250508_104904.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
-
-<div class="container2">
-
-  <div class="Hunt n' gather">
-    <h1>Hunt n' gather</h1>
-
-    <div class="gallery">
+    <div class="Hunt n' gather">
+      <h1>Experimentation</h1>
       <div class="progress-img">
-        <a href="http://braintoneart.com/"><img src="images/braintone.jpg"></a>
-        <p>Braintone Art<br><br> an interactive system that turns brainwaves into digital artwork using EEG headsets. As users focus or relax, their mental states shape abstract visuals in real time, creating a personalised piece of art.</p>
+        <iframe class="glitchbg" src="index.html" frameborder="0" style="width: 100%;"></iframe>
+        <p>P5 Glitch sketch<br><br> Experimenting with p5.js glitching effects. Original code by Nikiafenix on p5js.org.
+          I found it while looking for inspiration for my final project.</p>
       </div>
 
-      <div class="progress-img">
-        <a href="https://hugease.com.au/products/hug-duo"><img src="images/hugtoy.png"></a>
-        <p>Hug Ease <br><br> Soft toys that simulate gentle breathing to create a calming effect and help in reducin anxiety and aide in sleeping. I know it's aimed towards children but as someone who struggled to sleep, I feel like this would be a game changer.</p>
-      </div>
-      <div class="progress-img">
-        <a href=https://www.freethink.com/consumer-tech/how-one-streamer-plays-video-games-using-only-her-mind#:~:text=During%20her%20streams%2C%20Perri%20plays,be%20translated%20into%20digital%20commands.><img src="images/Frame 32.png"></a>
-        <p>Play Video Games with your mind<br><br> Perrikaryal is a twitch streamer that uses an EEG headset to playview games. When I first came across
-    </div>
-  
-    <div class="progress-img">
-      <a href="https://hugease.com.au/products/hug-duo"><img src="images/hugtoy.png"></a>
-      <p>Hug Ease <br><br> Soft toys that simulate gentle breathing to create a calming effect and help in reducin anxiety and aide in sleeping. I know it's aimed towards children but as someone who struggled to sleep, I feel like this would be a game changer.</p>
-    </div>
-    <div class="progress-img">
-      <a href=https://www.freethink.com/consumer-tech/how-one-streamer-plays-video-games-using-only-her-mind#:~:text=During%20her%20streams%2C%20Perri%20plays,be%20translated%20into%20digital%20commands.><img src="images/Frame 32.png"></a>
-      <p>Play Video Games with your mind<br><br> Perrikaryal is a twitch streamer that uses an EEG headset to playview games. When I first came across her on TikTok I was so schocked at what she was going and it is so cool. The possibilities are endless.  </p>
-    </div>
 
+
+    </div>
   </div>
-     </div>
-
-
-     <div class="Hunt n' gather">
-    <h1>Experimentation</h1>
-    <div class="progress-img">
-          <iframe class="glitchbg" src="index.html" frameborder="0" style="width: 100%;"></iframe>
-      <p>P5 GLicth sketch<br><br> Experimenting with p5js glicthing affects. Original code by by nikiafenix on p5js.org</p>
-    </div>
-   
-
-
   </div>
-     </div>
-  </div>
-<audio id="click1" src="images/mixkit-sci-fi-click-900.mp3" preload="auto"></audio>
+  <audio id="click1" src="images/mixkit-sci-fi-click-900.mp3" preload="auto"></audio>
 
   <p style="font-size: 0.5em;">≛ please gods I've seen too many sunrises from the study room this month, lemme sleep</p>
 </body>
+
 </html>

@@ -1,201 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-<style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: "DS Digital";
+            src: url("../Fonts/DS-DIGIB.TTF") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
 
-  @font-face {
-  font-family: 'DS Digital';
-  src: url('../Fonts/DS-DIGIB.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-  * {
-    box-sizing: border-box;
-  }
+        * {
+            box-sizing: border-box;
+        }
 
-  body {
-    margin: 0;
-        font-family: 'pixelify sans', sans-serif;
-  overflow-x: hidden;
-    background-color: #9AA28D;
-    background-image: 
-      linear-gradient(to right, #A0A893 2px, transparent 1px),
-      linear-gradient(to bottom, #A0A893 2px, transparent 1px);
-    background-size: 20px 20px; /* Size of each square */
-  }
+        body {
+            margin: 0;
+            font-family: "pixelify sans", sans-serif;
+            overflow-x: hidden;
+            background-color: #9aa28d;
+            background-image: linear-gradient(to right,
+                    #a0a893 2px,
+                    transparent 1px),
+                linear-gradient(to bottom, #a0a893 2px, transparent 1px);
+            background-size: 20px 20px;
+            /* Size of each square */
+        }
 
-.text-body {
-    border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); 
-    background-color: #A0A893;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
+        .text-body {
+            border: 3px black solid;
+            border-radius: 5px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            background-color: #a0a893;
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+        }
 
-}
+        .text-body {
+            display: none;
+        }
 
-.text-body{
-    display: none;
-}
-
-   .back{
-           position: absolute;
+        .back {
+            position: absolute;
             bottom: -30px;
             right: 5px;
-            transform: translate(50%, 50%); /* Pushes it half out to the right and down */
+            transform: translate(50%, 50%);
+            /* Pushes it half out to the right and down */
             width: clamp(150px, 20vw, 250px);
             height: auto;
             box-sizing: border-box;
             overflow: hidden;
-
         }
 
-    .reflec-text {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: rgba(0, 0, 0, 0.657);
-        width: 80%;
-    }
-
-    .week{
-        display: flex;
-        /* align-items: center; */
-        gap: 7%;
-    }
-
-    .w7ref, .w8ref{
-        cursor: pointer;
-        /* background-color: yellow; */
-        white-space: nowrap;
-        
-    }
-
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* background-color: green; */
-    }
-
-    .return{
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.357);
-}
-
-.return:hover{
-    color: black;
-}
-
-    p{
-          font-size: 1.3em;
-    }
-
-    a{
-        text-decoration: none;
-        color: black;
-    }
-
-     @media (max-width: 1000px) {
-        .week{
-        flex-direction: column;
+        .reflec-text {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(0, 0, 0, 0.657);
+            width: 80%;
         }
 
-        .w7ref, .w8ref{
-            font-size: 1.5em;
-            padding: 0;
-            margin: 0;
+        .week {
+            display: flex;
+            /* align-items: center; */
+            gap: 7%;
         }
 
-         p{
-          font-size: 1em;
-    }
-          /* .back {
+        .w7ref,
+        .w8ref {
+            cursor: pointer;
+            /* background-color: yellow; */
+            white-space: nowrap;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: green; */
+        }
+
+        .return {
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.357);
+        }
+
+        .return:hover {
+            color: black;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media (max-width: 1000px) {
+            .week {
+                flex-direction: column;
+            }
+
+            .w7ref,
+            .w8ref {
+                font-size: 1.5em;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            /* .back {
         width: 15vw;
         bottom: -15%;
         right: 0%;
     } */
-}
-
-     
-
-
-  </style>
+        }
+    </style>
 </head>
-<body>
-   
 
+<body>
     <div class="reflec-text">
         <div class="nav">
-    <div class="week">
-        <h1 class="w7ref" style="color: rgba(0, 0, 0, 1);" onclick="openFolder('w7reftext')">Week 7 Reflection   </h1>
-        <h1 class="w8ref" style="color: rgba(0, 0, 0, 0.5);" onclick="openFolder('w8reftext')">Week 8 Reflection</h1> 
+            <div class="week">
+                <h1 class="w7ref" style="color: rgba(0, 0, 0, 1)" onclick="event.preventDefault(); document.getElementById('click1').play();openFolder('w7reftext')">
+                    Week 7 Reflection
+                </h1>
+                <h1 class="w8ref" style="color: rgba(0, 0, 0, 0.5)" onclick="event.preventDefault(); document.getElementById('click1').play();openFolder('w8reftext')">
+                    Week 8 Reflection
+                </h1>
+            </div>
+            <div class="return">
+                <div onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w7home.html'; }, 200);"
+                    class="backStamp">
+                    <h2>█ Return</h2>
+                </div>
+                <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
+                <audio id="click1" src="images/22-101soundboards.mp3" preload="auto"></audio>
+
+            </div>
+        </div>
+        <div class="body-refstuff">
+            <div class="text-body" id="w7reftext">
+                <p>
+                    In Week 7, we began learning about physical computing. I was a bit
+                    nervous at first because it had been a long time since I’d done
+                    anything with circuits. The last time I used a resistor was back in
+                    Grade 10 when I was 15, so it felt like I was starting from scratch.
+                    On top of that, I had never used a breadboard before, which made the
+                    first few projects a bit confusing. <br /><br />At first, figuring
+                    out how to make the circuits work took some trial and error. There
+                    were a lot of wires, and it was sometimes hard to keep track of
+                    everything. But once I got the hang of it, it became easier.
+                    <br /><br />
+                    We also got to see examples of physical computing projects displayed
+                    in the Telstra space, which was really inspiring. I especially liked
+                    the “Moth to the Flame” installation, where a moth figure moved
+                    toward a lamp that lit up. Being in the Telstra space itself was
+                    exciting, it’s such a cool environment, and I’d never had a class
+                    there before.
+                </p>
+            </div>
+            <div class="text-body" id="w8reftext">
+                <p>
+                    In Week 8, which took place after the mid-semester break, we
+                    continued learning the basics of physical computing using Arduino.
+                    Week 8 felt so much like a continuation of Week 7 that, in my mind,
+                    they genuinely merged into one long class. That's why they share the
+                    space and aesthetic in my workbook. <br /><br />
+                    We built more interactive circuits this week, including the
+                    Surprising Gaaris project. I especially enjoyed the potato music. It
+                    was silly in the best way, and it made learning about sensors and
+                    conductivity more engaging and memorable.<br /><br />
+                    Karen showed us this really cool project of circuits sewn onto
+                    fabric using conductive thread, which I found to be really neat. I'd
+                    never thought about using fabric as a base for a circuit till then.
+                </p>
+            </div>
+        </div>
+        <div class="back">
+            <img class="topimg" src="images/40cf6f_12ce3ee2d64f4ee8acf44da30cc6d6a9~mv2.gif" style="width: 100%" />
+        </div>
     </div>
-     <div class="return">
-      <div onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w7home.html'; }, 200);" class="backStamp"><h2>█ Return</h2></div>
-     <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
-    </div>
-    </div>
-    <div class="body-refstuff">
-    <div class="text-body" id="w7reftext">
-        <p>In Week 7, we began learning about physical computing. I was a bit nervous at first because it had been a long time since I’d done anything with circuits. The last time I used a resistor was back in Grade 10 when I was 15, so it felt like I was starting from scratch. On top of that, I had never used a breadboard before, which made the first few projects a bit confusing. <br><br>At first, figuring out how to make the circuits work took some trial and error. There were a lot of wires, and it was sometimes hard to keep track of everything. But once I got the hang of it, it became easier. <br><br> We also got to see examples of physical computing projects displayed in the Telstra space, which was really inspiring. I especially liked the “Moth to the Flame” installation, where a moth figure moved toward a lamp that lit up. Being in the Telstra space itself was exciting, it’s such a cool environment, and I’d never had a class there before. </p>
 
-    </div>
-    <div class="text-body" id="w8reftext">
-        <p>In Week 8, which took place after the mid-semester break, we continued learning the basics of physical computing using Arduino. Week 8 felt so much like a continuation of Week 7 that, in my mind, they genuinely merged into one long class. Thats why they share the space and aestetic in my workbook. <br><br> We built more interactive circuits this week, including the Surprising Gaaris project. I especially enjoyed the potato music. It was silly in the best way, and it made learning about sensors and conductivity more engaging and memorable.<br><br>
-        Karen showed us this really cool project of circuit sewen onto fabric using conductive thread why I found to be really neat, I'd never thought about using fabric as a base for a ciruit till then</p>
+    <!-- Used copilot to help in building the open folder function based on the one I used in the Week 3 webpage-->
 
-    </div>
-    </div>
-    <div class="back">
-        <img  class="topimg" src="images/40cf6f_12ce3ee2d64f4ee8acf44da30cc6d6a9~mv2.gif" style=" width: 100%;">
-    </div>
-    </div>
+    <script>
+        function openFolder(folderId) {
+            // Get tab headers
+            const w7ref = document.querySelector(".w7ref");
+            const w8ref = document.querySelector(".w8ref");
 
-    
+            // Get content sections
+            const w7text = document.getElementById("w7reftext");
+            const w8text = document.getElementById("w8reftext");
 
-      <script>
-       function openFolder(folderId) {
-        // Get tab headers
-        const w7ref = document.querySelector('.w7ref');
-        const w8ref = document.querySelector('.w8ref');
+            // Hide all text bodies
+            w7text.style.display = "none";
+            w8text.style.display = "none";
 
-        // Get content sections
-        const w7text = document.getElementById('w7reftext');
-        const w8text = document.getElementById('w8reftext');
+            // Reset tab header styles
+            w7ref.style.color = "rgba(0, 0, 0, 0.5)";
+            w8ref.style.color = "rgba(0, 0, 0, 0.5)";
 
-        // Hide all text bodies
-        w7text.style.display = 'none';
-        w8text.style.display = 'none';
+            // Show selected text body
+            document.getElementById(folderId).style.display = "block";
 
-        // Reset tab header styles
-        w7ref.style.color = 'rgba(0, 0, 0, 0.5)';
-        w8ref.style.color = 'rgba(0, 0, 0, 0.5)';
-
-        // Show selected text body
-        document.getElementById(folderId).style.display = 'block';
-
-        // Highlight active tab
-        if (folderId === 'w7reftext') {
-            w7ref.style.color = 'rgba(0, 0, 0, 1)';
-        } else if (folderId === 'w8reftext') {
-            w8ref.style.color = 'rgba(0, 0, 0, 1)';
+            // Highlight active tab
+            if (folderId === "w7reftext") {
+                w7ref.style.color = "rgba(0, 0, 0, 1)";
+            } else if (folderId === "w8reftext") {
+                w8ref.style.color = "rgba(0, 0, 0, 1)";
+            }
         }
-    }
 
-    // Optional: Open Week 7 by default on load
-    window.onload = () => openFolder('w7reftext');
-        </script>
+        // Optional: Open Week 7 by default on load
+        window.onload = () => openFolder("w7reftext");
+    </script>
 </body>
+
 </html>

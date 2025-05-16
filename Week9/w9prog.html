@@ -1,110 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <style>
-
-      body{
-        background-color: black;
-        font-family: "Orbitron", sans-serif;
-        color: white;
-      }
-      .head {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  a{
-    text-decoration: none;
-    color: white;
-}
-
-
-  .gallery {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 20px;
-margin: 20px;
-}
-
-.progress-img {
-  border: 2px solid #000000;
-  padding: 10px;
-
-}
-
-.progress-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
- 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 2% 0% 2%;
-}
-  
-.backStamp{
-    padding-right: 1%;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-}
-  
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      font-family: "Orbitron", sans-serif;
+      color: white;
     }
-}
-</style>
-    
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin: 20px;
+    }
+
+    .progress-img {
+      border: 2px solid #000000;
+      padding: 10px;
+
+    }
+
+    .progress-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0% 2% 0% 2%;
+    }
+
+    .backStamp {
+      padding-right: 1%;
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
 </head>
+
 <body>
- 
-<div class="header">
+
+  <div class="header">
     <h1>Progress: Making 2C responsive</h1>
-    <div><a href="w9home.html"><h2>█ Return</h2></a></div>
-     <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
+    <div><a onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w9home.html'; }, 200);" class="backStamp">
+        <h2>█ Return</h2>
+      </a></div>
+    <audio id="click2" src="images/mixkit-sci-fi-click-900.mp3" preload="auto"></audio>
   </div>
 
 
-     <div class="gallery">
+  <div class="gallery">
     <div class="progress-img">
       <img src="images/Screenshot 2025-05-16 032742.png">
-        <p>In order to keep my styling consitent even when making the webpages resposive I made custom buttons, text box boarders for each stage.</p>
+      <p>In order to keep my styling consistent even when making the webpages responsive I made custom buttons, text box
+        borders for each stage.</p>
     </div>
     <div class="progress-img">
-    <img src="images/Screenshot 2025-05-15 223133.png">
-      <p>I stuggrled a lot with making text stay inside the borders when resized the windows. This stage took a lot of trial and error. I used media queries when making the website responsive. Due to time constraints I only focused on making 2C responsive.</p>
+      <img src="images/Screenshot 2025-05-15 223133.png">
+      <p>I struggled a lot with making text stay inside the borders when resizing the windows. This stage took a lot of
+        trial and error. I used media queries when making the website responsive. Due to time constraints I only focused
+        on making 2C responsive.</p>
     </div>
     <div class="progress-img">
-    <img src="images/Screenshot 2025-05-14 131823.png">
-      <p>Positioning text and images to be in the right spot when the screen size changes took more time than expected. </p>
+      <img src="images/Screenshot 2025-05-14 131823.png">
+      <p>Positioning text and images to be in the right spot when the screen size changes took more time than expected.
+      </p>
     </div>
-     <div class="progress-img">
+    <div class="progress-img">
       <img src="images/Screenshot 2025-05-16 032623.png">
-      <p> I was tyrying to have some simple interactivity in my 2C workbook since the main focus was Physical computing. I did that through the use of CSS, sound and simple animations. Week-7-8 was tamagotchi themed so I tried to make the aesthetic of the pages match a tamagotchi display</p>
+      <p> I was trying to have some simple interactivity in my 2C workbook since the main focus was Physical computing.
+        I did that through the use of CSS, sound and simple animations. Week-7-8 was tamagotchi themed so I tried to
+        make the aesthetic of the pages match a tamagotchi display.</p>
     </div>
     <div class="progress-img">
-    <img src="images/Screenshot 2025-05-14 220750.png">
-    <p>As mentioned before postioning text and stacking divs took most of the time as I wanted to make it was responsive as possible and wanted to avoid the pages breaking. This also helped me understand how to use CSS styling more effectively</p>
+      <img src="images/Screenshot 2025-05-14 220750.png">
+      <p>As mentioned before, positioning text and stacking divs took most of the time as I wanted to make it as
+        responsive as possible and wanted to avoid the pages breaking. This also helped me understand how to use CSS
+        styling more effectively.</p>
     </div>
-   
+
     <div class="progress-img">
-    <img src="images/Screenshot 2025-05-16 022508.png">
-    <p>In order to help me postion divs and other items accurately I gave eacg on a background-color which helped a lot in understanding what was going wrong where</p>
+      <img src="images/Screenshot 2025-05-16 022508.png">
+      <p>In order to help me position divs and other items accurately I gave each one a background-colour which helped a
+        lot in understanding what was going wrong where</p>
     </div>
-   
-   
+
+
   </div>
-    
+
 </body>
+
 </html>

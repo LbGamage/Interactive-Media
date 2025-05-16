@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "DS Digital";
+  src: url("../Fonts/DS-DIGIB.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "pixelify sans", sans-serif;
+  overflow-x: hidden;
+  background-color: #9aa28d;
+  background-image: linear-gradient(to right, #a0a893 2px, transparent 1px),
+    linear-gradient(to bottom, #a0a893 2px, transparent 1px);
+  background-size: 20px 20px; /* Size of each square */
+  padding-bottom: 5%;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  width: 50%;
+  padding-left: 5%;
+  font-size: 1.5rem;
+}
+
+.twocNav {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  /* background-color: aqua; */
+  align-items: center;
+  padding-right: 2%;
+}
+
+img {
+  width: 100%;
+}
+
+.smol {
+  display: none;
+}
+
+.dropoption {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  gap: 0.1rem;
+  right: 0;
+  width: 100%;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  border: 0.1em solid black;
+  background-color: #9aa28d;
+  z-index: 10;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+/* Show menu on hover */
+.dropoption:hover .dropdown-content:hover,
+.drophead:hover {
+  cursor: pointer;
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+.projectsw7 {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  width: 80%;
+  /* border: 2px solid #000; */
+}
+
+.video-box,
+.text-box {
+  flex: 1 1;
+}
+
+.text-box {
+  /* background-color:aqua ; */
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.video-box video {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------ */
+.section-header {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  background-color: rgba(38, 38, 38, 0.185);
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.section-header:hover {
+  background-color: rgba(38, 38, 38, 0.674);
+}
+
+.collapsible-content {
+  display: none;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.collapsible-content.show {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.subcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+.HnGw7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* chatGPT helped animate this */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+/* Responsive styling */
+@media (max-width: 700px) {
+  .collapsible-content.show {
+    flex-direction: column;
+  }
+
+  .subcontent {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .twocNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-right: 0px;
+    /* background-color: yellow; */
+    margin: 0;
+    padding: 2%;
+    width: 20%;
+  }
+
+  .smol {
+    display: block;
+    width: 50px;
+    /* background-color: red; */
+  }
+
+  .full {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    /* background-color: blueviolet; */
+  }
+}
