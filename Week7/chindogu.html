@@ -21,13 +21,15 @@
 
   body {
     margin: 0;
-font-family: 'pixelify sans'; 
+font-family: 'pixelify sans', sans-serif;
 overflow-x: hidden;
     background-color: #9AA28D;
     background-image: 
       linear-gradient(to right, #A0A893 2px, transparent 1px),
       linear-gradient(to bottom, #A0A893 2px, transparent 1px);
     background-size: 20px 20px; /* Size of each square */
+
+    padding-bottom: 10%;
   }
 .container {
     display: flex;
@@ -37,6 +39,10 @@ overflow-x: hidden;
     width: 80%;
     margin: 0 auto;
     padding-top: 3%;
+}
+
+img{
+  width: 100%;
 }
     .video-box, .text-box {
       flex: 1 1;
@@ -48,6 +54,11 @@ overflow-x: hidden;
   /* flex-wrap: wrap; */
   gap: 2rem;
   justify-content: center;
+  border: 3px black solid;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); 
+
+  border-radius: 5px;
+
 }
 
 .text-box{
@@ -60,19 +71,22 @@ overflow-x: hidden;
       width: 100%;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .header{
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
-    font-family: 'DS Digital';
+    padding: 0% 2% 0% 2%;
 }
   
 .backStamp{
     padding-right: 1%;
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.357);
+}
+
+.backStamp:hover{
+    color: black;
 }
 
 a{
@@ -103,7 +117,7 @@ a{
 </head>
 <body>
     <div class="header">
-    <h1>Chindogu</h1>
+    <h1 style="font-size: 3em;">Chindogu</h1>
     <div onclick="event.preventDefault(); document.getElementById('click2').play(); setTimeout(() => { window.location.href='w7home.html'; }, 200);" class="backStamp"><h2>█ Return</h2></div>
      <audio id="click2" src="images/11-101soundboards.mp3" preload="auto"></audio>
   </div>
@@ -117,25 +131,29 @@ a{
     <div class="container">
     <div class="collapsible-content">
     <div class="video-box">
-       <video controls>
-        <source src="images/ultrasonic - Made with Clipchamp (1).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+       <img src="images/popcorn.png">
     </div>
     <div class="text-box">
-      <p>This is a sample paragraph alongside a video...</p>
+      <p>Single-Kernel Popcorn Popper<br><br> Ever get to the bottom of a popcorn bag and find nothing but sad, unpopped kernels? This gadget is for that exact heartbreak. The portable, mini-sized popper is designed to handle just 1–3 kernels at a time. It would likely use a battery and heat up wires/coils(?) to make the kernal pop.</p>
     </div>
   </div>
 
     <div class="collapsible-content">
     <div class="video-box">
-       <video controls>
-        <source src="images/ultrasonic - Made with Clipchamp (1).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+              <img src="images/kindle.png">
     </div>
     <div class="text-box">
-      <p>This is a sample paragraph alongside a video...</p>
+      <p>Head-Gesture Page Turner<br><br>You know that perfect moment when you’re tucked in bed, under the duvet, it’s rainy outside, and everything’s just right for a good read. But then... turning the page means moving. Too much.
+Enter the Kindle Head Turner: a motion-tracking device that flips pages with a simple tilt of your head. </p>
+    </div>
+  </div>
+
+  <div class="collapsible-content">
+    <div class="video-box">
+              <img src="images/eyeliner.png">
+   </div>
+    <div class="text-box">
+      <p>Symmetrical Eyeliner Bot<br><br>Tired of the daily battle to make both eyes match? Let this bot handle it. Using ml5 facial mapping and precise motors, it measures key points on your face and draws perfectly symmetrical eyeliner every time.</p>
     </div>
   </div>
         </div>

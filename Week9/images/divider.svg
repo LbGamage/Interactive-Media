@@ -1,7 +1,7 @@
 <svg width="6345" height="285" viewBox="0 0 6345 285" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="-4.17233e-07" y="10.063" width="183.993" height="183.993" transform="matrix(0.695231 0.718786 -0.695231 0.718786 144.647 2.82986)" stroke="white" stroke-width="14"/>
-<rect x="-5.96046e-07" y="14.3757" width="101.19" height="101.19" transform="matrix(0.695231 0.718786 -0.695231 0.718786 147.645 59.2476)" stroke="white" stroke-width="20"/>
-<rect width="62.9748" height="62.9748" transform="matrix(0.695231 0.718786 -0.695231 0.718786 137.782 97)" fill="white"/>
-<line x1="257" y1="144" x2="6345" y2="144" stroke="white" stroke-width="18"/>
-<path d="M280.5 105L193.5 18H625.976L684 51.5H4075L4021.5 105H280.5Z" fill="white" stroke="white" stroke-width="12"/>
+<rect x="-4.17233e-07" y="10.063" width="183.993" height="183.993" transform="matrix(0.695231 0.718786 -0.695231 0.718786 144.647 2.82986)" stroke="#5AFFF1" stroke-width="14"/>
+<rect x="-5.96046e-07" y="14.3757" width="101.19" height="101.19" transform="matrix(0.695231 0.718786 -0.695231 0.718786 147.645 59.2476)" stroke="#5AFFF1" stroke-width="20"/>
+<rect x="-5.96046e-07" y="14.3757" width="42.9748" height="42.9748" transform="matrix(0.695231 0.718786 -0.695231 0.718786 147.776 101.043)" fill="#5AFFF1" stroke="#5AFFF1" stroke-width="20"/>
+<line x1="257" y1="144" x2="6345" y2="144" stroke="#5AFFF1" stroke-width="18"/>
+<path d="M280.5 105L193.5 18H625.976L684 51.5H4075L4021.5 105H280.5Z" fill="#5AFFF1" stroke="#5AFFF1" stroke-width="12"/>
 </svg>

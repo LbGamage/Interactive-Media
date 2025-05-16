@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'CsAnika';
+    src: url('Fonts/CsAnikaRegularDemo-1jXwM.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  z-index: 10;
+}
+
+body {
+  background-color: #F5F3F0;
+  overflow: hidden;
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
+.w1, .w2, .w3, .w4, .w5, .w6, .prog, .bgitems {
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 10px;  
+  transition: 0.4ms;
+}
+
+.w1 {
+  top: 15%;
+  left: 50%;
+  width: 20%;
+  z-index: 5;
+}
+
+.w2 {
+  top: 30%;
+  left: 35%;
+  width: 20%;
+  z-index: 5;
+}
+
+.kusama {
+  bottom: 5%;
+  right: 43%;
+  width: 18%;
+  z-index: 5;
+}
+
+.w6 {
+  top: 13%;
+  left: 20%;
+  width: 18%;
+  z-index: 5;
+}
+
+.prog {
+  bottom: 10%;
+  right: 5%;
+  width: 20%;
+  z-index: 3;
+}
+
+.w4 {
+  bottom: 18%;
+  left: 50%;
+  width: 15%;
+  z-index: 6;
+}
+
+.w3 {
+  bottom: 25%;
+  left: 30%;
+  width: 12%;
+  z-index: 6;
+}
+
+.w5 {
+  top: 40%;
+  right: 20%;
+  width: 17%;
+  height: 20%;
+  z-index: 6;
+}
+
+.item1 {
+  bottom: 3%;
+  left: 22%;
+  width: 12%;
+  z-index: 2;
+}
+
+.recipt {
+  top: 13%;
+  left: 10%;
+  width: 15%;
+  z-index: 1;
+  rotate: -6deg;
+}
+
+.number {
+  top: 10%;
+  right: 3%;
+  width: 20%;
+  z-index: 2;
+}
+
+.flowers {
+  bottom: 30%;
+  right: 2%;
+  width: 15%;
+  z-index: 5;
+}
+
+.catcut {
+  top: 35%;
+  right: 15%;
+  width: 5%;
+  min-width: 5%;
+  z-index: 8;
+}
+
+.catcut2 {
+  top: 15%;
+  left: 8%;
+  width: 5%;
+  min-width: 5%;
+  z-index: 5;
+}
+
+.totoro {
+  top: 18%;
+  left: 38%;
+  width: 5%;
+  min-width: 8%;
+  z-index: 5;
+}
+
+.keychain {
+  bottom: 12%;
+  right: 20%;
+  width: 15%;
+  z-index: 8;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  transform-origin: top;
+  transition: transform 0.9s ease-in-out;
+}
+
+.keychain:hover {
+  animation: sway 1s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
+}
+
+.cd {
+  top: 55%;
+  left: 3%;
+  width: 20%;
+  z-index: 9999;
+}
+
+.playmusic {
+  transition: transform 0.3s ease; 
+}
+
+.playmusic:hover {
+  animation: spin 3.5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.w1:hover, .w2:hover, .w3:hover, .w4:hover, .w5:hover, .w6:hover, .prog:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+  z-index: 5;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.draggable {
+  cursor: grab;
+  transition: none;
+}
+
+.footer {
+  width: 20%;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 5%;
+  right: 1%;
+  font-family: 'Caveat';
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .header {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+  .prog {
+    width: 40%;
+    bottom: 35%;
+    right: 10%;
+  }
+  .footer {
+    width: 90%;
+    right: 5%;
+  }
+  .w1 {
+    top: 10%;
+    left: 40%;
+    width: 35%;
+  }
+  .w2 {
+    top: 20%;
+    left: 30%;
+    width: 35%;
+  }
+  .kusama {
+    bottom: 15%; 
+    right: 30%;
+    width: 30%;
+  }
+  .w6 {
+    top: 8%;
+    left: 10%;
+    width: 30%;
+  }
+  .w4 {
+    bottom: 15%; 
+    width: 25%;
+  }
+  .w3 {
+    bottom: 20%;
+    left: 20%;
+    width: 23%;
+  }
+  .w5 {
+    top: 30%;
+    right: 10%;
+    width: 30%;
+  }
+  .item1 {
+    bottom: 10%;
+    left: 15%;
+    width: 23%;
+  }
+  .recipt {
+    top: 20%;
+    left: 5%;
+    width: 25%;
+  }
+  .number {
+    top: 8%;
+    right: 5%;
+    width: 30%;
+  }
+  .flowers {
+    bottom: 25%;
+    right: 5%;
+    width: 25%;
+  }
+  .catcut {
+    top: 25%;
+    right: 10%;
+    width: 10%;
+  }
+  .catcut2 {
+    top: 10%;
+    left: 5%;
+    width: 10%;
+  }
+  .totoro {
+    top: 15%;
+    left: 30%;
+    width: 10%;
+  }
+  .keychain {
+    bottom: 12%; 
+    right: 15%;
+    width: 25%;
+  }
+  .cd {
+    top: 50%;
+    left: 5%;
+    width: 30%;
+  }
+}
+
+
+/* OLD CSS */
+         	
+/* Shooting Stars from the LMS pages
+
+#shooting-stars {
+    position: absolute; 
+    z-index: 1;
+}
+
+pre {}
+
+.stars1 {
+
+color: rgb(245, 245, 171);
+
+text-shadow: rgb(190, 190, 232);
+
+font-size: 1.4em;
+
+letter-spacing: -2px;
+
+text-shadow: 2px 2px 20px #ffe8a4;
+
+opacity: 0.9;
+
+}
+
+#star1 {
+
+position: absolute;
+top: 0px;
+right: 10vw;
+animation: 5s shootingStar linear infinite;
+
+}
+
+#star2 {
+position: absolute;
+top: 0px;
+right: 50vw;
+animation: 4s shootingStar linear infinite;
+}
+
+#star3 {
+position: absolute;
+top: -15vh;
+right: 60vw;
+animation: 5s shootingStar linear infinite;
+animation-delay: 1.2s;
+}
+
+#star4 {
+position: absolute;
+top: -30vh;
+right: 90vw;
+animation: 7s shootingStar linear infinite;
+animation-delay: 2s;
+}
+
+#star5 {
+position: absolute;
+top: -40vh;
+right: 30vw;
+animation: 6s shootingStar linear infinite;
+}
+
+#star6 {
+position: absolute;
+top: -3vh;
+right: -50vw;
+animation: 6s shootingStar linear infinite;
+animation-delay: 1.2s;
+}
+
+#star7 {
+position: absolute;
+top: -22px;
+right: -20vw;
+animation: 5s shootingStar linear infinite;
+animation-delay: 2.2s;
+}
+
+@keyframes stars-fall {
+0% {
+line-height: 5px;
+}
+100% {
+line-height: 10px;
+}
+}
+@keyframes shootingStar {
+0% {
+transform: rotateZ(-40deg) translateX(0%) translateY(0%);
+}
+100% {
+transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
+}
+}
+ */
