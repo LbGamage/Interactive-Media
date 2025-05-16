@@ -44,7 +44,7 @@ img {
   width: 100%;
 }
 
-.smol {
+.smol, .smol-kit {
   display: none;
 }
 
