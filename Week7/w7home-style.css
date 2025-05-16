@@ -214,6 +214,11 @@ img {
     /* background-color: red; */
   }
 
+  .smol-kit{
+       display: block;
+    width: 100%;
+  }
+
   .full {
     display: none;
   }
